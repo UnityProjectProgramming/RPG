@@ -8,13 +8,10 @@ namespace RPG.Characters
 {
     public class AreaEffectBehaviour : AbilityBehaviour {
         
-        AreaEffectConfig config;
+       
         AudioSource audioSource;
 
-        public void SetConfig (AreaEffectConfig configToSet)
-        {
-            this.config = configToSet;
-        }
+    
         // Use this for initialization
         void Start() {
             audioSource = GetComponent<AudioSource>();
@@ -32,9 +29,9 @@ namespace RPG.Characters
             //static sphere cast for targets
             RaycastHit[] hits = Physics.SphereCastAll(
                     transform.position,
-                    config.GetRadius(),
+                    (config as AreaEffectConfig).GetRadius(),
                     Vector3.up,
-                    config.GetRadius()
+                    (config as AreaEffectConfig).GetRadius()
                 );
             foreach (RaycastHit hit in hits)
             {
@@ -42,7 +39,7 @@ namespace RPG.Characters
                 bool hitPlayer = hit.collider.gameObject.GetComponent<Player>();
                 if (damagable != null && !hitPlayer)
                 {
-                    float damageToTake = useParams.baseDamage + config.GetDamageToEachTarget();
+                    float damageToTake = useParams.baseDamage + (config as AreaEffectConfig).GetDamageToEachTarget();
                     damagable.TakeDamage(damageToTake);
                 }
             }
@@ -52,16 +49,6 @@ namespace RPG.Characters
         {
             audioSource.clip = config.GetAbilitySFX();
             audioSource.Play();
-        }
-
-
-        private void PlayParticleEffect()
-        {
-            var particlePrefab = config.GetParticlePrefab();
-            var prefab = Instantiate(particlePrefab, transform.position, particlePrefab.transform.rotation);
-            ParticleSystem myParticleSystem = GameObject.FindObjectOfType<ParticleSystem>();
-            myParticleSystem.Play();
-            Destroy(prefab, myParticleSystem.main.duration + 5); //TODO remove Magic Number
         }
     }
 }

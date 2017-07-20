@@ -7,7 +7,7 @@ namespace RPG.Characters
     public class PlayerHealthBar : MonoBehaviour
     {
 
-        [SerializeField] float visualHealthOrbDecreaseSpeed = 5f;
+        //[SerializeField] float visualHealthOrbDecreaseSpeed = 5f;
         Image healthOrb;
         Player player;
 
