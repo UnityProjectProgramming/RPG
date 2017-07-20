@@ -6,7 +6,7 @@ namespace RPG.Characters
 {
 
 
-    public class SelfHealBehaviour : MonoBehaviour, ISpecialAbility
+    public class SelfHealBehaviour : AbilityBehaviour
     {
 
         SelfHealConfig config;
@@ -24,7 +24,7 @@ namespace RPG.Characters
             audioSource = GetComponent<AudioSource>();
         }
 
-        public void Use(AbilityUseParams useParams)
+        public override void Use(AbilityUseParams useParams)
         {
             player.Heal(config.GetHealAmount());
             PlaySFX();

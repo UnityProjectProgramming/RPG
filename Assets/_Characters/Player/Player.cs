@@ -27,7 +27,7 @@ namespace RPG.Characters
         [SerializeField] ParticleSystem criticalHitParticle;
 
         //Temporary used serliazedField
-        [SerializeField] SpecialAbility[] abilities;
+        [SerializeField] AbilityConfig[] abilities;
 
 
         
