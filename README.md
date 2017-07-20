@@ -1,2 +1,1 @@
-# UnityRPG
-Simple RPG Game in Unity
+Dragon RPG
