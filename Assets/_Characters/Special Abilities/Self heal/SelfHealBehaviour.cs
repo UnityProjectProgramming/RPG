@@ -9,20 +9,15 @@ namespace RPG.Characters
     public class SelfHealBehaviour : AbilityBehaviour
     {
         Player player;
-
-        private AudioSource audioSource;
-
         void Start()
         {
-            player = GameObject.FindObjectOfType<Player>();
-            audioSource = GetComponent<AudioSource>();
+            player = GetComponent<Player>();
         }
 
         public override void Use(AbilityUseParams useParams)
         {
             player.Heal((config as SelfHealConfig).GetHealAmount());
-            audioSource.clip = config.GetAbilitySFX();
-            audioSource.Play();
+            PlayAbilitySound();
             PlayParticleEffect();
         }
     }

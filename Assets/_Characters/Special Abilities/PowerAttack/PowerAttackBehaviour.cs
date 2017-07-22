@@ -6,19 +6,11 @@ namespace RPG.Characters
 {
     public class PowerAttackBehaviour : AbilityBehaviour
     {
-        AudioSource audioSource = null;
-   
-
-        void Start()
-        {
-            audioSource = GetComponent<AudioSource>();
-        }
 
         public override void Use(AbilityUseParams useParams)
         {
             DealDamage(useParams);
-            audioSource.clip = config.GetAbilitySFX();
-            audioSource.Play();
+            PlayAbilitySound();
             PlayParticleEffect();
         }
 

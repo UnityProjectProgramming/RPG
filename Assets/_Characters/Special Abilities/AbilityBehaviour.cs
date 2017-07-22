@@ -9,6 +9,7 @@ namespace RPG.Characters
         protected AbilityConfig config;
 
         const float PARTICLE_CLEAN_UP_DELAY = 20.0f;
+
         public void SetConfig(AbilityConfig configToSet)
         {
             config = configToSet;
@@ -32,6 +33,13 @@ namespace RPG.Characters
             }
             Destroy(particlePrefab);
             yield return new WaitForEndOfFrame();
+        }
+
+        protected void PlayAbilitySound()
+        {
+            var abilitySound = config.GetRandomAbilitySound(); // TODO change to random clip.
+            var audioSource = GetComponent<AudioSource>();
+            audioSource.PlayOneShot(abilitySound); 
         }
     }
 
