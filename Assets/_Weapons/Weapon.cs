@@ -13,6 +13,7 @@ namespace RPG.Weapons
         [SerializeField] float maxAttackRange = 2f;
         [SerializeField] float minTimeBetweenHits = 0.5f;
         [SerializeField] float additionalDamage = 10f;
+        
 
         public float GetMinTimeBetweenHits()
         {

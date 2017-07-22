@@ -59,11 +59,9 @@ namespace RPG.Characters
             }       
         }
 
-        public float healthAsPercentage { get { return currentHealthPoint / maxHealthPoint; } }
-
         private void Update()
         {
-            if(healthAsPercentage > Mathf.Epsilon)
+            if (healthAsPercentage > Mathf.Epsilon)
             {
                 ScanForAbilityKeyDown();
             }
@@ -78,36 +76,8 @@ namespace RPG.Characters
             else if (Input.GetKeyDown(KeyCode.Alpha2)) //Self Heal Special Ability
             {
                 AttemptSpecialAbility(2);
-            } 
-        }
-
-        public void TakeDamage(float damage)
-        {
-            currentHealthPoint = Mathf.Clamp(currentHealthPoint - damage, 0f, maxHealthPoint);
-            audioSource.clip = damageSounds[UnityEngine.Random.Range(0, damageSounds.Length)];
-            audioSource.Play();
-            if (currentHealthPoint <=0)
-            {            
-                StartCoroutine(KillPlayer());
             }
         }
-
-        public void Heal(float healAmount)
-        {
-            currentHealthPoint = Mathf.Clamp(currentHealthPoint + healAmount, 0f, maxHealthPoint);
-        }
-
-        IEnumerator KillPlayer()
-        {
-            animator.SetTrigger(DEATH_TRIGGER);
-
-            audioSource.clip = deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)];
-            audioSource.Play();
-            yield return new WaitForSecondsRealtime(audioSource.clip.length);
-            
-            SceneManager.LoadScene(0);
-        }
-
 
         private void SetCurrentMaxHealth()
         {
@@ -146,39 +116,25 @@ namespace RPG.Characters
             //cameraRaycaster = FindObjectOfType<CameraRaycaster>();
             cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy; //Delegate
         }
-
-        void OnMouseOverEnemy(Enemy enemyToSet)
-        {
-            this.enemy = enemyToSet;
-            if (Input.GetMouseButton(0) && IsTargetInRange(enemyToSet.gameObject))
-            {
-                AttackTarget();
-            }
-            if (Input.GetMouseButtonDown(1))
-            {
-                AttemptSpecialAbility(0);
-            }
-        }
-        
         private void AttemptSpecialAbility(int abilityIndex)
         {
             var energyComponent = GetComponent<Energy>();
             var energyCost = abilities[abilityIndex].GetEnergyCost();
             if (energyComponent.IsEnergyAvaliable(energyCost))
             {
-                energyComponent.ConsumeEnergy(energyCost); 
+                energyComponent.ConsumeEnergy(energyCost);
                 var abilityParams = new AbilityUseParams(enemy, baseDamage);
                 abilities[abilityIndex].Use(abilityParams);
             }
         }
 
         private void AttackTarget()
-        {         
+        {
             if (Time.time - lastHitTime > weaponInUse.GetMinTimeBetweenHits())
             {
                 animator = GetComponent<Animator>();
                 enemy.TakeDamage(CalculateDamage());
-                animator.SetTrigger(ATTACK_TRIGGER); 
+                animator.SetTrigger(ATTACK_TRIGGER);
                 lastHitTime = Time.time;
             }
         }
@@ -192,16 +148,66 @@ namespace RPG.Characters
             {
                 criticalHitParticle.Play();
                 return damageBeforeCritical * criticalHitMultiplier;
-            } else
+            }
+            else
             {
                 return damageBeforeCritical;
-            }          
+            }
         }
 
         private bool IsTargetInRange(GameObject target)
         {
             float distanceToTarget = (target.transform.position - transform.position).magnitude;
-           return  distanceToTarget <= weaponInUse.GetMaxAttackRange();
-        }      
+            return distanceToTarget <= weaponInUse.GetMaxAttackRange();
+        }
+
+        void OnMouseOverEnemy(Enemy enemyToSet)
+        {
+            this.enemy = enemyToSet;
+            if (Input.GetMouseButton(0) && IsTargetInRange(enemyToSet.gameObject))
+            {
+                AttackTarget();
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                AttemptSpecialAbility(0);
+            }
+        }
+
+        IEnumerator KillPlayer()
+        {
+            animator.SetTrigger(DEATH_TRIGGER);
+
+            audioSource.clip = deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)];
+            audioSource.Play();
+            yield return new WaitForSecondsRealtime(audioSource.clip.length);
+
+            SceneManager.LoadScene(0);
+        }
+
+        public float healthAsPercentage { get { return currentHealthPoint / maxHealthPoint; } }
+
+        public void TakeDamage(float damage)
+        {
+            currentHealthPoint = Mathf.Clamp(currentHealthPoint - damage, 0f, maxHealthPoint);
+            audioSource.clip = damageSounds[UnityEngine.Random.Range(0, damageSounds.Length)];
+            audioSource.Play();
+            if (currentHealthPoint <=0)
+            {            
+                StartCoroutine(KillPlayer());
+            }
+        }
+
+        public void Heal(float healAmount)
+        {
+            currentHealthPoint = Mathf.Clamp(currentHealthPoint + healAmount, 0f, maxHealthPoint);
+        }
+
+        public void PutWeaponInHand(Weapon weaponConfig)
+        {
+            print("Putting In player hand : " + weaponConfig);
+        }
+
+
     }
 }
