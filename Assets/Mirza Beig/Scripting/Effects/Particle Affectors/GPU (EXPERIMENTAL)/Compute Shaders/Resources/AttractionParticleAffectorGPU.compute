@@ -1,0 +1,62 @@
+﻿
+// =================================	
+// Kernels.
+// =================================
+
+#pragma kernel CSMain
+
+// =================================	
+// Includes.
+// =================================
+			
+#include "ParticleAffectorGPU-Common.cginc"
+
+// =================================	
+// Structs.
+// =================================
+
+// ...
+		
+// =================================	
+// Variables.
+// =================================
+
+// ...
+
+float arrivalRadiusSqr;
+float arrivedRadiusSqr;
+
+// =================================	
+// Functions.
+// =================================
+
+// ...
+
+// =================================	
+// Kernels.
+// =================================
+
+// ...
+
+[numthreads(12, 1, 1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{	
+	id_x = id.x; init();
+
+	forceVec = -normalize(scaledDirectionToAffectorCenter);
+
+	if (distanceToAffectorCenterSqr < arrivalRadiusSqr)
+	{
+		float inverseArrivalScaleNormalized = 1.0 - (distanceToAffectorCenterSqr / arrivalRadiusSqr);
+		forceVec *= inverseArrivalScaleNormalized;
+	}
+
+	forceVec *= distanceToAffectorCenterSqr > arrivedRadiusSqr;
+
+	process();
+}
+
+// =================================	
+// --END-- //
+// =================================
+
