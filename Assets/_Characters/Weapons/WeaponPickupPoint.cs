@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RPG.Characters;
-namespace RPG.Weapons
+
+namespace RPG.Characters
 {
     [ExecuteInEditMode]
     public class WeaponPickupPoint : MonoBehaviour
@@ -37,7 +37,6 @@ namespace RPG.Weapons
 
         private void OnTriggerEnter()
         {
-            print("Pick Up Triggerd!");
             FindObjectOfType<Player>().PutWeaponInHand(weaponConfig);
             var audioSource = GetComponent<AudioSource>();
             audioSource.PlayOneShot(pickUpSFX);
