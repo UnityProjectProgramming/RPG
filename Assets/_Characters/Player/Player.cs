@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.SceneManagement;
-using RPG.CameraUI; // TODO , Consider Re-Wiring.
+using RPG.CameraUI;
 using RPG.Core;
 
 
@@ -39,9 +39,13 @@ namespace RPG.Characters
         CameraRaycaster cameraRaycaster;
         GameObject weaponObject;
 
+        private bool isGamePaused;
+        public LevelFlowManager levelFlowManager;
 
         private void Start()
         {
+            
+            isGamePaused = false;
             audioSource = GetComponent<AudioSource>();
             RegisterForMouseClick();
             SetCurrentMaxHealth();
@@ -63,6 +67,25 @@ namespace RPG.Characters
             if (healthAsPercentage > Mathf.Epsilon)
             {
                 ScanForAbilityKeyDown();
+            }
+            PauseGame();
+        }
+
+        private void PauseGame()
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                isGamePaused = !isGamePaused;
+            }
+            if(isGamePaused && Input.GetKeyDown(KeyCode.Escape))
+            {
+                Time.timeScale = 0;
+                levelFlowManager.pauseGame.SetActive(true);
+
+            } else if (!isGamePaused && Input.GetKeyDown(KeyCode.Escape))
+            {
+                Time.timeScale = 1;
+                levelFlowManager.pauseGame.SetActive(false);
             }
         }
 
@@ -202,6 +225,10 @@ namespace RPG.Characters
             weaponObject = Instantiate(weaponPrefab, dominantHand.transform);
             weaponObject.transform.localPosition = currentWeaponConfig.grip.localPosition;
             weaponObject.transform.localRotation = currentWeaponConfig.grip.localRotation;
+        }
+        public void OnButtonEven()   //TODO , move to anotehr script
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }
