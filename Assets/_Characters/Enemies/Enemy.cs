@@ -21,7 +21,6 @@ namespace RPG.Characters
         bool isAttacking = false;
         float currentHealthPoint;
 
-        AICharacterControl aiCharacterControl = null;
         Player player = null;
 
         public float healthAsPercentage
@@ -34,7 +33,6 @@ namespace RPG.Characters
 
         private void Start()
         {
-            aiCharacterControl = GetComponent<AICharacterControl>();
             player = FindObjectOfType<Player>();
             currentHealthPoint = maxHealthPoint;
 
@@ -64,11 +62,11 @@ namespace RPG.Characters
             }
             if (distanceToPlayer <= chaseRadious)
             {
-                aiCharacterControl.SetTarget(player.transform);
+               // aiCharacterControl.SetTarget(player.transform);
             }
             else
             {
-                aiCharacterControl.SetTarget(transform);
+               // aiCharacterControl.SetTarget(transform);
             }
         }
         //TODO seperate out character firing Logic.
