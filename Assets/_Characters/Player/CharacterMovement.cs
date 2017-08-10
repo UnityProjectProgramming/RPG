@@ -67,38 +67,16 @@ namespace RPG.Characters
             }
         }
 
-        private void OnMouseOverPotentiallyWalkable(Vector3 destination)
-        {
-            if (Input.GetMouseButton(0))
-            {
-                agent.SetDestination(destination);
-            }
-        }
-
-        void OnMouseOverEnemy(Enemy enemy)
-        {
-            if (Input.GetMouseButton(0) || Input.GetMouseButtonDown(1))// left mouse Or Right click
-            {
-                agent.SetDestination(enemy.transform.position);
-            } 
-        }
-
-        //Call-Back (google the function name if you need help)
-        void OnAnimatorMove()
-        {
-            if (Time.deltaTime > 0)
-            {
-                Vector3 velocity = (animator.deltaPosition * moveSpeedMultiplier) / Time.deltaTime;
-                velocity.y = myRigidBody.velocity.y;
-                myRigidBody.velocity = velocity;
-            }
-        }
-
         public void Move(Vector3 movement)
         {
             SetForwardAndTurn(movement);
             ApplyExtraTurnRotation();
             UpdateAnimator();
+        }
+
+        public void Kill()
+        {
+            // To allow death signaling.
         }
 
         private void SetForwardAndTurn(Vector3 movement)
@@ -127,6 +105,34 @@ namespace RPG.Characters
             animator.SetFloat("Turn", turnAmount, 0.1f, Time.deltaTime);
             animator.speed = animSpeedMultiplier;
         }
+
+        private void OnMouseOverPotentiallyWalkable(Vector3 destination)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                agent.SetDestination(destination);
+            }
+        }
+
+        void OnMouseOverEnemy(Enemy enemy)
+        {
+            if (Input.GetMouseButton(0) || Input.GetMouseButtonDown(1))// left mouse Or Right click
+            {
+                agent.SetDestination(enemy.transform.position);
+            } 
+        }
+
+        //Call-Back (google the function name if you need help)
+        void OnAnimatorMove()
+        {
+            if (Time.deltaTime > 0)
+            {
+                Vector3 velocity = (animator.deltaPosition * moveSpeedMultiplier) / Time.deltaTime;
+                velocity.y = myRigidBody.velocity.y;
+                myRigidBody.velocity = velocity;
+            }
+        }
+
     }
 }
 

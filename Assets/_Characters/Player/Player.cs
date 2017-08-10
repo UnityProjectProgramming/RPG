@@ -13,14 +13,10 @@ namespace RPG.Characters
 {
     public class Player : MonoBehaviour, IDamageable
     {
-        [SerializeField] float maxHealthPoint = 100f;
         [SerializeField] float baseDamage = 10f;
         [SerializeField] AnimatorOverrideController animatorOverrideController;
         [SerializeField] Weapon currentWeaponConfig;
 
-        AudioSource audioSource;
-        [SerializeField] AudioClip[] damageSounds;
-        [SerializeField] AudioClip[] deathSounds;
 
         [Range(0.1f, 1.0f)] [SerializeField] float criticalHitChance = 0.1f;
         [SerializeField] float criticalHitMultiplier = 1.25f;
@@ -30,10 +26,8 @@ namespace RPG.Characters
         [SerializeField] AbilityConfig[] abilities;
 
         Enemy enemy = null;
-        private float currentHealthPoint;
         private float lastHitTime = 0f;
         Animator animator;
-        const String DEATH_TRIGGER = "Death";
         const String ATTACK_TRIGGER = "Attack";
 
         CameraRaycaster cameraRaycaster;
@@ -187,34 +181,8 @@ namespace RPG.Characters
             }
         }
 
-        IEnumerator KillPlayer()
-        {
-            animator.SetTrigger(DEATH_TRIGGER);
 
-            audioSource.clip = deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)];
-            audioSource.Play();
-            yield return new WaitForSecondsRealtime(audioSource.clip.length);
 
-            SceneManager.LoadScene(0);
-        }
-
-        public float healthAsPercentage { get { return currentHealthPoint / maxHealthPoint; } }
-
-        public void TakeDamage(float damage)
-        {
-            currentHealthPoint = Mathf.Clamp(currentHealthPoint - damage, 0f, maxHealthPoint);
-            audioSource.clip = damageSounds[UnityEngine.Random.Range(0, damageSounds.Length)];
-            audioSource.Play();
-            if (currentHealthPoint <=0)
-            {            
-                StartCoroutine(KillPlayer());
-            }
-        }
-
-        public void Heal(float healAmount)
-        {
-            currentHealthPoint = Mathf.Clamp(currentHealthPoint + healAmount, 0f, maxHealthPoint);
-        }
 
         public void PutWeaponInHand(Weapon weaponToUse)
         {
