@@ -4,15 +4,28 @@ using RPG.CameraUI; // TODO , Consider Re-Wiring.
 
 namespace RPG.Characters
 {
-    [RequireComponent(typeof(ThirdPersonCharacter))]
+
     [RequireComponent(typeof(NavMeshAgent))]
+    [RequireComponent(typeof(Rigidbody))]
+    [RequireComponent(typeof(Animator))]
+    [RequireComponent(typeof(CapsuleCollider))]
 
     public class CharacterMovement : MonoBehaviour
     {
-        [SerializeField] float stoppingDistance = 1.0f;
-        [SerializeField] float moveSpeedMultiplier = 0.5f;
+        //====Serliaized Section====
+        [SerializeField] float moveSpeedMultiplier  = 0.5f;
+        [SerializeField] float moveThreshold        = 1.0f;
+        [SerializeField] float movingTurnSpeed      = 360;
+        [SerializeField] float stationaryTurnSpeed  = 180;
+        [SerializeField] float stoppingDistance     = 1.0f;
+        [SerializeField] float runCycleLegOffset    = 0.2f;
+        [SerializeField] float animSpeedMultiplier  = 1.5f;
 
-        ThirdPersonCharacter character;   // A reference to the ThirdPersonCharacter on the object
+
+        //====Private Section====
+        float turnAmount;
+        float forwardAmount;
+
         GameObject walkTarget;
         Vector3 clickPoint;
         NavMeshAgent agent;
@@ -23,30 +36,34 @@ namespace RPG.Characters
 
         void Start()
         {
+            // Ray-Casting and Applying Delegates
             CameraRaycaster cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
-            character = GetComponent<ThirdPersonCharacter>();
-            walkTarget = new GameObject("walkTarget");
+            cameraRaycaster.onMouseOverpotentiallyWalkable += OnMouseOverPotentiallyWalkable;
+            cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy;        
 
             myRigidBody = GetComponent<Rigidbody>();
+            myRigidBody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+
             animator = GetComponent<Animator>();
+            animator.applyRootMotion = true;
 
             agent = GetComponent<NavMeshAgent>();
             agent.updateRotation = false;
             agent.updatePosition = true;
             agent.stoppingDistance = stoppingDistance;
-            cameraRaycaster.onMouseOverpotentiallyWalkable += OnMouseOverPotentiallyWalkable;
-            cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy;
+
+            walkTarget = new GameObject("walkTarget");
         }
 
         void Update()
         {
             if(agent.remainingDistance > agent.stoppingDistance)
             {
-                character.Move(agent.desiredVelocity);
+               Move(agent.desiredVelocity);
             }
             else
             {
-                character.Move(Vector3.zero);
+               Move(Vector3.zero);
             }
         }
 
@@ -66,19 +83,52 @@ namespace RPG.Characters
             } 
         }
 
+        //Call-Back (google the function name if you need help)
         void OnAnimatorMove()
         {
-            // we implement this function to override the default root motion.
-            // this allows us to modify the positional speed before it's applied.
             if (Time.deltaTime > 0)
             {
                 Vector3 velocity = (animator.deltaPosition * moveSpeedMultiplier) / Time.deltaTime;
-                // we preserve the existing y part of the current velocity.
                 velocity.y = myRigidBody.velocity.y;
                 myRigidBody.velocity = velocity;
             }
         }
+
+        public void Move(Vector3 movement)
+        {
+            SetForwardAndTurn(movement);
+            ApplyExtraTurnRotation();
+            UpdateAnimator();
+        }
+
+        private void SetForwardAndTurn(Vector3 movement)
+        {
+            // convert the world relative moveInput vector into a local-relative.
+            // turn amount and forward amount required to head in the desired direction.       
+            if (movement.magnitude > moveThreshold)
+            {
+                movement.Normalize();
+            }
+            var localMovement = transform.InverseTransformDirection(movement);
+            turnAmount = Mathf.Atan2(localMovement.x, localMovement.z);
+            forwardAmount = localMovement.z;
+        }
+
+        private void ApplyExtraTurnRotation()
+        {
+            // help the character turn faster (this is in addition to root rotation in the animation)
+            float turnSpeed = Mathf.Lerp(stationaryTurnSpeed, movingTurnSpeed, forwardAmount);
+            transform.Rotate(0, turnAmount * turnSpeed * Time.deltaTime, 0);
+        }
+
+        private void UpdateAnimator()
+        {
+            animator.SetFloat("Forward", forwardAmount, 0.1f, Time.deltaTime);
+            animator.SetFloat("Turn", turnAmount, 0.1f, Time.deltaTime);
+            animator.speed = animSpeedMultiplier;
+        }
     }
 }
+
 
 
