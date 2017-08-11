@@ -22,14 +22,12 @@ namespace RPG.Characters
         [SerializeField] float criticalHitMultiplier = 1.25f;
         [SerializeField] ParticleSystem criticalHitParticle;
 
-        //Temporary used serliazedField
-        [SerializeField] AbilityConfig[] abilities;
 
         Enemy enemy = null;
         private float lastHitTime = 0f;
         Animator animator;
         const String ATTACK_TRIGGER = "Attack";
-
+        SpecialAbilities abilities;
         CameraRaycaster cameraRaycaster;
         GameObject weaponObject;
 
@@ -37,21 +35,12 @@ namespace RPG.Characters
         public LevelFlowManager levelFlowManager;
 
         private void Start()
-        {
-            
+        {   
             isGamePaused = false;
+            abilities = GetComponent<SpecialAbilities>();
             RegisterForMouseClick();
             PutWeaponInHand(currentWeaponConfig);
             SetAttackAnimation();
-            AttachInitialAbilities();
-        }
-
-        private void AttachInitialAbilities()
-        {
-            for(int abilityIndex = 0; abilityIndex < abilities.Length; abilityIndex++)
-            {
-                abilities[abilityIndex].AttachAbilityTo(gameObject);
-            }       
         }
 
         private void Update()
@@ -84,13 +73,13 @@ namespace RPG.Characters
 
         private void ScanForAbilityKeyDown()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1)) // AoE Special Ability
+            
+            for (int keyIndex = 1; keyIndex < abilities.GetNumberOfAbilities(); keyIndex++)
             {
-                AttemptSpecialAbility(1);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha2)) //Self Heal Special Ability
-            {
-                AttemptSpecialAbility(2);
+                if (Input.GetKeyDown(keyIndex.ToString()))
+                {                    
+                    abilities.AttemptSpecialAbility(keyIndex);
+                }
             }
         }
 
@@ -115,17 +104,6 @@ namespace RPG.Characters
             cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
             //cameraRaycaster = FindObjectOfType<CameraRaycaster>();
             cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy; //Delegate
-        }
-        private void AttemptSpecialAbility(int abilityIndex)
-        {
-            var energyComponent = GetComponent<Energy>();
-            var energyCost = abilities[abilityIndex].GetEnergyCost();
-            if (energyComponent.IsEnergyAvaliable(energyCost))
-            {
-                energyComponent.ConsumeEnergy(energyCost);
-                var abilityParams = new AbilityUseParams(enemy, baseDamage);
-                abilities[abilityIndex].Use(abilityParams);
-            }
         }
 
         private void AttackTarget()
@@ -170,12 +148,9 @@ namespace RPG.Characters
             }
             if (Input.GetMouseButtonDown(1))
             {
-                AttemptSpecialAbility(0);
+                abilities.AttemptSpecialAbility(0);
             }
         }
-
-
-
 
         public void PutWeaponInHand(Weapon weaponToUse)
         {
