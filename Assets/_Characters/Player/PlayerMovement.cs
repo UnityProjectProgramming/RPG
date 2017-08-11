@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.SceneManagement;
 using RPG.CameraUI;
-using RPG.Core;
 
 
-
+// TODO , extract weaponSystem
 namespace RPG.Characters
 {
-    public class Player : MonoBehaviour //no Idamageable because we are going fron interface to component
+    public class PlayerMovement : MonoBehaviour //no Idamageable because we are going fron interface to component
     {
         [SerializeField] float baseDamage = 10f;
         [SerializeField] AnimatorOverrideController animatorOverrideController;
@@ -30,44 +27,53 @@ namespace RPG.Characters
         SpecialAbilities abilities;
         CameraRaycaster cameraRaycaster;
         GameObject weaponObject;
+        Character character;
 
         private bool isGamePaused;
         public LevelFlowManager levelFlowManager;
 
         private void Start()
-        {   
+        {
+            character = GetComponent<Character>();
             isGamePaused = false;
             abilities = GetComponent<SpecialAbilities>();
-            RegisterForMouseClick();
+            RegisterForMouseEvents();
             PutWeaponInHand(currentWeaponConfig);
             SetAttackAnimation();
         }
 
-        private void Update()
+        private void RegisterForMouseEvents()
         {
-            var healthPercentage = GetComponent<HealthSystem>().healthAsPercentage;
-            if (healthPercentage > Mathf.Epsilon)
-            {
-                ScanForAbilityKeyDown();
-            }
+            //cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
+            cameraRaycaster = FindObjectOfType<CameraRaycaster>();
+            cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy; //Delegate
+            cameraRaycaster.onMouseOverpotentiallyWalkable += onMouseOverpotentiallyWalkable;
+        }
+
+        private void Update()
+        {         
+            ScanForAbilityKeyDown();         
             PauseGame();
         }
 
-        private void PauseGame()
+        void onMouseOverpotentiallyWalkable(Vector3 destination)
         {
-            if(Input.GetKeyDown(KeyCode.Escape))
+            if(Input.GetMouseButton(0))
             {
-                isGamePaused = !isGamePaused;
+                character.SetDestination(destination);
             }
-            if(isGamePaused && Input.GetKeyDown(KeyCode.Escape))
-            {
-                Time.timeScale = 0;
-                levelFlowManager.pauseGame.SetActive(true);
+        }
 
-            } else if (!isGamePaused && Input.GetKeyDown(KeyCode.Escape))
+        void OnMouseOverEnemy(Enemy enemyToSet)
+        {
+            this.enemy = enemyToSet;
+            if (Input.GetMouseButton(0) && IsTargetInRange(enemyToSet.gameObject))
             {
-                Time.timeScale = 1;
-                levelFlowManager.pauseGame.SetActive(false);
+                AttackTarget();
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                abilities.AttemptSpecialAbility(0);
             }
         }
 
@@ -97,13 +103,6 @@ namespace RPG.Characters
             Assert.IsFalse(numberOfDominantHands <= 0, "No Domiannt hand found on the player , please add one .");
             Assert.IsFalse(numberOfDominantHands > 1, "Multiple Dominant hand scripts on the player , please remove one");
             return dominantHands[0].gameObject;
-        }
-
-        private void RegisterForMouseClick()
-        {
-            cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
-            //cameraRaycaster = FindObjectOfType<CameraRaycaster>();
-            cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy; //Delegate
         }
 
         private void AttackTarget()
@@ -139,18 +138,6 @@ namespace RPG.Characters
             return distanceToTarget <= currentWeaponConfig.GetMaxAttackRange();
         }
 
-        void OnMouseOverEnemy(Enemy enemyToSet)
-        {
-            this.enemy = enemyToSet;
-            if (Input.GetMouseButton(0) && IsTargetInRange(enemyToSet.gameObject))
-            {
-                AttackTarget();
-            }
-            if (Input.GetMouseButtonDown(1))
-            {
-                abilities.AttemptSpecialAbility(0);
-            }
-        }
 
         public void PutWeaponInHand(Weapon weaponToUse)
         {
@@ -165,6 +152,25 @@ namespace RPG.Characters
         public void OnButtonEven()   //TODO , move to anotehr script
         {
             SceneManager.LoadScene(0);
+        }
+
+        private void PauseGame()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                isGamePaused = !isGamePaused;
+            }
+            if (isGamePaused && Input.GetKeyDown(KeyCode.Escape))
+            {
+                Time.timeScale = 0;
+                levelFlowManager.pauseGame.SetActive(true);
+
+            }
+            else if (!isGamePaused && Input.GetKeyDown(KeyCode.Escape))
+            {
+                Time.timeScale = 1;
+                levelFlowManager.pauseGame.SetActive(false);
+            }
         }
     }
 }
