@@ -1,6 +1,6 @@
 ## Role-Playing Game made in Unity3D
 
-### Game should be around 2 gours of game play
+### Game should be around 2 Hours of game play
 
 #### What I will cover in this game 
 * Story Mode Only "For now :) ".
