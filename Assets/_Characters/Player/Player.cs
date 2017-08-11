@@ -11,7 +11,7 @@ using RPG.Core;
 
 namespace RPG.Characters
 {
-    public class Player : MonoBehaviour, IDamageable
+    public class Player : MonoBehaviour //no Idamageable because we are going fron interface to component
     {
         [SerializeField] float baseDamage = 10f;
         [SerializeField] AnimatorOverrideController animatorOverrideController;
@@ -40,9 +40,7 @@ namespace RPG.Characters
         {
             
             isGamePaused = false;
-            audioSource = GetComponent<AudioSource>();
             RegisterForMouseClick();
-            SetCurrentMaxHealth();
             PutWeaponInHand(currentWeaponConfig);
             SetAttackAnimation();
             AttachInitialAbilities();
@@ -58,7 +56,8 @@ namespace RPG.Characters
 
         private void Update()
         {
-            if (healthAsPercentage > Mathf.Epsilon)
+            var healthPercentage = GetComponent<HealthSystem>().healthAsPercentage;
+            if (healthPercentage > Mathf.Epsilon)
             {
                 ScanForAbilityKeyDown();
             }
@@ -93,11 +92,6 @@ namespace RPG.Characters
             {
                 AttemptSpecialAbility(2);
             }
-        }
-
-        private void SetCurrentMaxHealth()
-        {
-            currentHealthPoint = maxHealthPoint;
         }
 
         private void SetAttackAnimation()
@@ -140,7 +134,6 @@ namespace RPG.Characters
             {
                 SetAttackAnimation();
                 animator = GetComponent<Animator>();
-                enemy.TakeDamage(CalculateDamage());
                 animator.SetTrigger(ATTACK_TRIGGER);
                 lastHitTime = Time.time;
             }

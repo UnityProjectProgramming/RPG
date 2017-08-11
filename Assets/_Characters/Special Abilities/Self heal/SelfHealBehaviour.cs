@@ -16,7 +16,8 @@ namespace RPG.Characters
 
         public override void Use(AbilityUseParams useParams)
         {
-            player.Heal((config as SelfHealConfig).GetHealAmount());
+            var playerHealth = GetComponent<HealthSystem>();
+            playerHealth.Heal((config as SelfHealConfig).GetHealAmount());
             PlayAbilitySound();
             PlayParticleEffect();
         }

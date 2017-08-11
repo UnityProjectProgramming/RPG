@@ -5,7 +5,7 @@ using RPG.Core;
 
 namespace RPG.Characters
 {
-    public class Enemy : MonoBehaviour, IDamageable
+    public class Enemy : MonoBehaviour, IDamageable //TODO Remove interface //no Idamageable because we are going fron interface to component
     {
 
         [SerializeField] float attackRadious = 3f;
@@ -24,17 +24,17 @@ namespace RPG.Characters
         private void Start()
         {
             player = FindObjectOfType<Player>();
-            currentHealthPoint = maxHealthPoint;
 
+        }
+
+        public void TakeDamage(float amount)
+        {
+            //TODO remove 
         }
 
         private void Update()
         {
-            if(player.healthAsPercentage <= Mathf.Epsilon)
-            {
-                StopAllCoroutines();
-                Destroy(this); //Destroy Enemy behaviour script (Enemy will still exist).
-            }
+
             var distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
             if (distanceToPlayer <= attackRadious && !isAttacking)
             {
