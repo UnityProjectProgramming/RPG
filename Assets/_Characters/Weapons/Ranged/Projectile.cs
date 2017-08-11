@@ -32,7 +32,7 @@ namespace RPG.Characters
             var layerCollidedWith = collision.gameObject.layer;
             if (shooter && layerCollidedWith != shooter.layer)
             {
-                DamageIfDamageable(collision);
+                //DamageIfDamageable(collision);
             }
             else
             {
@@ -40,14 +40,16 @@ namespace RPG.Characters
             }
         }
 
-        private void DamageIfDamageable(Collision collision)
-        {
-            Component damageableComponent = collision.gameObject.GetComponent(typeof(IDamageable));
-            if (damageableComponent)
-            {
-                (damageableComponent as IDamageable).TakeDamage(damageCaused);
-            }
-            Destroy(gameObject);
-        }
+        //TODO re-implement
+
+        //private void DamageIfDamageable(Collision collision)
+        //{
+        //    Component damageableComponent = collision.gameObject.GetComponent(typeof(IDamageable));
+        //    if (damageableComponent)
+        //    {
+        //        (damageableComponent as IDamageable).TakeDamage(damageCaused);
+        //    }
+        //    Destroy(gameObject);
+        //}
     }
 }

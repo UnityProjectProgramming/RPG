@@ -8,14 +8,14 @@ namespace RPG.Characters
 {
     public class AreaEffectBehaviour : AbilityBehaviour {
 
-        public override void Use(AbilityUseParams useParams)
+        public override void Use(GameObject target)
         {
-            DealRadialDamage(useParams);
+            DealRadialDamage();
             PlayAbilitySound();
             PlayParticleEffect();
         }
 
-        private void DealRadialDamage(AbilityUseParams useParams)
+        private void DealRadialDamage()
         {
             //static sphere cast for targets
             RaycastHit[] hits = Physics.SphereCastAll(
@@ -26,11 +26,11 @@ namespace RPG.Characters
                 );
             foreach (RaycastHit hit in hits)
             {
-                var damagable = hit.collider.gameObject.GetComponent<IDamageable>();
+                var damagable = hit.collider.gameObject.GetComponent<HealthSystem>();
                 bool hitPlayer = hit.collider.gameObject.GetComponent<Player>();
                 if (damagable != null && !hitPlayer)
                 {
-                    float damageToTake = useParams.baseDamage + (config as AreaEffectConfig).GetDamageToEachTarget();
+                    float damageToTake = (config as AreaEffectConfig).GetDamageToEachTarget();
                     damagable.TakeDamage(damageToTake);
                 }
             }

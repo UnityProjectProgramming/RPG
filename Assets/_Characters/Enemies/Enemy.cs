@@ -5,7 +5,7 @@ using RPG.Core;
 
 namespace RPG.Characters
 {
-    public class Enemy : MonoBehaviour, IDamageable //TODO Remove interface //no Idamageable because we are going fron interface to component
+    public class Enemy : MonoBehaviour//no Idamageable because we are going fron interface to component
     {
 
         [SerializeField] float attackRadious = 3f;
