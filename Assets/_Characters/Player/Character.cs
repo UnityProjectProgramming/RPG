@@ -1,18 +1,31 @@
 using UnityEngine; // TODO using System was removed.
 using UnityEngine.AI;
 using RPG.CameraUI; // TODO , Consider Re-Wiring.
+using System;
 
 namespace RPG.Characters
 {
-
+    [SelectionBase]
     [RequireComponent(typeof(NavMeshAgent))]
     [RequireComponent(typeof(Rigidbody))]
-    [RequireComponent(typeof(Animator))]
-    [RequireComponent(typeof(CapsuleCollider))]
-
-    public class CharacterMovement : MonoBehaviour
+   
+    public class Character : MonoBehaviour
     {
         //====Serliaized Section====
+
+        [Header("Capsule Collider Settings")]
+        [SerializeField] Vector3 colliderCenter = new Vector3(0.0f, 0.8f, 0.0f);
+        [SerializeField] float capsuleRadius = 0.2f;
+        [SerializeField] float capsuleHeight = 1.6f;
+
+
+        [Header("Setup Settings")]
+        [SerializeField] RuntimeAnimatorController animatorController;
+        [SerializeField] AnimatorOverrideController animatorOverrideController;
+        [SerializeField] Avatar characterAvatar;
+
+        
+        [Header("Movement Properties")]
         [SerializeField] float moveSpeedMultiplier  = 0.5f;
         [SerializeField] float moveThreshold        = 1.0f;
         [SerializeField] float movingTurnSpeed      = 360;
@@ -32,7 +45,24 @@ namespace RPG.Characters
         Rigidbody myRigidBody;
         Animator animator;
 
-        //private bool isInDirectMode = false;
+
+        private void Awake()
+        {
+            AddRequierdComponents();
+        }
+
+        private void AddRequierdComponents()
+        {
+            var capsuleCollider = gameObject.AddComponent<CapsuleCollider>();
+            capsuleCollider.radius = capsuleRadius;
+            capsuleCollider.height = capsuleHeight;
+            capsuleCollider.center = colliderCenter;
+
+            animator = gameObject.AddComponent<Animator>();
+            animator.runtimeAnimatorController = animatorController;
+            animator.avatar = characterAvatar;
+            animator.applyRootMotion = true;
+        }
 
         void Start()
         {
@@ -43,9 +73,6 @@ namespace RPG.Characters
 
             myRigidBody = GetComponent<Rigidbody>();
             myRigidBody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-
-            animator = GetComponent<Animator>();
-            animator.applyRootMotion = true;
 
             agent = GetComponent<NavMeshAgent>();
             agent.updateRotation = false;
