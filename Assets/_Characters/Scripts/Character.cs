@@ -12,11 +12,6 @@ namespace RPG.Characters
 
         [Header("Audio")]
         [Range(0.0f, 1.0f)] [SerializeField] float audoiSourceSpatialBlend = 0.5f;
-  
-        [Header("Capsule Collider")]
-        [SerializeField] Vector3 colliderCenter = new Vector3(0.0f, 0.8f, 0.0f);
-        [SerializeField] float capsuleRadius = 0.2f;
-        [SerializeField] float capsuleHeight = 1.6f;
 
 
         [Header("Animator")]
@@ -24,7 +19,13 @@ namespace RPG.Characters
         [SerializeField] AnimatorOverrideController animatorOverrideController;
         [SerializeField] Avatar characterAvatar;
 
-        
+
+        [Header("Capsule Collider")]
+        [SerializeField] Vector3 colliderCenter = new Vector3(0.0f, 0.8f, 0.0f);
+        [SerializeField] float capsuleRadius = 0.2f;
+        [SerializeField] float capsuleHeight = 1.6f;
+
+       
         [Header("Movement")]
         [SerializeField] float moveSpeedMultiplier  = 0.5f;
         [SerializeField] float moveThreshold        = 1.0f;
@@ -34,16 +35,15 @@ namespace RPG.Characters
         [SerializeField] float animSpeedMultiplier  = 1.5f;
 
         [Header("Nav Mesh Agent")]
-        [SerializeField] float speed                = 1.0f;
-        [SerializeField] float angularSpeed         = 120.0f;
-        [SerializeField] float acceleration         = 8.0f;
-        [SerializeField] float stoppingDistance     = 1.3f;
+        [SerializeField] float speed                  = 1.0f;
+        [SerializeField] float angularSpeed           = 120.0f;
+        [SerializeField] float acceleration           = 8.0f;
+        [SerializeField] float stoppingDistance       = 1.3f;
         [SerializeField] float obstcleAvoidanceRadius = 0.1f;
 
         //====Private Section====
         float turnAmount;
         float forwardAmount;
-
         NavMeshAgent navMeshAgent;
         Rigidbody myRigidBody;
         Animator animator;
@@ -104,6 +104,11 @@ namespace RPG.Characters
         public void SetDestination(Vector3 worldPosition)
         {
             navMeshAgent.destination = worldPosition;
+        }
+
+        public AnimatorOverrideController GetAnimatorOverride()
+        {
+            return animatorOverrideController;
         }
 
         void Move(Vector3 movement)

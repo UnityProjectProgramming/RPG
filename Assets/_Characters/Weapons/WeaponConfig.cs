@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace RPG.Characters
 {
-    [CreateAssetMenu(menuName = ("RPG/Weapon"))]
-    public class Weapon : ScriptableObject
+    [CreateAssetMenu(menuName = ("RPG/WeaponConfig"))]
+    public class WeaponConfig : ScriptableObject
     {
 
         public Transform grip;
