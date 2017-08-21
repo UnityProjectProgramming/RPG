@@ -7,7 +7,7 @@ namespace RPG.Characters
 {
     public class PlayerMovement : MonoBehaviour //no Idamageable because we are going fron interface to component
     {
-        Enemy enemy = null;
+        EnemyAI enemy = null;
         SpecialAbilities abilities;
         CameraRaycaster cameraRaycaster;
         Character character;
@@ -46,7 +46,7 @@ namespace RPG.Characters
             }
         }
 
-        void OnMouseOverEnemy(Enemy enemyToSet)
+        void OnMouseOverEnemy(EnemyAI enemyToSet)
         {
             this.enemy = enemyToSet;
             if (Input.GetMouseButton(0) && IsTargetInRange(enemyToSet.gameObject))

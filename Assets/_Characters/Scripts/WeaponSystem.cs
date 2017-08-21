@@ -7,11 +7,15 @@ namespace RPG.Characters
 {
     public class WeaponSystem : MonoBehaviour
     {
-
-        [SerializeField] float baseDamage = 10f;
+        [Header("Weapon")]
         [SerializeField] WeaponConfig currentWeaponConfig;
+
+        [Header("Damage Setup")]
+        [SerializeField] float baseDamage = 10f;
         [Range(0.1f, 1.0f)] [SerializeField] float criticalHitChance = 0.1f;
         [SerializeField] float criticalHitMultiplier = 1.25f;
+
+        [Header("Particle Setup")]
         [SerializeField] ParticleSystem criticalHitParticle;
 
 
@@ -76,7 +80,7 @@ namespace RPG.Characters
         {
             var dominantHands = GetComponentsInChildren<DominantHand>();
             int numberOfDominantHands = dominantHands.Length;
-            Assert.IsFalse(numberOfDominantHands <= 0, "No Domiannt hand found on the player , please add one .");
+            Assert.IsFalse(numberOfDominantHands <= 0, ("No Domiannt hand found on the  ")+gameObject.name + ("  please add one ."));
             Assert.IsFalse(numberOfDominantHands > 1, "Multiple Dominant hand scripts on the player , please remove one");
             return dominantHands[0].gameObject;
         }

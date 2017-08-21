@@ -19,8 +19,8 @@ namespace RPG.CameraUI
 
         Rect screenRect = new Rect(0.0f, 0.0f, Screen.width, Screen.height);
 
-        //Seting up delegate for Enemy 
-        public delegate void OnMouseOverEnemy(Enemy enemy); // Declearing new Delegate Type.
+        //Seting up delegate for EnemyAI 
+        public delegate void OnMouseOverEnemy(EnemyAI enemy); // Declearing new Delegate Type.
         public event OnMouseOverEnemy onMouseOverEnemy;
 
         //Seting up delegate for terrian.
@@ -59,7 +59,7 @@ namespace RPG.CameraUI
             RaycastHit hitInfo;
             Physics.Raycast(ray, out hitInfo, maxRaycastDepth);
             GameObject gameObjectHit = hitInfo.collider.gameObject;
-            var enemyHit = gameObjectHit.GetComponent<Enemy>();
+            var enemyHit = gameObjectHit.GetComponent<EnemyAI>();
             if (enemyHit)
             {
                 Cursor.SetCursor(enemyCursor, cursorHotspot, CursorMode.Auto);
