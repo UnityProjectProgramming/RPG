@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using RPG.CameraUI;
-// TODO , extract weaponSystem
+
 namespace RPG.Characters
 {
     public class PlayerMovement : MonoBehaviour //no Idamageable because we are going fron interface to component

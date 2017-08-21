@@ -27,11 +27,6 @@ namespace RPG.Characters
 
         }
 
-        public void TakeDamage(float amount)
-        {
-            //TODO remove 
-        }
-
         private void Update()
         {
 
