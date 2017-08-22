@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using RPG.Core;
+using System;
 
 namespace RPG.Characters
 {
@@ -11,10 +12,15 @@ namespace RPG.Characters
     {
 
         [SerializeField] float chaseRadious = 6f;
+        [SerializeField] float waypointTolerance = 1.5f;
+        [SerializeField] WaypointContainer patrolPath;
+
+
         enum State { idle, attacking, patrolling, chasing };
         State state = State.idle;
         float distanceToPlayer;
         float currentWeaponRange = 3f;
+        int nextWaypointIndex;
         PlayerMovement player = null;
         Character character;
 
@@ -35,8 +41,7 @@ namespace RPG.Characters
                 //stop what we'are doing
                 StopAllCoroutines();
                 //start patrolling
-                state = State.patrolling;
-
+                StartCoroutine(Patrol());
             }
             if (distanceToPlayer <=  chaseRadious && state != State.chasing)
             {
@@ -51,6 +56,31 @@ namespace RPG.Characters
                 StopAllCoroutines();
                 //start attacking
                 state = State.attacking;
+            }
+        }
+
+        IEnumerator Patrol()
+        {
+            state = State.patrolling;
+
+            while(true)
+            {
+                //work out where to go next
+                Vector3 nextWaypointPos = patrolPath.transform.GetChild(nextWaypointIndex).position;
+                //tell character to go there
+                character.SetDestination(nextWaypointPos);
+                //cycle waypoints
+                CycleWaypointWhenClose(nextWaypointPos);
+                //wait at a waypoint
+                yield return new WaitForSeconds(0.5f); //TODO parametise
+            }       
+        }
+
+        private void CycleWaypointWhenClose(Vector3 nextWaypointPos)
+        {
+            if(Vector3.Distance(transform.position, nextWaypointPos) <= waypointTolerance)
+            {
+                nextWaypointIndex = (nextWaypointIndex + 1) % patrolPath.transform.childCount;
             }
         }
 
