@@ -6,6 +6,7 @@ using System;
 
 namespace RPG.Characters
 {
+    [RequireComponent(typeof(HealthSystem))]
     [RequireComponent(typeof(WeaponSystem))]
     [RequireComponent(typeof(Character))]
     public class EnemyAI : MonoBehaviour//no Idamageable because we are going fron interface to component
@@ -105,6 +106,8 @@ namespace RPG.Characters
         //    float projectileSpeed = projectileComponant.GetDefaultLaunchSpeed();
         //    newProjectile.GetComponent<Rigidbody>().velocity = unitVectorToPlayer * projectileSpeed;
         //}
+
+
         private void OnDrawGizmos()
         {
             Gizmos.color = new Color(255f, 0f, 0f, 0.5f);
