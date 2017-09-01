@@ -22,13 +22,13 @@ namespace RPG.Characters
         float distanceToPlayer;
         float currentWeaponRange = 3f;
         int nextWaypointIndex;
-        PlayerMovement player = null;
+        PlayerControl player = null;
         Character character;
 
         private void Start()
         {
             character = GetComponent<Character>();
-            player = FindObjectOfType<PlayerMovement>();
+            player = FindObjectOfType<PlayerControl>();
         }
 
         private void Update()
@@ -64,7 +64,7 @@ namespace RPG.Characters
         {
             state = State.patrolling;
 
-            while(true)
+            while(patrolPath != null)
             {
                 //work out where to go next
                 Vector3 nextWaypointPos = patrolPath.transform.GetChild(nextWaypointIndex).position;

@@ -1,15 +1,14 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using RPG.CameraUI;
 
 namespace RPG.Characters
 {
-    public class PlayerMovement : MonoBehaviour //no Idamageable because we are going fron interface to component
+    public class PlayerControl : MonoBehaviour //no Idamageable because we are going fron interface to component
     {
-        EnemyAI enemy = null;
         SpecialAbilities abilities;
-        CameraRaycaster cameraRaycaster;
         Character character;
         private bool isGamePaused;
         public LevelFlowManager levelFlowManager;
@@ -26,8 +25,7 @@ namespace RPG.Characters
 
         private void RegisterForMouseEvents()
         {
-            //cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
-            cameraRaycaster = FindObjectOfType<CameraRaycaster>();
+            var cameraRaycaster = FindObjectOfType<CameraRaycaster>();
             cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy; //Delegate
             cameraRaycaster.onMouseOverpotentiallyWalkable += onMouseOverpotentiallyWalkable;
         }
@@ -46,26 +44,13 @@ namespace RPG.Characters
             }
         }
 
-        void OnMouseOverEnemy(EnemyAI enemyToSet)
-        {
-            this.enemy = enemyToSet;
-            if (Input.GetMouseButton(0) && IsTargetInRange(enemyToSet.gameObject))
-            {
-                weaponSystem.AttackTarget(enemy.gameObject);
-            }
-            if (Input.GetMouseButtonDown(1))
-            {
-                abilities.AttemptSpecialAbility(0);
-            }
-        }
-
         private void ScanForAbilityKeyDown()
         {
-            
+
             for (int keyIndex = 1; keyIndex < abilities.GetNumberOfAbilities(); keyIndex++)
             {
                 if (Input.GetKeyDown(keyIndex.ToString()))
-                {                    
+                {
                     abilities.AttemptSpecialAbility(keyIndex);
                 }
             }
@@ -75,6 +60,48 @@ namespace RPG.Characters
         {
             float distanceToTarget = (target.transform.position - transform.position).magnitude;
             return distanceToTarget <= weaponSystem.GetCurrentWeapon().GetMaxAttackRange();
+        }
+
+        void OnMouseOverEnemy(EnemyAI enemy)
+        {
+            if (Input.GetMouseButton(0) && IsTargetInRange(enemy.gameObject))
+            {
+                weaponSystem.AttackTarget(enemy.gameObject);
+            }
+            else if (Input.GetMouseButton(0) && !IsTargetInRange(enemy.gameObject))
+            {
+                StartCoroutine(MoveAndAttack(enemy));
+            }
+            else if (Input.GetMouseButtonDown(1) && IsTargetInRange(enemy.gameObject))
+            {
+                abilities.AttemptSpecialAbility(0, enemy.gameObject); 
+            }
+            else if (Input.GetMouseButtonDown(1) && !IsTargetInRange(enemy.gameObject))
+            {
+                StartCoroutine(MoveAndPowerAttack(enemy));
+            }
+        }
+
+        IEnumerator MoveToTarget(GameObject target)
+        {
+            this.character.SetDestination(target.transform.position);
+            while(!IsTargetInRange(target))
+            {
+                yield return new WaitForEndOfFrame();
+            }
+            yield return new WaitForEndOfFrame();
+        }
+
+        IEnumerator MoveAndAttack(EnemyAI enemy)
+        {
+            yield return StartCoroutine(MoveToTarget(enemy.gameObject));
+            weaponSystem.AttackTarget(enemy.gameObject);
+        }
+
+        IEnumerator MoveAndPowerAttack (EnemyAI enemy)
+        {
+            yield return StartCoroutine(MoveToTarget(enemy.gameObject));
+            abilities.AttemptSpecialAbility(0, enemy.gameObject);
         }
 
         public void OnButtonEven()   //TODO , move to anotehr script
