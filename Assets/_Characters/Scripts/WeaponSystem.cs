@@ -82,7 +82,6 @@ namespace RPG.Characters
         {
             target = targetToAttack;
             print("Attacking  " + targetToAttack);
-            //TODO use a repeat attack  co-routine.
             StartCoroutine(AttackTargetRepeatedly());
         }
 

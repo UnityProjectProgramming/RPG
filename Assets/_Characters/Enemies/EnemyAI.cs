@@ -24,23 +24,26 @@ namespace RPG.Characters
         int nextWaypointIndex;
         PlayerControl player = null;
         Character character;
+        WeaponSystem weaponSystem;
 
         private void Start()
         {
             character = GetComponent<Character>();
             player = FindObjectOfType<PlayerControl>();
+            weaponSystem = GetComponent<WeaponSystem>();
         }
 
         private void Update()
         {
             distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
-            WeaponSystem weaponSystem = GetComponent<WeaponSystem>();
             currentWeaponRange = weaponSystem.GetCurrentWeapon().GetMaxAttackRange();
 
             if(distanceToPlayer > chaseRadious && state != State.patrolling)
             {
                 //stop what we'are doing
                 StopAllCoroutines();
+                //Stop weaponSystem Coroutine.
+               // weaponSystem.StopAllCoroutines();
                 //start patrolling
                 StartCoroutine(Patrol());
             }
@@ -48,6 +51,7 @@ namespace RPG.Characters
             {
                 //stop what we'are doing
                 StopAllCoroutines();
+                //weaponSystem.StopAllCoroutines();
                 //start chasing
                 StartCoroutine(ChasePlayer());
             }
@@ -56,7 +60,7 @@ namespace RPG.Characters
                 //stop what we're doing
                 StopAllCoroutines();
                 //start attacking
-                state = State.attacking;
+                StartCoroutine(AttackPlayer());
             }
         }
 
@@ -77,21 +81,31 @@ namespace RPG.Characters
             }       
         }
 
+        IEnumerator ChasePlayer()
+        {
+            state = State.chasing;
+            while (distanceToPlayer >= currentWeaponRange)
+            {
+                character.SetDestination(player.transform.position);
+                yield return new WaitForEndOfFrame();
+            }
+        }
+
+        IEnumerator AttackPlayer()
+        {
+            state = State.attacking;
+            while(distanceToPlayer <= currentWeaponRange)
+            {
+                weaponSystem.AttackTarget(player.gameObject);
+                yield return new WaitForEndOfFrame();
+            }
+        }
+
         private void CycleWaypointWhenClose(Vector3 nextWaypointPos)
         {
             if(Vector3.Distance(transform.position, nextWaypointPos) <= waypointTolerance)
             {
                 nextWaypointIndex = (nextWaypointIndex + 1) % patrolPath.transform.childCount;
-            }
-        }
-
-        IEnumerator ChasePlayer()
-        {
-            state = State.chasing;
-            while(distanceToPlayer >= currentWeaponRange)
-            {
-                character.SetDestination(player.transform.position);
-                yield return new WaitForEndOfFrame();
             }
         }
 
