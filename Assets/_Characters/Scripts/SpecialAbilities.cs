@@ -49,7 +49,6 @@ namespace RPG.Characters
             if (energyCost <= currentEnegryPoint)
             {
                 ConsumeEnergy(energyCost);
-                print("Using Special Ability " + abilityIndex);
                 abilities[abilityIndex].Use(target);
             }
             else
