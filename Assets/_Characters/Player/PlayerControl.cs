@@ -33,7 +33,6 @@ namespace RPG.Characters
         private void Update()
         {         
             ScanForAbilityKeyDown();         
-            PauseGame();
         }
 
         void onMouseOverpotentiallyWalkable(Vector3 destination)
@@ -102,30 +101,6 @@ namespace RPG.Characters
         {
             yield return StartCoroutine(MoveToTarget(enemy.gameObject));
             abilities.AttemptSpecialAbility(0, enemy.gameObject);
-        }
-
-        public void OnButtonEven()   //TODO , move to anotehr script
-        {
-            SceneManager.LoadScene(0);
-        }
-
-        private void PauseGame()
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                isGamePaused = !isGamePaused;
-            }
-            if (isGamePaused && Input.GetKeyDown(KeyCode.Escape))
-            {
-                Time.timeScale = 0;
-                levelFlowManager.pauseGame.SetActive(true);
-
-            }
-            else if (!isGamePaused && Input.GetKeyDown(KeyCode.Escape))
-            {
-                Time.timeScale = 1;
-                levelFlowManager.pauseGame.SetActive(false);
-            }
         }
     }
 }

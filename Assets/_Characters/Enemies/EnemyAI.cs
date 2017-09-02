@@ -109,7 +109,8 @@ namespace RPG.Characters
             }
         }
 
-        //TODO We will simplify this Method in another way, we Can use this one if we didn't like the otherway.
+        //TODO , Consider re-working this Method to make it fire an arrow that if it enterd the Player it will dealy damage
+        // otherwise , the damage wont be dealt , also considering making damage on AnimationEvents.
         //void FireProjectile()
         //{
         //    GameObject newProjectile = Instantiate(projectileToUse, projectileSocket.transform.position, Quaternion.identity);

@@ -76,7 +76,6 @@ namespace RPG.Characters
             }
             else // Assume is enemy for now, reconsider other NPCs Later 
             {
-                // TODO , play the animation and death sound of the other character here (consider the comment top of it ).
                 DestroyObject(gameObject, deathVanishSeconds);
             }
         }

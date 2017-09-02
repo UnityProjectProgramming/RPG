@@ -42,7 +42,6 @@ namespace RPG.Characters
         // Update is called once per frame
         void Update()
         {
-            //TODO check continously if we should still be attacking 
             bool targetIsDead;
             bool targetIsOutOfRange;
             if( target == null)
