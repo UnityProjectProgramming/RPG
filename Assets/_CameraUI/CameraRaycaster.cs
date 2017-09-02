@@ -71,7 +71,7 @@ namespace RPG.CameraUI
 
         private bool RaycastForPotentiallyWalkable(Ray ray)
         {
-            // TODO , remove , Potentially walkable means it is only walkable when the  navmesh extends to the place i wanna go to.
+            //Potentially walkable means it is only walkable when the  navmesh extends to the place i wanna go to.
             RaycastHit hitInfo;
             LayerMask potentiallyWalkableLayer = 1 << POTENTIALLY_WALKABLE_LAYER;
             bool potentiallyWalkableHit = Physics.Raycast(ray, out hitInfo, maxRaycastDepth, potentiallyWalkableLayer);

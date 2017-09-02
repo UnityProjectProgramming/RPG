@@ -81,7 +81,7 @@ namespace RPG.Characters
         public void AttackTarget(GameObject targetToAttack)
         {
             target = targetToAttack;
-            print("Attacking  " + targetToAttack);
+            print("Attacking  " + targetToAttack); 
             StartCoroutine(AttackTargetRepeatedly());
         }
 
@@ -116,7 +116,7 @@ namespace RPG.Characters
             //trigger attack animation
             animator.SetTrigger(ATTACK_TRIGGER);
             //deal damage
-            float damageDelay = 1.0f; //TODO get from weapon
+            float damageDelay = currentWeaponConfig.GetDamageDelay();
             SetAttackAnimation();
             StartCoroutine(DamageAfterDelay(damageDelay));
         }

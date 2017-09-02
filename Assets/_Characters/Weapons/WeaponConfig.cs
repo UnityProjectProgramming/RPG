@@ -9,16 +9,20 @@ namespace RPG.Characters
 
         public Transform grip;
         [SerializeField] GameObject weaponPrefab;
-        [SerializeField] AnimationClip weaponAnimation;
+        [SerializeField] AnimationClip attackAnimation;
         [SerializeField] float maxAttackRange = 2f;
-        [SerializeField] float minTimeBetweenHits = 0.5f;
         [SerializeField] float additionalDamage = 10f;
+        [SerializeField] float damageDelay = 0.5f;
         
 
         public float GetMinTimeBetweenHits()
         {
-            //TODO consider whether when we take animation time in account.
-            return minTimeBetweenHits;
+            return attackAnimation.length;
+        }
+
+        public float GetDamageDelay()
+        {
+            return damageDelay;
         }
 
         public float GetMaxAttackRange ()
@@ -33,7 +37,7 @@ namespace RPG.Characters
         public AnimationClip GetAnimClip()
         {
             RemoveAnimationEvents();
-            return weaponAnimation;
+            return attackAnimation;
         }
 
         public float GetAdditionalDamage()
@@ -44,7 +48,7 @@ namespace RPG.Characters
         // SO that assets pack can't cause bugs 
         private void RemoveAnimationEvents()
         {
-            weaponAnimation.events = new AnimationEvent[0];
+            attackAnimation.events = new AnimationEvent[0];
         }
     }
 }

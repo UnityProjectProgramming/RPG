@@ -16,16 +16,11 @@ namespace RPG.Characters
         [SerializeField] AudioClip[] damageSounds;
         [SerializeField] AudioClip[] deathSounds;
 
-
-
         const string DEATH_TRIGGER = "Death";
         private float currentHealthPoint ;
-
-
         Animator animator;
         AudioSource audioSource;
         Character characterMovement;
-
         public float healthAsPercentage { get { return currentHealthPoint / maxHealthPoint; } }
 
         void Start()
@@ -62,7 +57,6 @@ namespace RPG.Characters
             }
         }
 
-
         public void Heal(float healAmount)
         {
             currentHealthPoint = Mathf.Clamp(currentHealthPoint + healAmount, 0f, maxHealthPoint);
@@ -70,7 +64,6 @@ namespace RPG.Characters
 
         IEnumerator KillCharacter()
         {
-            StopAllCoroutines();
             characterMovement.Kill();
             animator.SetTrigger(DEATH_TRIGGER);
             var playerComponent = GetComponent<PlayerControl>();

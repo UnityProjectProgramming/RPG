@@ -15,7 +15,7 @@ namespace RPG.Characters
         [SerializeField] float chaseRadious = 6f;
         [SerializeField] float waypointTolerance = 1.5f;
         [SerializeField] WaypointContainer patrolPath;
-
+        [SerializeField] float waypointDwellTime = 2.0f;
 
         enum State { idle, attacking, patrolling, chasing };
         State state = State.idle;
@@ -77,7 +77,7 @@ namespace RPG.Characters
                 //cycle waypoints
                 CycleWaypointWhenClose(nextWaypointPos);
                 //wait at a waypoint
-                yield return new WaitForSeconds(0.5f); //TODO parametise
+                yield return new WaitForSeconds(waypointDwellTime); 
             }       
         }
 
