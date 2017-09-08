@@ -9,11 +9,23 @@ namespace RPG.Characters
 
         public Transform grip;
         [SerializeField] GameObject weaponPrefab;
+        //[SerializeField] GameObject projectileToUse;
+        //[SerializeField] Transform projectileSocket;
         [SerializeField] AnimationClip attackAnimation;
         [SerializeField] float maxAttackRange = 2f;
         [SerializeField] float additionalDamage = 10f;
         [SerializeField] float damageDelay = 0.5f;
         
+
+        //public GameObject GetProjectileToUse()
+        //{
+        //    return projectileToUse;
+        //}
+
+        //public Transform GetProjectileSocket()
+        //{
+        //    return projectileSocket;
+        //}
 
         public float GetMinTimeBetweenHits()
         {

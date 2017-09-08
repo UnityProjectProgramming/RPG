@@ -10,6 +10,7 @@ namespace RPG.Characters
     {
         [Header("Weapon")]
         [SerializeField] WeaponConfig currentWeaponConfig;
+        [SerializeField] bool isProjectileWeapon = false;
 
         [Header("Damage Setup")]
         [SerializeField] float baseDamage = 10f;
@@ -131,6 +132,11 @@ namespace RPG.Characters
             return currentWeaponConfig;
         }
 
+        public bool GetIsProjectileWeapon()
+        {
+            return isProjectileWeapon;
+        }
+
         private void SetAttackAnimation()
         {
             //protect against animator override controller
@@ -183,5 +189,19 @@ namespace RPG.Characters
                 return damageBeforeCritical;
             }
         }
+
+        //TODO , Consider re-working this Method to make it fire an arrow that if it enterd the Player it will dealy damage
+        // otherwise , the damage wont be dealt , also considering making damage on AnimationEvents.
+        //void FireProjectile()
+        //{
+        //    //if (GetIsProjectileWeapon() != true) { return; }
+        //    var projectileToUse = currentWeaponConfig.GetProjectileToUse();
+        //    var projectileSocket = currentWeaponConfig.GetProjectileSocket();
+        //    GameObject newProjectile = Instantiate(projectileToUse, projectileSocket.position, Quaternion.identity);
+        //    Vector3 aimOffset = new Vector3(1, 1, 1);
+        //    Vector3 unitVectorToPlayer = (transform.position + aimOffset - projectileSocket.transform.position).normalized;
+        //    float projectileSpeed = 20;
+        //    newProjectile.GetComponent<Rigidbody>().velocity = unitVectorToPlayer * projectileSpeed;
+        //}
     }
 }

@@ -16,6 +16,7 @@ namespace RPG.Characters
         [SerializeField] float waypointTolerance = 1.5f;
         [SerializeField] WaypointContainer patrolPath;
         [SerializeField] float waypointDwellTime = 2.0f;
+        
 
         enum State { idle, attacking, patrolling, chasing };
         State state = State.idle;
@@ -108,19 +109,6 @@ namespace RPG.Characters
                 nextWaypointIndex = (nextWaypointIndex + 1) % patrolPath.transform.childCount;
             }
         }
-
-        //TODO , Consider re-working this Method to make it fire an arrow that if it enterd the Player it will dealy damage
-        // otherwise , the damage wont be dealt , also considering making damage on AnimationEvents.
-        //void FireProjectile()
-        //{
-        //    GameObject newProjectile = Instantiate(projectileToUse, projectileSocket.transform.position, Quaternion.identity);
-        //    Projectile projectileComponant = newProjectile.GetComponent<Projectile>();
-        //    projectileComponant.damageCaused = damagePerShot;
-        //    projectileComponant.SetShooter(gameObject);
-        //    Vector3 unitVectorToPlayer = (player.transform.position + aimOffset - projectileSocket.transform.position).normalized;
-        //    float projectileSpeed = projectileComponant.GetDefaultLaunchSpeed();
-        //    newProjectile.GetComponent<Rigidbody>().velocity = unitVectorToPlayer * projectileSpeed;
-        //}
 
 
         private void OnDrawGizmos()

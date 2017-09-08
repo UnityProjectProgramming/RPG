@@ -10,15 +10,12 @@ namespace RPG.Characters
     {
         SpecialAbilities abilities;
         Character character;
-        private bool isGamePaused;
-        public LevelFlowManager levelFlowManager;
         WeaponSystem weaponSystem;
 
         private void Start()
         {
             weaponSystem = GetComponent<WeaponSystem>();
             character = GetComponent<Character>();
-            isGamePaused = false;
             abilities = GetComponent<SpecialAbilities>();
             RegisterForMouseEvents();
         }

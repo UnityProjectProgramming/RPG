@@ -12,19 +12,22 @@ namespace RPG.Characters
         [Header("Audio")]
         [Range(0.0f, 1.0f)] [SerializeField] float audoiSourceSpatialBlend = 0.5f;
 
+        [Space]
 
         [Header("Animator")]
         [SerializeField] RuntimeAnimatorController animatorController;
         [SerializeField] AnimatorOverrideController animatorOverrideController;
         [SerializeField] Avatar characterAvatar;
 
+        [Space]
 
         [Header("Capsule Collider")]
         [SerializeField] Vector3 colliderCenter = new Vector3(0.0f, 0.8f, 0.0f);
         [SerializeField] float capsuleRadius = 0.2f;
         [SerializeField] float capsuleHeight = 1.6f;
 
-       
+        [Space]
+
         [Header("Movement")]
         [SerializeField] float moveSpeedMultiplier  = 0.5f;
         [SerializeField] float moveThreshold        = 1.0f;
@@ -32,6 +35,8 @@ namespace RPG.Characters
         [SerializeField] float stationaryTurnSpeed  = 180;
         [SerializeField] float runCycleLegOffset    = 0.2f;
         [SerializeField] float animSpeedMultiplier  = 1.5f;
+
+        [Space]
 
         [Header("Nav Mesh Agent")]
         [SerializeField] float speed                  = 1.0f;
