@@ -14,7 +14,7 @@ namespace RPG.Characters
 
         [Header("Damage Setup")]
         [SerializeField] float baseDamage = 10f;
-        [Range(0.1f, 1.0f)] [SerializeField] float criticalHitChance = 0.1f;
+        [Range(0.0f, 1.0f)] [SerializeField] float criticalHitChance = 0.1f;
         [SerializeField] float criticalHitMultiplier = 1.25f;
 
         [Header("Particle Setup")]
@@ -76,6 +76,12 @@ namespace RPG.Characters
             weaponObject = Instantiate(weaponPrefab, dominantHand.transform);
             weaponObject.transform.localPosition = currentWeaponConfig.grip.localPosition;
             weaponObject.transform.localRotation = currentWeaponConfig.grip.localRotation;
+        }
+
+        public void StopAttacking()
+        {
+            animator.StopPlayback();
+            StopAllCoroutines();
         }
 
         public void AttackTarget(GameObject targetToAttack)

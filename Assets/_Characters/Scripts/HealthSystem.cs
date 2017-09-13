@@ -28,7 +28,6 @@ namespace RPG.Characters
             animator = GetComponent<Animator>();
             audioSource = GetComponent<AudioSource>();
             characterMovement = GetComponent<Character>();
-
             currentHealthPoint = maxHealthPoint;
         }
 
@@ -71,11 +70,13 @@ namespace RPG.Characters
             {
                 audioSource.clip = deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)];
                 audioSource.Play();
+                characterMovement.GetNavMeshAgent().speed = 0;
                 yield return new WaitForSecondsRealtime(audioSource.clip.length);
                 SceneManager.LoadScene(0);
             }
             else // Assume is enemy for now, reconsider other NPCs Later 
             {
+                characterMovement.GetNavMeshAgent().speed = 0;
                 DestroyObject(gameObject, deathVanishSeconds);
             }
         }

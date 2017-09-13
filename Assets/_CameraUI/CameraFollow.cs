@@ -16,7 +16,7 @@ namespace RPG.CameraUI
 
         }
 
-        private void LateUpdate()
+        private void Update()
         {
             transform.position = player.transform.position;
         }

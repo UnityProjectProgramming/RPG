@@ -104,6 +104,11 @@ namespace RPG.Characters
         {
             isAlive = false;
         }
+        
+        public NavMeshAgent GetNavMeshAgent()
+        {
+            return navMeshAgent;
+        }
 
         public void SetDestination(Vector3 worldPosition)
         {
