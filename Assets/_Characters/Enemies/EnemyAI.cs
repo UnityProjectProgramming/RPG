@@ -15,7 +15,8 @@ namespace RPG.Characters
         [SerializeField] float chaseRadious = 6f;
         [SerializeField] float waypointTolerance = 1.5f;
         [SerializeField] WaypointContainer patrolPath;
-        [SerializeField] float waypointDwellTime = 2.0f;
+        [SerializeField] float waypointDwellTimeMin = 2.0f;
+        [SerializeField] float waypointDwellTimeMax = 5.0f;
         
 
         enum State { idle, attacking, patrolling, chasing };
@@ -78,7 +79,8 @@ namespace RPG.Characters
                 //cycle waypoints
                 CycleWaypointWhenClose(nextWaypointPos);
                 //wait at a waypoint
-                yield return new WaitForSeconds(waypointDwellTime); 
+                float randWaypointDwellTime = UnityEngine.Random.Range(waypointDwellTimeMin, waypointDwellTimeMax);
+                yield return new WaitForSeconds(randWaypointDwellTime); 
             }       
         }
 

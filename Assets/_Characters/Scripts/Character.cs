@@ -18,6 +18,7 @@ namespace RPG.Characters
         [SerializeField] RuntimeAnimatorController animatorController;
         [SerializeField] AnimatorOverrideController animatorOverrideController;
         [SerializeField] Avatar characterAvatar;
+        [SerializeField] [Range(0.1f, 1.0f)] float animForwardCap = 1.0f;
 
         [Space]
 
@@ -154,7 +155,7 @@ namespace RPG.Characters
 
         private void UpdateAnimator()
         {
-            animator.SetFloat("Forward", forwardAmount, 0.1f, Time.deltaTime);
+            animator.SetFloat("Forward", forwardAmount * animForwardCap, 0.1f, Time.deltaTime);
             animator.SetFloat("Turn", turnAmount, 0.1f, Time.deltaTime);
             animator.speed = animSpeedMultiplier;
         }

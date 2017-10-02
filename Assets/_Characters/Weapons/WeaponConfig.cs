@@ -27,7 +27,7 @@ namespace RPG.Characters
         //    return projectileSocket;
         //}
 
-        public float GetMinTimeBetweenHits()
+        public float GetMinTimeBetweenAnimationCycles()
         {
             return attackAnimation.length;
         }

@@ -101,7 +101,7 @@ namespace RPG.Characters
             while (attackerStillAlive && targetStillAlive)
             {
                 //know how often to attack
-                float weaponHitPeriod = currentWeaponConfig.GetMinTimeBetweenHits();
+                float weaponHitPeriod = currentWeaponConfig.GetMinTimeBetweenAnimationCycles();
                 float timeToWait = weaponHitPeriod + character.GetAnimatorSpeedMultiplier();
                 //if time to hit again
                 bool isTimeToHitAgain = Time.time - lastHitTime > timeToWait;
@@ -169,16 +169,6 @@ namespace RPG.Characters
             return dominantHands[0].gameObject;
         }
 
-        private void AttackTarget()
-        {
-            if (Time.time - lastHitTime > currentWeaponConfig.GetMinTimeBetweenHits())
-            {
-                SetAttackAnimation();
-                animator = GetComponent<Animator>();
-                animator.SetTrigger(ATTACK_TRIGGER);
-                lastHitTime = Time.time;
-            }
-        }
 
         private float CalculateDamage()
         {
