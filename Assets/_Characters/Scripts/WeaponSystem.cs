@@ -101,8 +101,9 @@ namespace RPG.Characters
             while (attackerStillAlive && targetStillAlive)
             {
                 //know how often to attack
-                float weaponHitPeriod = currentWeaponConfig.GetMinTimeBetweenAnimationCycles();
-                float timeToWait = weaponHitPeriod + character.GetAnimatorSpeedMultiplier();
+                var animationClip = currentWeaponConfig.GetAnimClip();
+                float animationClipTime = animationClip.length / character.GetAnimatorSpeedMultiplier();
+                float timeToWait = animationClipTime + currentWeaponConfig.GetMinTimeBetweenAnimationCycles();
                 //if time to hit again
                 bool isTimeToHitAgain = Time.time - lastHitTime > timeToWait;
                 
