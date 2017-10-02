@@ -9,13 +9,14 @@ namespace RPG.Characters
 {
     public class HealthSystem : MonoBehaviour
     {
-
+        //Serlized
         [SerializeField] float maxHealthPoint        = 100f;
         [SerializeField] float deathVanishSeconds    = 2.0f;
         [SerializeField] Image healthBar;
         [SerializeField] AudioClip[] damageSounds;
         [SerializeField] AudioClip[] deathSounds;
 
+        //Private
         const string DEATH_TRIGGER = "Death";
         private float currentHealthPoint ;
         Animator animator;
@@ -66,18 +67,18 @@ namespace RPG.Characters
             characterMovement.Kill();
             animator.SetTrigger(DEATH_TRIGGER);
             var playerComponent = GetComponent<PlayerControl>();
-            if(playerComponent && playerComponent.isActiveAndEnabled) // relying on Lazy Evaluation (Google if you need help)
+            audioSource.clip = deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)];
+            audioSource.Play();
+            characterMovement.GetNavMeshAgent().speed = 0;
+            yield return new WaitForSecondsRealtime(audioSource.clip.length);
+            if (playerComponent && playerComponent.isActiveAndEnabled) // relying on Lazy Evaluation (Google if you need help)
             {
-                audioSource.clip = deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)];
-                audioSource.Play();
-                characterMovement.GetNavMeshAgent().speed = 0;
-                yield return new WaitForSecondsRealtime(audioSource.clip.length);
                 SceneManager.LoadScene(0);
             }
             else // Assume is enemy for now, reconsider other NPCs Later 
             {
                 characterMovement.GetNavMeshAgent().speed = 0;
-                DestroyObject(gameObject, deathVanishSeconds);
+                DestroyObject(gameObject, deathVanishSeconds + audioSource.clip.length);
             }
         }
     }
