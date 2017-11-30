@@ -1,18 +1,16 @@
-## Role-Playing Game made in Unity3D
+## RPG Diablo Clone made in Unity
 
-### Game should be around 2 Hours of game play
+Youtube Link: 
 
-#### What I will cover in this game 
+#### The main Task i'll do in this game
 * Story Mode Only "For now :) ".
 * PickUp System.
 * Inventory System.
 * Quest System.
 * Special Abilities System.
-* Attack/Dodging Animation
+* Attack/Dodging Animation (Combat System)
 * Save/Load System.
 * Advanced AI behaviour.
 
-#### What I will not cover
+#### What I will do after the main task
 * Co-Op and Multiplayer moods.
-* Cinematic.
-* High Quality Graphics.
