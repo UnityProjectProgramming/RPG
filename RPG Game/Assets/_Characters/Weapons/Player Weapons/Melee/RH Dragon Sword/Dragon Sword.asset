@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5308a80fdc16bf459b7f1015f6f41dc, type: 3}
+  m_Name: Dragon Sword
+  m_EditorClassIdentifier: 
+  grip: {fileID: 4443640645496284, guid: e065df1aee7d64148a05974d59cadd26, type: 2}
+  weaponPrefab: {fileID: 181534, guid: 13af847dfa6dbe844ba4b7c902f98f67, type: 2}
+  attackAnimation: {fileID: 7400000, guid: 5382c9f3a528413448fc27554dd73d74, type: 3}
+  maxAttackRange: 3
+  additionalDamage: 50
+  damageDelay: 0.5
