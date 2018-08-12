@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5308a80fdc16bf459b7f1015f6f41dc, type: 3}
+  m_Name: Pirate Sword
+  m_EditorClassIdentifier: 
+  grip: {fileID: 4443640645496284, guid: 32fd8ea5415be014fa0a3ea6340bc117, type: 2}
+  weaponPrefab: {fileID: 129084, guid: 47acc5b26852c45438ce84bf1364dea1, type: 2}
+  weaponAnimation: {fileID: 7400000, guid: 65ab56ec63abae340b7646d2ed24c864, type: 3}
+  maxAttackRange: 1.7
+  minTimeBetweenHits: 0.3
+  additionalDamage: 10
