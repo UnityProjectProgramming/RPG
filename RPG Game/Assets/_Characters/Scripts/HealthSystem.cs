@@ -9,7 +9,7 @@ namespace RPG.Characters
 {
     public class HealthSystem : MonoBehaviour
     {
-        //Serlized
+        // Serlized
         [SerializeField] float maxHealthPoint        = 100f;
         [SerializeField] float deathVanishSeconds    = 2.0f;
         [SerializeField] Image healthBar;
