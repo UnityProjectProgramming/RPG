@@ -112,8 +112,13 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
+<<<<<<< .merge_file_a00632
   m_NavMeshData: {fileID: 23800000, guid: fd8a93bdf19c7ba468e6cf03d60fce7c, type: 2}
+--- !u!1001 &652839
+=======
+  m_NavMeshData: {fileID: 0}
 --- !u!1001 &8359283
+>>>>>>> .merge_file_a03128
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -321,6 +326,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Trench_Spikes_01_Snow (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
   m_IsPrefabAsset: 0
@@ -372,6 +381,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Pole_03_Snow (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c991633e88cc3df4c81a2bda12bd262c, type: 2}
   m_IsPrefabAsset: 0
@@ -422,6 +435,10 @@ Prefab:
     - target: {fileID: 134552, guid: a05f863b43c88ff48ad851af5fcccc6c, type: 2}
       propertyPath: m_Name
       value: SM_Prop_Logs_01_Snow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a05f863b43c88ff48ad851af5fcccc6c, type: 2}
@@ -674,6 +691,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_DirtMound_02_Snow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e969791af4274489a57b2cc0a46246, type: 2}
   m_IsPrefabAsset: 0
@@ -724,6 +745,10 @@ Prefab:
     - target: {fileID: 192656, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
@@ -835,6 +860,17 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_02_Snow (22)
       objectReference: {fileID: 0}
+<<<<<<< .merge_file_a00632
+    - target: {fileID: 2336888, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8922350433fa73241aef3c0e0d5b0729, type: 2}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+=======
+>>>>>>> .merge_file_a03128
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa7d51e47efdfb439320af38b406506, type: 2}
   m_IsPrefabAsset: 0
@@ -937,6 +973,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 136
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a191bb751b4a8aa4dac078058b125484, type: 2}
   m_IsPrefabAsset: 0
@@ -999,6 +1039,10 @@ Prefab:
     - target: {fileID: 496958, guid: 21ca2f06c4a7e3c44a45c8b1baa6d967, type: 2}
       propertyPath: m_LocalScale.z
       value: 1.1824
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ca2f06c4a7e3c44a45c8b1baa6d967, type: 2}
@@ -1113,6 +1157,10 @@ Prefab:
     - target: {fileID: 1984547639385548, guid: 3eaf863440df0ba4c8bdb78ed49f9b20, type: 2}
       propertyPath: m_Name
       value: big house (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eaf863440df0ba4c8bdb78ed49f9b20, type: 2}
@@ -1354,6 +1402,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec0a7ce60257564b99584a4b431ca4d, type: 2}
   m_IsPrefabAsset: 0
@@ -1460,10 +1512,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (46)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -1514,6 +1562,10 @@ Prefab:
     - target: {fileID: 132804, guid: f35d4605c6d965d479a43fce9e656e19, type: 2}
       propertyPath: m_Name
       value: SM_Wep_Spear_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f35d4605c6d965d479a43fce9e656e19, type: 2}
@@ -1624,6 +1676,10 @@ Prefab:
     - target: {fileID: 192656, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
@@ -1786,6 +1842,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
   m_IsPrefabAsset: 0
@@ -1836,6 +1896,10 @@ Prefab:
     - target: {fileID: 183996, guid: caa7d51e47efdfb439320af38b406506, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_02_Snow (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa7d51e47efdfb439320af38b406506, type: 2}
@@ -2047,6 +2111,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_02_Snow (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa7d51e47efdfb439320af38b406506, type: 2}
   m_IsPrefabAsset: 0
@@ -2094,6 +2162,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+<<<<<<< .merge_file_a00632
+    - target: {fileID: 2336888, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8922350433fa73241aef3c0e0d5b0729, type: 2}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_Name
+      value: SM_Env_Dirt_Tile_Large_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+=======
+>>>>>>> .merge_file_a03128
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daf81ff421f0ab241ba62bcb683f3043, type: 2}
   m_IsPrefabAsset: 0
@@ -2290,6 +2373,10 @@ Prefab:
     - target: {fileID: 179830, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
       propertyPath: m_Name
       value: SM_Env_Trench_Spikes_01_Snow (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
@@ -2503,6 +2590,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.5314
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5979c3ac636334478a20376bafe57d7, type: 2}
   m_IsPrefabAsset: 0
@@ -2628,6 +2719,10 @@ Prefab:
     - target: {fileID: 179830, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
       propertyPath: m_Name
       value: SM_Env_Trench_Spikes_01_Snow (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
@@ -2763,6 +2858,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Trench_Spikes_01_Snow (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
   m_IsPrefabAsset: 0
@@ -2864,6 +2963,10 @@ Prefab:
     - target: {fileID: 183996, guid: caa7d51e47efdfb439320af38b406506, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_02_Snow (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa7d51e47efdfb439320af38b406506, type: 2}
@@ -3030,6 +3133,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
   m_IsPrefabAsset: 0
@@ -3096,6 +3203,10 @@ Prefab:
     - target: {fileID: 108800, guid: 244cf031e21ad8b4db284576c4707a29, type: 2}
       propertyPath: m_Name
       value: SM_Env_Path_Rocks_Side_01_Snow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 244cf031e21ad8b4db284576c4707a29, type: 2}
@@ -3313,6 +3424,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Prop_Dock_02_Snow (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30d314fcdeb4cc4478e937f9263479de, type: 2}
   m_IsPrefabAsset: 0
@@ -3363,6 +3478,10 @@ Prefab:
     - target: {fileID: 132804, guid: f35d4605c6d965d479a43fce9e656e19, type: 2}
       propertyPath: m_Name
       value: SM_Wep_Spear_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f35d4605c6d965d479a43fce9e656e19, type: 2}
@@ -3427,6 +3546,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a12d018fbdf2144f8b2d255ad102fa4, type: 2}
   m_IsPrefabAsset: 0
@@ -3489,6 +3612,10 @@ Prefab:
     - target: {fileID: 452268, guid: 41eb6fce2070b7f46b5bf6c38e028f24, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41eb6fce2070b7f46b5bf6c38e028f24, type: 2}
@@ -3882,10 +4009,17 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8922350433fa73241aef3c0e0d5b0729, type: 2}
+<<<<<<< .merge_file_a00632
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_Name
+      value: SM_Env_Dirt_Tile_Large_01 (51)
+      objectReference: {fileID: 0}
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+=======
+>>>>>>> .merge_file_a03128
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -4004,6 +4138,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
   m_IsPrefabAsset: 0
@@ -4054,6 +4192,10 @@ Prefab:
     - target: {fileID: 138276, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_01_Snow (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
@@ -4109,10 +4251,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (30)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -4176,6 +4314,10 @@ Prefab:
     - target: {fileID: 402186, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
@@ -4287,6 +4429,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
   m_IsPrefabAsset: 0
@@ -4353,6 +4499,10 @@ Prefab:
     - target: {fileID: 179830, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
       propertyPath: m_Name
       value: SM_Env_Trench_Spikes_01_Snow (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
@@ -4959,6 +5109,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Wep_Club_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5979c3ac636334478a20376bafe57d7, type: 2}
   m_IsPrefabAsset: 0
@@ -5084,6 +5238,21 @@ Transform:
 --- !u!1001 &179420344
 Prefab:
   m_ObjectHideFlags: 0
+<<<<<<< .merge_file_a00632
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 853030634}
+  m_Layer: 0
+  m_Name: Sea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &853030634
+=======
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 775361866}
@@ -5128,6 +5297,7 @@ Prefab:
   m_SourcePrefab: {fileID: 100100000, guid: caa7d51e47efdfb439320af38b406506, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &179420345 stripped
+>>>>>>> .merge_file_a03128
 Transform:
   m_CorrespondingSourceObject: {fileID: 495844, guid: caa7d51e47efdfb439320af38b406506,
     type: 2}
@@ -5386,10 +5556,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -6216,10 +6382,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (57)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -6274,10 +6436,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (60)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -6400,10 +6558,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (63)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -7447,10 +7601,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (38)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -7505,10 +7655,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (35)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -8083,10 +8229,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -8792,10 +8934,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (78)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -8850,10 +8988,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -9043,10 +9177,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (77)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -9409,10 +9539,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -10290,10 +10416,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (79)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -10575,10 +10697,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (43)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -10988,10 +11106,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (64)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -12149,10 +12263,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (29)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -12515,10 +12625,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (15)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -12758,10 +12864,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (67)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -13913,10 +14015,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (66)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -14200,10 +14298,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -14423,10 +14517,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -14880,10 +14970,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (68)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -15205,10 +15291,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (27)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -17480,10 +17562,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (51)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -18168,10 +18246,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (22)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -18226,10 +18300,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -18542,10 +18612,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (42)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -18769,10 +18835,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (33)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -19095,10 +19157,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (28)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -19580,10 +19638,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (72)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -19791,10 +19845,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (32)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -21968,10 +22018,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (45)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -22347,7 +22393,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &853030634
 Transform:
@@ -22858,10 +22904,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (55)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -24388,10 +24430,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (34)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -24560,10 +24598,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (40)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -24796,10 +24830,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -26290,10 +26320,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (71)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -27126,10 +27152,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (80)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -27534,10 +27556,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (76)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -28002,10 +28020,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (53)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -28583,10 +28597,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (69)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -29183,10 +29193,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (21)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -29304,10 +29310,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (74)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -29595,10 +29597,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -31058,10 +31056,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (47)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -31851,10 +31845,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (39)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -32234,10 +32224,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -33067,10 +33053,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (41)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -33960,10 +33942,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (37)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -34018,10 +33996,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (56)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -34663,10 +34637,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (48)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -36954,10 +36924,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (58)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -38043,10 +38009,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (49)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -38557,10 +38519,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (61)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -38961,10 +38919,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (44)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -41320,10 +41274,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -42385,10 +42335,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (73)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -44478,10 +44424,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -45397,10 +45339,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (36)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -46282,10 +46220,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -46587,10 +46521,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -48159,10 +48089,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (75)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -48591,10 +48517,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (52)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -48751,10 +48673,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (62)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -49207,10 +49125,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (26)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -49328,10 +49242,6 @@ Prefab:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
@@ -50664,6 +50574,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
   m_IsPrefabAsset: 0
@@ -51049,6 +50963,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fe796031adccd745a945915d6ec60ac, type: 2}
   m_IsPrefabAsset: 0
@@ -51112,6 +51030,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f227883e03897f49bc7703b0d514453, type: 2}
   m_IsPrefabAsset: 0
@@ -51174,6 +51096,10 @@ Prefab:
     - target: {fileID: 432356, guid: 244cf031e21ad8b4db284576c4707a29, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 244cf031e21ad8b4db284576c4707a29, type: 2}
@@ -51387,6 +51313,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Path_Wood_Plank_01_Snow (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01027be15bbf7d24eb5b09bd16be80d3, type: 2}
   m_IsPrefabAsset: 0
@@ -51438,6 +51368,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Mound_03_Snow (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f23d4405fae95459382943e0a2342c, type: 2}
   m_IsPrefabAsset: 0
@@ -51488,6 +51422,10 @@ Prefab:
     - target: {fileID: 138276, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_01_Snow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
@@ -51551,6 +51489,10 @@ Prefab:
     - target: {fileID: 470486, guid: 4ec0a7ce60257564b99584a4b431ca4d, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec0a7ce60257564b99584a4b431ca4d, type: 2}
@@ -51670,6 +51612,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_02_Snow (130)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa7d51e47efdfb439320af38b406506, type: 2}
   m_IsPrefabAsset: 0
@@ -51784,6 +51730,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
   m_IsPrefabAsset: 0
@@ -51835,6 +51785,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
   m_IsPrefabAsset: 0
@@ -51881,6 +51835,10 @@ Prefab:
     - target: {fileID: 482034, guid: d73214eddd849d24a84e9dcb68195d3d, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d73214eddd849d24a84e9dcb68195d3d, type: 2}
@@ -51933,6 +51891,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_02_Snow (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa7d51e47efdfb439320af38b406506, type: 2}
   m_IsPrefabAsset: 0
@@ -51983,6 +51945,10 @@ Prefab:
     - target: {fileID: 192656, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
@@ -52086,6 +52052,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Wep_Spear_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f35d4605c6d965d479a43fce9e656e19, type: 2}
   m_IsPrefabAsset: 0
@@ -52136,6 +52106,10 @@ Prefab:
     - target: {fileID: 132804, guid: f35d4605c6d965d479a43fce9e656e19, type: 2}
       propertyPath: m_Name
       value: SM_Wep_Spear_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f35d4605c6d965d479a43fce9e656e19, type: 2}
@@ -52247,6 +52221,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_02_Snow (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa7d51e47efdfb439320af38b406506, type: 2}
   m_IsPrefabAsset: 0
@@ -52297,6 +52275,10 @@ Prefab:
     - target: {fileID: 132804, guid: f35d4605c6d965d479a43fce9e656e19, type: 2}
       propertyPath: m_Name
       value: SM_Wep_Spear_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f35d4605c6d965d479a43fce9e656e19, type: 2}
@@ -52474,6 +52456,10 @@ Prefab:
     - target: {fileID: 131180, guid: f5a51e637558ff04895a354af9c4b59f, type: 2}
       propertyPath: m_Name
       value: SM_Wep_Axe_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5a51e637558ff04895a354af9c4b59f, type: 2}
@@ -52817,6 +52803,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_01_Snow (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
   m_IsPrefabAsset: 0
@@ -52986,6 +52976,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -55.88
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 617b155b3c14f584f96c939ffb8f50da, type: 2}
   m_IsPrefabAsset: 0
@@ -53048,6 +53042,10 @@ Prefab:
     - target: {fileID: 104734, guid: e5979c3ac636334478a20376bafe57d7, type: 2}
       propertyPath: m_Name
       value: SM_Wep_Club_01 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5979c3ac636334478a20376bafe57d7, type: 2}
@@ -53226,6 +53224,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
   m_IsPrefabAsset: 0
@@ -53276,6 +53278,10 @@ Prefab:
     - target: {fileID: 138276, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_01_Snow (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346d2a1b4aa86de4889f01fab83d8e95, type: 2}
@@ -53698,6 +53704,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Wep_Club_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5979c3ac636334478a20376bafe57d7, type: 2}
   m_IsPrefabAsset: 0
@@ -53863,6 +53873,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Wep_Club_01 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5979c3ac636334478a20376bafe57d7, type: 2}
   m_IsPrefabAsset: 0
@@ -53980,6 +53994,10 @@ Prefab:
     - target: {fileID: 108800, guid: 244cf031e21ad8b4db284576c4707a29, type: 2}
       propertyPath: m_Name
       value: SM_Env_Path_Rocks_Side_01_Snow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 244cf031e21ad8b4db284576c4707a29, type: 2}
@@ -54150,10 +54168,6 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (31)
       objectReference: {fileID: 0}
-    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
   m_IsPrefabAsset: 0
@@ -54267,6 +54281,10 @@ Prefab:
     - target: {fileID: 192656, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
@@ -54488,6 +54506,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_DirtMound_02_Snow (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e969791af4274489a57b2cc0a46246, type: 2}
   m_IsPrefabAsset: 0
@@ -54554,6 +54576,10 @@ Prefab:
     - target: {fileID: 179830, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
       propertyPath: m_Name
       value: SM_Env_Trench_Spikes_01_Snow (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
@@ -54660,6 +54686,10 @@ Prefab:
     - target: {fileID: 192656, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
@@ -55223,6 +55253,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Grass_Large_01_Snow (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706f228787b4cf5458cc0eccc5a8933c, type: 2}
   m_IsPrefabAsset: 0
@@ -55273,6 +55307,10 @@ Prefab:
     - target: {fileID: 183996, guid: caa7d51e47efdfb439320af38b406506, type: 2}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_02_Snow (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa7d51e47efdfb439320af38b406506, type: 2}
@@ -55328,6 +55366,10 @@ Prefab:
     - target: {fileID: 482034, guid: d73214eddd849d24a84e9dcb68195d3d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d73214eddd849d24a84e9dcb68195d3d, type: 2}
@@ -55631,6 +55673,10 @@ Prefab:
     - target: {fileID: 179830, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
       propertyPath: m_Name
       value: SM_Env_Trench_Spikes_01_Snow (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a45622b4b9b95f4ba25020e1ceff34a, type: 2}
