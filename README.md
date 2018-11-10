@@ -1,6 +1,8 @@
-## RPG Diablo Clone made in Unity
+# Graduation Project ( Team Project )
 
-### The main Task I'll do in this game
+## RPG Action/Adventure Game
+
+### Main Things
 * Core Combat System
 * PickUp System.
 * Inventory System.
@@ -10,10 +12,10 @@
 * Save/Load System.
 * Advanced AI behaviour.
 
-### What I will do after the main task
+### To Be added Later
 * Create Ability Tree System
-* Cooler and Fancyyy UI :D 
-* Co-Op and Multiplayer moods.
+* Unique Maps  
+
 
 ### Video and Pics
 
