@@ -9,7 +9,7 @@ namespace RPG.Characters
     [RequireComponent(typeof(HealthSystem))]
     [RequireComponent(typeof(WeaponSystem))]
     [RequireComponent(typeof(Character))]
-    public class EnemyAI : MonoBehaviour//no Idamageable because we are going fron interface to component
+    public class EnemyAI : MonoBehaviour//no Idamageable because we are going from interface to component
     {
 
         [SerializeField] float chaseRadious = 6f;
