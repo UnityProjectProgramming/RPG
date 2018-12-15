@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Name: Bow
   m_EditorClassIdentifier: 
   grip: {fileID: 4400551247379338, guid: 710da2dfe9676844fac90c00fa1dd2e0, type: 2}
-  weaponPrefab: {fileID: 100000, guid: 4f18c80df16a4ae4194559bba2f3ab9b, type: 3}
+  weaponPrefab: {fileID: 1713674773227922, guid: 9cbcacbbea719f9488a7cf04e338d9fc,
+    type: 2}
   attackAnimation: {fileID: 7400000, guid: 24d693751e9fd0b42ba8f9595d8b5f5e, type: 3}
   maxAttackRange: 11
   additionalDamage: 0
