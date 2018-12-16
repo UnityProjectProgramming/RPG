@@ -167,7 +167,11 @@ namespace RPG.Characters
             int numberOfDominantHands = dominantHands.Length;
             Assert.IsFalse(numberOfDominantHands <= 0, ("No Domiannt hand found on the  ")+gameObject.name + ("  please add one ."));
             Assert.IsFalse(numberOfDominantHands > 1, "Multiple Dominant hand scripts on the player , please remove one");
-            return dominantHands[0].gameObject;
+            if(dominantHands[0].gameObject)
+            {
+                return dominantHands[0].gameObject;
+            }
+            return gameObject;
         }
 
 

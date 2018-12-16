@@ -11,9 +11,11 @@ namespace RPG.Characters
     [RequireComponent(typeof(Character))]
     public class EnemyAI : MonoBehaviour//no Idamageable because we are going from interface to component
     {
-
+        [Header("Waypoint System")]
         [SerializeField] float chaseRadious = 6f;
         [SerializeField] float waypointTolerance = 1.5f;
+
+        [Header("Patrol Path")]
         [SerializeField] WaypointContainer patrolPath;
         [SerializeField] float waypointDwellTimeMin = 2.0f;
         [SerializeField] float waypointDwellTimeMax = 5.0f;
