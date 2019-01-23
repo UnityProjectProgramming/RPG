@@ -54,8 +54,11 @@ namespace RPG.CameraUI
             {
                 // creating the ray.
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
                 //specify layer priorities below.
-                if (RaycastForEnemy(ray)) { return; } else if(RaycastForNPC(ray)) { return; }
+                if (RaycastForEnemy(ray)) { return; }
+                else if(RaycastForNPC(ray)) { return; }
+
                 if (RaycastForPotentiallyWalkable(ray)) { return; }
                 
             }
