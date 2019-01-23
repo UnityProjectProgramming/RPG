@@ -11,10 +11,12 @@ namespace RPG.CameraUI
         // INSPECTOR PROPERTIES RENDERED BY CUSTOM EDITOR SCRIPT
         [SerializeField] Texture2D walkCursor = null;
         [SerializeField] Texture2D enemyCursor = null;
+        [SerializeField] Texture2D npcCursor = null;
         [SerializeField] Vector2 cursorHotspot = new Vector2(96, 96);
 
         const int POTENTIALLY_WALKABLE_LAYER = 8;
         const int POTENTIALLY_ENEMY_LAYER = 9;
+        const int PITENTIALLY_NPC_LAYER = 10;
         float maxRaycastDepth = 5000f; // Hard coded value
 
         Rect screenRect = new Rect(0.0f, 0.0f, Screen.width, Screen.height);
@@ -26,6 +28,10 @@ namespace RPG.CameraUI
         //Seting up delegate for terrian.
         public delegate void OnMouseOverTerrain(Vector3 destination); // Declearing new Delegate Type.
         public event OnMouseOverTerrain onMouseOverpotentiallyWalkable;
+
+        //Setting Up delegate for DialogueNPC
+        public delegate void OnMouseOverNPC(EnemyAI NPC);
+        public event OnMouseOverNPC onMouseOverNPC;
 
         // Event means (you can't override this class accidenlty , YOU CAN ONLY ADD TO IT).
         void Update()
@@ -49,8 +55,9 @@ namespace RPG.CameraUI
                 // creating the ray.
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 //specify layer priorities below.
-                if (RaycastForEnemy(ray)) { return; }
+                if (RaycastForEnemy(ray)) { return; } else if(RaycastForNPC(ray)) { return; }
                 if (RaycastForPotentiallyWalkable(ray)) { return; }
+                
             }
         }
 
@@ -64,10 +71,30 @@ namespace RPG.CameraUI
             {
                 enemyHit = gameObjectHit.GetComponent<EnemyAI>();
             }
-            if (enemyHit)
+            if (enemyHit && enemyHit.tag != "NPC")
             {
                 Cursor.SetCursor(enemyCursor, cursorHotspot, CursorMode.Auto);
                 onMouseOverEnemy(enemyHit);
+                return true;
+            }
+            return false;
+        }
+
+        private bool RaycastForNPC(Ray ray)
+        {
+            Debug.Log("From RayCastForNPC");
+            RaycastHit hitInfo;
+            EnemyAI NPC = null;
+            Physics.Raycast(ray, out hitInfo, maxRaycastDepth);
+            GameObject gameObjectHit = hitInfo.collider.gameObject;
+            if(gameObjectHit)
+            {
+                NPC = gameObjectHit.GetComponent<EnemyAI>();
+            }
+            if(NPC && NPC.tag == "NPC")
+            {
+                Cursor.SetCursor(npcCursor, cursorHotspot, CursorMode.Auto);
+                onMouseOverNPC(NPC);
                 return true;
             }
             return false;

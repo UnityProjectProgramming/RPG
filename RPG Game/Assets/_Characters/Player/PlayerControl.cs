@@ -25,6 +25,7 @@ namespace RPG.Characters
             var cameraRaycaster = FindObjectOfType<CameraRaycaster>();
             cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy; //Delegate
             cameraRaycaster.onMouseOverpotentiallyWalkable += onMouseOverpotentiallyWalkable;
+            cameraRaycaster.onMouseOverNPC += onMouseOverNPC;
         }
 
         private void Update()
@@ -39,6 +40,11 @@ namespace RPG.Characters
                 weaponSystem.StopAttacking();
                 character.SetDestination(destination);
             }
+        }
+
+        void onMouseOverNPC(EnemyAI NPC)
+        {
+            Debug.Log("On :" + NPC.name);
         }
 
         private void ScanForAbilityKeyDown()
