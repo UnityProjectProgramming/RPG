@@ -19,10 +19,10 @@ namespace RPG.Characters
         [SerializeField] WaypointContainer patrolPath;
         [SerializeField] float waypointDwellTimeMin = 2.0f;
         [SerializeField] float waypointDwellTimeMax = 5.0f;
-        
 
-        enum State { idle, attacking, patrolling, chasing };
-        State state = State.idle;
+
+        [SerializeField] enum State { idle, attacking, patrolling, chasing };
+        [SerializeField] State state = State.idle;
         float distanceToPlayer;
         float currentWeaponRange = 3f;
         int nextWaypointIndex;

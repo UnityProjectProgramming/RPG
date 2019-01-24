@@ -11,6 +11,7 @@ namespace RPG.Characters
         SpecialAbilities abilities;
         Character character;
         WeaponSystem weaponSystem;
+        
 
         private void Start()
         {
@@ -25,6 +26,7 @@ namespace RPG.Characters
             var cameraRaycaster = FindObjectOfType<CameraRaycaster>();
             cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy; //Delegate
             cameraRaycaster.onMouseOverpotentiallyWalkable += onMouseOverpotentiallyWalkable;
+            cameraRaycaster.onMouseOverNPC += onMouseOverNPC;
         }
 
         private void Update()
@@ -38,6 +40,25 @@ namespace RPG.Characters
             {
                 weaponSystem.StopAttacking();
                 character.SetDestination(destination);
+            }
+        }
+
+        void onMouseOverNPC(EnemyAI NPC)
+        {
+            if(Input.GetMouseButton(0))
+            {
+                // TODO@: Go To NPC
+                StartCoroutine(MoveToTarget(NPC.gameObject));
+                // Start Dialogue Seuquence.
+                if(Vector3.Distance(NPC.transform.position, this.gameObject.transform.position) < 5)
+                {
+                    var dialogueTrigger = NPC.GetComponent<DialogueTrigger>();
+                    if(dialogueTrigger)
+                    {
+                        dialogueTrigger.TriggerDialogue();
+                        NPC.transform.LookAt(gameObject.transform);
+                    }
+                }
             }
         }
 
