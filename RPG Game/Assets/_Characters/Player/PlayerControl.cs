@@ -56,6 +56,7 @@ namespace RPG.Characters
                     if(dialogueTrigger)
                     {
                         dialogueTrigger.TriggerDialogue();
+                        NPC.transform.LookAt(gameObject.transform);
                     }
                 }
             }
