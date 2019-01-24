@@ -85,7 +85,6 @@ namespace RPG.CameraUI
 
         private bool RaycastForNPC(Ray ray)
         {
-            Debug.Log("From RayCastForNPC");
             RaycastHit hitInfo;
             EnemyAI NPC = null;
             Physics.Raycast(ray, out hitInfo, maxRaycastDepth);

@@ -11,6 +11,7 @@ namespace RPG.Characters
         SpecialAbilities abilities;
         Character character;
         WeaponSystem weaponSystem;
+        
 
         private void Start()
         {
@@ -44,7 +45,20 @@ namespace RPG.Characters
 
         void onMouseOverNPC(EnemyAI NPC)
         {
-            Debug.Log("On :" + NPC.name);
+            if(Input.GetMouseButton(0))
+            {
+                // TODO@: Go To NPC
+                StartCoroutine(MoveToTarget(NPC.gameObject));
+                // Start Dialogue Seuquence.
+                if(Vector3.Distance(NPC.transform.position, this.gameObject.transform.position) < 5)
+                {
+                    var dialogueTrigger = NPC.GetComponent<DialogueTrigger>();
+                    if(dialogueTrigger)
+                    {
+                        dialogueTrigger.TriggerDialogue();
+                    }
+                }
+            }
         }
 
         private void ScanForAbilityKeyDown()
