@@ -41,11 +41,9 @@ namespace RPG.CameraUI
             {
                 //Implement UI interaction.
                 // Stop looking for other objects
-                Debug.Log("Not Performing Raycast");
             }
             else
             {
-                Debug.Log("Performing Raycast");
                 PerformRaycasts();
             }
         }
