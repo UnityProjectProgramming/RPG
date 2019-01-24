@@ -13,7 +13,7 @@ namespace RPG.CameraUI
         void Start()
         {
             player = GameObject.FindGameObjectWithTag("Player");
-
+            Debug.Log(player.name);
         }
 
         private void Update()

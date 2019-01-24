@@ -41,9 +41,11 @@ namespace RPG.CameraUI
             {
                 //Implement UI interaction.
                 // Stop looking for other objects
+                Debug.Log("Not Performing Raycast");
             }
             else
             {
+                Debug.Log("Performing Raycast");
                 PerformRaycasts();
             }
         }
@@ -68,7 +70,8 @@ namespace RPG.CameraUI
         {
             RaycastHit hitInfo;
             EnemyAI enemyHit = null;
-            Physics.Raycast(ray, out hitInfo, maxRaycastDepth);
+            var performRaycast = Physics.Raycast(ray, out hitInfo, maxRaycastDepth);
+            if (!performRaycast) { return false; }
             GameObject gameObjectHit = hitInfo.collider.gameObject;
             if(gameObjectHit)
             {
@@ -87,7 +90,8 @@ namespace RPG.CameraUI
         {
             RaycastHit hitInfo;
             EnemyAI NPC = null;
-            Physics.Raycast(ray, out hitInfo, maxRaycastDepth);
+            var performRaycast = Physics.Raycast(ray, out hitInfo, maxRaycastDepth);
+            if (!performRaycast) { return false; }
             GameObject gameObjectHit = hitInfo.collider.gameObject;
             if(gameObjectHit)
             {
