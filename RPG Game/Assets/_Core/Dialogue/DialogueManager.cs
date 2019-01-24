@@ -7,19 +7,21 @@ public class DialogueManager : MonoBehaviour {
 
     private Queue<string> sentences;
 
-    public Text NPCNameText;
-    public Text dialogueText;
+    [SerializeField] Text NPCNameText;
+    [SerializeField] Text dialogueText;
+    [SerializeField] GameObject dialogueGameObject;
 
 	// Use this for initialization
 	void Start ()
     {
         sentences = new Queue<string>();
+        dialogueGameObject.SetActive(false);
 	}
 	
     public void StartDialogue(Dialogue dialogue)
     {
         NPCNameText.text = dialogue.NPCName;
-
+        dialogueGameObject.SetActive(true);
         sentences.Clear();
 
         foreach(var sentence in dialogue.sentences)
@@ -38,12 +40,23 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
         var sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(StreamLetters(sentence));
+    }
+
+    IEnumerator StreamLetters(string sentence)
+    {
+        dialogueText.text = "";
+        foreach(var letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 
     void EndDialogue()
     {
-        Debug.Log("End of Conv");
+        dialogueGameObject.SetActive(false);
     }
 }
 
