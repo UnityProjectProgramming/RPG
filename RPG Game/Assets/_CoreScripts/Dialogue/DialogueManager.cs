@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour {
 
     [SerializeField] Text NPCNameText;
     [SerializeField] Text dialogueText;
+    [SerializeField] Text continueDialogueText;
     [SerializeField] GameObject dialogueGameObject;
 
 	// Use this for initialization
@@ -34,6 +35,10 @@ public class DialogueManager : MonoBehaviour {
 
     public void DisplayNextSentence()
     {
+        if(sentences.Count == 1)
+        {
+            continueDialogueText.text = "End Conv";
+        }
         if(sentences.Count == 0)
         {
             EndDialogue();

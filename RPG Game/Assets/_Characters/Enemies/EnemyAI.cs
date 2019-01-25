@@ -6,6 +6,8 @@ using System;
 
 namespace RPG.Characters
 {
+    public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, NPC };
+
     [RequireComponent(typeof(HealthSystem))]
     [RequireComponent(typeof(WeaponSystem))]
     [RequireComponent(typeof(Character))]
@@ -20,6 +22,9 @@ namespace RPG.Characters
         [SerializeField] float waypointDwellTimeMin = 2.0f;
         [SerializeField] float waypointDwellTimeMax = 5.0f;
 
+        [SerializeField]  EnemyType enemyType = EnemyType.None;
+
+
 
         [SerializeField] enum State { idle, attacking, patrolling, chasing };
         [SerializeField] State state = State.idle;
@@ -30,11 +35,23 @@ namespace RPG.Characters
         Character character;
         WeaponSystem weaponSystem;
 
+        public delegate void EnemyEventHandler(EnemyAI enemy);
+        public static event EnemyEventHandler OnEnemyDeath;
+
+        public static void EnemyDied(EnemyAI enemy)
+        {
+            if(OnEnemyDeath != null)
+            {
+                OnEnemyDeath(enemy);
+            }
+        }
+
         private void Start()
         {
             character = GetComponent<Character>();
             player = FindObjectOfType<PlayerControl>();
             weaponSystem = GetComponent<WeaponSystem>();
+
         }
 
         private void Update()
@@ -122,6 +139,11 @@ namespace RPG.Characters
 
             Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(transform.position, chaseRadious);
+        }
+
+        public EnemyType GetEnemyType()
+        {
+            return enemyType;
         }
     }
 }
