@@ -6,8 +6,8 @@ using System.Linq;
 public class Quest : MonoBehaviour
 {
     public List<Goal> goals = new List<Goal>();
-    public string QuestName;
-    public string Questdescription;
+    public string questName;
+    public string questDescription;
     public int experienceAmountReward;
     // We can add here and item as a reward such as sword, potion, key .... etc.
     public bool completed;
