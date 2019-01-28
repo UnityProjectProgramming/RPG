@@ -15,15 +15,12 @@ public class Quest : MonoBehaviour
     public void CheckGoals()
     {
         completed = goals.All(g => g.completed);
-        if(completed)
-        {
-            GiveReward();
-        }
     }
 
-    private void GiveReward()
+    public void GiveReward()
     {
         // Handle Giving rewards here and increasing Player EXP.
+        Debug.Log("Giving Player Reward!");
     }
 
 }
