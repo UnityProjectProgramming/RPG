@@ -14,8 +14,8 @@ public class UltimateSlayer : Quest
         experienceAmountReward = 100;
         // Reward item....
 
-        goals.Add(new KillGoal(EnemyType.Minion, "Kill 4 Minions", false, 0, 4));
-        goals.Add(new KillGoal(EnemyType.Knight, "Kill 2 knights", false, 0, 2));
+        goals.Add(new KillGoal(this, EnemyType.Minion, "Kill 4 Minions", false, 0, 4));
+        goals.Add(new KillGoal(this, EnemyType.Knight, "Kill 2 knights", false, 0, 2));
 
         goals.ForEach(g => g.Init());
 	}

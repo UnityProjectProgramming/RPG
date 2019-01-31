@@ -21,16 +21,26 @@ public class DialogueManager : MonoBehaviour {
 	
     public void StartDialogue(Dialogue dialogue)
     {
+        Debug.Log("Dialogue Started !");
         NPCNameText.text = dialogue.NPCName;
         dialogueGameObject.SetActive(true);
         sentences.Clear();
 
-        foreach(var sentence in dialogue.sentences)
+
+        foreach (var sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
         DisplayNextSentence();
+    }
+
+    public void AddToDialogue(Dialogue dialogue)
+    {
+        foreach (var sentence in dialogue.sentences)
+        {
+            sentences.Enqueue(sentence);
+        }
     }
 
     public void DisplayNextSentence()
