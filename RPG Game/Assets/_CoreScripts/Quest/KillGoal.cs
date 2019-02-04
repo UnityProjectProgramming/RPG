@@ -30,6 +30,7 @@ public class KillGoal : Goal
         if(enemy.GetEnemyType() == this.enemyType)
         {
             this.currentAmount++;
+            Debug.Log("Enemy Died and CurrentAmount = " + currentAmount);
             Evaluate();
         }
     }

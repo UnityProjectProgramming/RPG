@@ -26,7 +26,6 @@ public class DialogueManager : MonoBehaviour {
         dialogueGameObject.SetActive(true);
         sentences.Clear();
 
-
         foreach (var sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
@@ -40,15 +39,21 @@ public class DialogueManager : MonoBehaviour {
         foreach (var sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
+        }  
+    }
+
+    public void ContinueDialogue(Dialogue dialogue)
+    {
+        dialogueGameObject.SetActive(true);
+        foreach (var sentence in dialogue.sentences)
+        {
+            sentences.Enqueue(sentence);
         }
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 1)
-        {
-            continueDialogueText.text = "End Conv";
-        }
         if(sentences.Count == 0)
         {
             EndDialogue();
@@ -57,6 +62,17 @@ public class DialogueManager : MonoBehaviour {
         var sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(StreamLetters(sentence));
+        PrintAllQueue();
+    }
+
+    public void PrintAllQueue()
+    {
+        foreach(var sentence in sentences)
+        {
+            Debug.Log(sentence);
+        }
+
+        Debug.Log("___________________________");
     }
 
     IEnumerator StreamLetters(string sentence)

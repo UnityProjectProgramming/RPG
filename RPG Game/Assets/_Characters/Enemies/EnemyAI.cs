@@ -64,7 +64,7 @@ namespace RPG.Characters
                 //stop what we'are doing
                 StopAllCoroutines();
                 //Stop weaponSystem Coroutine.
-               // weaponSystem.StopAllCoroutines();
+                // weaponSystem.StopAllCoroutines();
                 //start patrolling
                 StartCoroutine(Patrol());
             }
