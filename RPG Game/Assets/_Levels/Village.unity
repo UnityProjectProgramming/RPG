@@ -3383,7 +3383,6 @@ MonoBehaviour:
   patrolPath: {fileID: 1432636041}
   waypointDwellTimeMin: 2
   waypointDwellTimeMax: 5
-  enemyType: 0
   state: 0
 --- !u!114 &112247158
 MonoBehaviour:
@@ -3453,6 +3452,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
+  enemyType: 0
 --- !u!1001 &113002142
 Prefab:
   m_ObjectHideFlags: 0
@@ -10857,7 +10857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4342760613413312, guid: f6fccff0ead85d841acc0e51e3457598, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6fccff0ead85d841acc0e51e3457598, type: 2}
@@ -14066,7 +14066,7 @@ Transform:
   - {fileID: 960575267}
   - {fileID: 953709610}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &496317581
 GameObject:
@@ -27808,7 +27808,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4137751935398116, guid: 7e10920969e57844599ad2aeff9e70ed, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e10920969e57844599ad2aeff9e70ed, type: 2}
@@ -30510,6 +30510,78 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2422d159a2884643ba9d94d7a1c57de, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1106791008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106791009}
+  - component: {fileID: 1106791011}
+  - component: {fileID: 1106791010}
+  m_Layer: 0
+  m_Name: Dirt Old Hoe(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1106791009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106791008}
+  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1688273088}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1106791010
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106791008}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 0754ff2960a855b4b9535c598af02f66, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1106791011
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106791008}
+  m_Mesh: {fileID: 4300002, guid: eee292b300b8dfa41be00641ff83b2a1, type: 3}
 --- !u!4 &1111956395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 407540, guid: ae6bdfcc214d3724793d88728ea87a2b,
@@ -31449,7 +31521,7 @@ Prefab:
     - target: {fileID: 224099760026639342, guid: 4a2b6e43e031a284e9af3fe6a109d8fd,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224099760026639342, guid: 4a2b6e43e031a284e9af3fe6a109d8fd,
         type: 2}
@@ -31508,7 +31580,12 @@ Prefab:
       objectReference: {fileID: 2084736937}
     - target: {fileID: 1906468909177668, guid: 4a2b6e43e031a284e9af3fe6a109d8fd, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396723213196760, guid: 4a2b6e43e031a284e9af3fe6a109d8fd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a2b6e43e031a284e9af3fe6a109d8fd, type: 2}
@@ -31950,7 +32027,7 @@ Transform:
   - {fileID: 1668397757}
   - {fileID: 733365158}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1165514863
 Prefab:
@@ -33223,7 +33300,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4860981425047504, guid: 0c74eb04651a2674cbe54464abe2e650, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4860981425047504, guid: 0c74eb04651a2674cbe54464abe2e650, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -33495,7 +33572,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4079947325986822, guid: f7591e66567677c4fac8df3f8c75860d, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7591e66567677c4fac8df3f8c75860d, type: 2}
@@ -38970,7 +39047,7 @@ RectTransform:
   m_Children:
   - {fileID: 1610868274}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -40238,7 +40315,6 @@ MonoBehaviour:
   patrolPath: {fileID: 1327793104}
   waypointDwellTimeMin: 2
   waypointDwellTimeMax: 5
-  enemyType: 0
   state: 0
 --- !u!114 &1415997655
 MonoBehaviour:
@@ -40308,6 +40384,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
+  enemyType: 0
 --- !u!1001 &1417966995
 Prefab:
   m_ObjectHideFlags: 0
@@ -41890,7 +41967,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913097894195018, guid: faa33ea9e93ffee42943e5473eae9add, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114826563152868392, guid: faa33ea9e93ffee42943e5473eae9add,
         type: 2}
@@ -46362,7 +46439,6 @@ MonoBehaviour:
   patrolPath: {fileID: 813264335}
   waypointDwellTimeMin: 2
   waypointDwellTimeMax: 5
-  enemyType: 0
   state: 0
 --- !u!114 &1616533674
 MonoBehaviour:
@@ -46432,6 +46508,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
+  enemyType: 0
 --- !u!1001 &1618594611
 Prefab:
   m_ObjectHideFlags: 0
@@ -48517,7 +48594,7 @@ Transform:
   m_LocalPosition: {x: 69.802, y: -0.012994647, z: 16.775}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1752368188}
+  - {fileID: 1106791009}
   m_Father: {fileID: 232498576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 22.047, y: -88.546005, z: 0.546}
@@ -50623,78 +50700,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 498126, guid: f19c957688bdf7849aa321d60569a6b2,
     type: 2}
   m_PrefabInternal: {fileID: 1751595975}
---- !u!1 &1752368187
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1752368188}
-  - component: {fileID: 1752368190}
-  - component: {fileID: 1752368189}
-  m_Layer: 0
-  m_Name: Dirt Old Hoe(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1752368188
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1752368187}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1688273088}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1752368189
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1752368187}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 0754ff2960a855b4b9535c598af02f66, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1752368190
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1752368187}
-  m_Mesh: {fileID: 4300002, guid: eee292b300b8dfa41be00641ff83b2a1, type: 3}
 --- !u!1001 &1752383256
 Prefab:
   m_ObjectHideFlags: 0
@@ -56862,7 +56867,6 @@ MonoBehaviour:
   patrolPath: {fileID: 2140804278}
   waypointDwellTimeMin: 2
   waypointDwellTimeMax: 5
-  enemyType: 0
   state: 0
 --- !u!114 &1818533657
 MonoBehaviour:
@@ -56932,6 +56936,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
+  enemyType: 0
 --- !u!1001 &1820974814
 Prefab:
   m_ObjectHideFlags: 0
@@ -57770,7 +57775,6 @@ MonoBehaviour:
   patrolPath: {fileID: 805441141}
   waypointDwellTimeMin: 2
   waypointDwellTimeMax: 5
-  enemyType: 0
   state: 0
 --- !u!114 &1847537208
 MonoBehaviour:
@@ -57840,6 +57844,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
+  enemyType: 0
 --- !u!1001 &1848452316
 Prefab:
   m_ObjectHideFlags: 0
@@ -59045,7 +59050,7 @@ Transform:
   - {fileID: 1700391824}
   - {fileID: 1611324948}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1890533595
 Prefab:
@@ -61581,7 +61586,6 @@ MonoBehaviour:
   patrolPath: {fileID: 782699983}
   waypointDwellTimeMin: 2
   waypointDwellTimeMax: 5
-  enemyType: 0
   state: 0
 --- !u!114 &1968222817
 MonoBehaviour:
@@ -61651,6 +61655,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
+  enemyType: 0
 --- !u!1001 &1968589359
 Prefab:
   m_ObjectHideFlags: 0

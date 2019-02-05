@@ -29,7 +29,6 @@ public class KillGoal : Goal
     {
         if (this.enemyType == enemy.GetEnemyType())
         {
-            Debug.Log("Detected enemy death: " + enemy);
             this.currentAmount++;
             Debug.Log("Current Amount now : " + currentAmount);
             Evaluate();

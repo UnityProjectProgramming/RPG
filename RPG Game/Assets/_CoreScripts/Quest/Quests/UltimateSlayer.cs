@@ -16,7 +16,7 @@ public class UltimateSlayer : Quest
         experienceAmountReward = 100;
         // Reward item....
 
-        Debug.Log("Starting" + questName);
+        Debug.Log("Starting quest: " + questName);
 
         goals.Add(new KillGoal(this, EnemyType.Thug, "Kill 4 Thugs", false, 0, 4));
         goals.ForEach(g => g.Init());
