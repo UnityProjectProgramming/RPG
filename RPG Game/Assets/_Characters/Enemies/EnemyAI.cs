@@ -6,7 +6,7 @@ using System;
 
 namespace RPG.Characters
 {
-    public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, NPC };
+    
 
     [RequireComponent(typeof(HealthSystem))]
     [RequireComponent(typeof(WeaponSystem))]
@@ -22,12 +22,12 @@ namespace RPG.Characters
         [SerializeField] float waypointDwellTimeMin = 2.0f;
         [SerializeField] float waypointDwellTimeMax = 5.0f;
 
-        [SerializeField]  EnemyType enemyType = EnemyType.None;
-
 
 
         [SerializeField] enum State { idle, attacking, patrolling, chasing };
         [SerializeField] State state = State.idle;
+
+
         float distanceToPlayer;
         float currentWeaponRange = 3f;
         int nextWaypointIndex;
@@ -35,16 +35,20 @@ namespace RPG.Characters
         Character character;
         WeaponSystem weaponSystem;
 
-        public delegate void EnemyEventHandler(EnemyAI enemy);
-        public static event EnemyEventHandler OnEnemyDeath;
 
-        public static void EnemyDied(EnemyAI enemy)
+        /*public void EnemyDied(EnemyAI enemy)
         {
-            if(OnEnemyDeath != null)
+            currentQuest = GetCurrentQuest();
+            if(currentQuest)
             {
-                OnEnemyDeath(enemy);
+                if (enemy.GetEnemyType() == currentQuest.goals[0].enemyType)
+                {
+                    currentQuest.goals[0].currentAmount++;
+                    Debug.Log("Enemy Died and CurrentAmount = " + currentQuest.goals[0].currentAmount);
+                    currentQuest.goals[0].Evaluate();
+                }
             }
-        }
+        }*/
 
         private void Start()
         {
@@ -59,7 +63,7 @@ namespace RPG.Characters
             distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
             currentWeaponRange = weaponSystem.GetCurrentWeapon().GetMaxAttackRange();
 
-            if(distanceToPlayer > chaseRadious && state != State.patrolling)
+            if (distanceToPlayer > chaseRadious && state != State.patrolling)
             {
                 //stop what we'are doing
                 StopAllCoroutines();
@@ -84,6 +88,18 @@ namespace RPG.Characters
                 StartCoroutine(AttackPlayer());
             }
         }
+
+        /*Quest GetCurrentQuest()
+        {
+            if(questSystem)
+            {
+                currentQuest = questSystem.GetQuestsObject().GetComponent<UltimateSlayer>();
+                return currentQuest;
+            }
+            return null;
+        }*/
+
+
 
         IEnumerator Patrol()
         {
@@ -141,9 +157,6 @@ namespace RPG.Characters
             Gizmos.DrawWireSphere(transform.position, chaseRadious);
         }
 
-        public EnemyType GetEnemyType()
-        {
-            return enemyType;
-        }
+
     }
 }

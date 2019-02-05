@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RPG.Characters;
 
 public class Goal
 {
@@ -10,9 +11,11 @@ public class Goal
     public int currentAmount;
     public int requiredAmount;
 
+
     public virtual void Init()
     {
         // Default init stuff.
+        Debug.Log("Goal Init");
     }
 
     public void Evaluate()
@@ -29,4 +32,5 @@ public class Goal
         completed = true;
         Debug.Log("Goal Marked Completed !");
     }
+
 }

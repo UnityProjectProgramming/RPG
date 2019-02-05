@@ -1823,6 +1823,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
+  enemyType: 4
 --- !u!114 &114537051117019740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1855,7 +1856,6 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   waypointDwellTimeMin: 2
   waypointDwellTimeMax: 5
-  enemyType: 4
   state: 0
 --- !u!114 &114865131609103590
 MonoBehaviour:

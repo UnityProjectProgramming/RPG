@@ -24,6 +24,12 @@ public class QuestSystem : MonoBehaviour
     private bool isQuestAssigned;
     private bool hasFinishedQuest;
     private bool hasRecivedReward;
+
+    public GameObject GetQuestsObject()
+    {
+        return quests;
+    }
+
     // Use this for initialization
     void Start ()
     {

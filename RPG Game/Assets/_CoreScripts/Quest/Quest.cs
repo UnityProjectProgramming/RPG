@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using RPG.Characters;
 
 public class Quest : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class Quest : MonoBehaviour
     public int experienceAmountReward;
     // We can add here and item as a reward such as sword, potion, key .... etc.
     public bool completed;
+
+
+
+
 
     public void CheckGoals()
     {

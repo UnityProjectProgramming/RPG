@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using System;
 
+public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, NPC };
+
 namespace RPG.Characters
 {
     [SelectionBase] //To selecet the root of the character component i.e the player
@@ -45,6 +47,10 @@ namespace RPG.Characters
         [SerializeField] float acceleration           = 8.0f;
         [SerializeField] float stoppingDistance       = 1.3f;
         [SerializeField] float obstcleAvoidanceRadius = 0.1f;
+
+        [Header("Enemy Type")]
+        [SerializeField] EnemyType enemyType = EnemyType.None;
+
 
         //====Private Section====
         float turnAmount;
@@ -103,6 +109,7 @@ namespace RPG.Characters
 
         public void Kill()
         {
+            CombatEvents.EnemyDied(this);
             isAlive = false;
         }
         
@@ -169,6 +176,11 @@ namespace RPG.Characters
                 velocity.y = myRigidBody.velocity.y;
                 myRigidBody.velocity = velocity;
             }
+        }
+
+        public EnemyType GetEnemyType()
+        {
+            return enemyType;
         }
 
     }

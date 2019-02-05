@@ -24,6 +24,8 @@ namespace RPG.Characters
         Character characterMovement;
         public float healthAsPercentage { get { return currentHealthPoint / maxHealthPoint; } }
 
+
+
         void Start()
         {
             animator = GetComponent<Animator>();
