@@ -6,8 +6,6 @@ using System;
 
 namespace RPG.Characters
 {
-    
-
     [RequireComponent(typeof(HealthSystem))]
     [RequireComponent(typeof(WeaponSystem))]
     [RequireComponent(typeof(Character))]
@@ -22,8 +20,6 @@ namespace RPG.Characters
         [SerializeField] float waypointDwellTimeMin = 2.0f;
         [SerializeField] float waypointDwellTimeMax = 5.0f;
 
-
-
         [SerializeField] enum State { idle, attacking, patrolling, chasing };
         [SerializeField] State state = State.idle;
 
@@ -35,20 +31,6 @@ namespace RPG.Characters
         Character character;
         WeaponSystem weaponSystem;
 
-
-        /*public void EnemyDied(EnemyAI enemy)
-        {
-            currentQuest = GetCurrentQuest();
-            if(currentQuest)
-            {
-                if (enemy.GetEnemyType() == currentQuest.goals[0].enemyType)
-                {
-                    currentQuest.goals[0].currentAmount++;
-                    Debug.Log("Enemy Died and CurrentAmount = " + currentQuest.goals[0].currentAmount);
-                    currentQuest.goals[0].Evaluate();
-                }
-            }
-        }*/
 
         private void Start()
         {
@@ -88,18 +70,6 @@ namespace RPG.Characters
                 StartCoroutine(AttackPlayer());
             }
         }
-
-        /*Quest GetCurrentQuest()
-        {
-            if(questSystem)
-            {
-                currentQuest = questSystem.GetQuestsObject().GetComponent<UltimateSlayer>();
-                return currentQuest;
-            }
-            return null;
-        }*/
-
-
 
         IEnumerator Patrol()
         {
