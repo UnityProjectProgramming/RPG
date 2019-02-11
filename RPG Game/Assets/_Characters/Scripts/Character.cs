@@ -59,6 +59,7 @@ namespace RPG.Characters
         Rigidbody myRigidBody;
         Animator animator;
         bool isAlive = true;
+        CapsuleCollider capsuleCollider;
 
         private void Awake()
         {
@@ -70,7 +71,7 @@ namespace RPG.Characters
             var audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.spatialBlend = audoiSourceSpatialBlend;
 
-            var capsuleCollider = gameObject.AddComponent<CapsuleCollider>();
+            capsuleCollider = gameObject.AddComponent<CapsuleCollider>();
             capsuleCollider.radius = capsuleRadius;
             capsuleCollider.height = capsuleHeight;
             capsuleCollider.center = colliderCenter;
@@ -131,6 +132,11 @@ namespace RPG.Characters
         public float GetAnimatorSpeedMultiplier()
         {
             return animator.speed;
+        }
+
+        public CapsuleCollider GetCapsuleCollider()
+        {
+            return capsuleCollider;
         }
 
         void Move(Vector3 movement)

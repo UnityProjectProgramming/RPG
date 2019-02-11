@@ -14,7 +14,6 @@ public class Goal
 
     public virtual void Init()
     {
-        // Default init stuff.
         Debug.Log("Goal Init");
     }
 

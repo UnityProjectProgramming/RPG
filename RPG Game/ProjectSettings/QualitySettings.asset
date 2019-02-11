@@ -4,7 +4,7 @@
 QualitySettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
-  m_CurrentQuality: 0
+  m_CurrentQuality: 2
   m_QualitySettings:
   - serializedVersion: 2
     name: Low
@@ -78,7 +78,7 @@ QualitySettings:
     name: High
     pixelLightCount: 4
     shadows: 2
-    shadowResolution: 2
+    shadowResolution: 1
     shadowProjection: 1
     shadowCascades: 4
     shadowDistance: 150
@@ -89,12 +89,12 @@ QualitySettings:
     blendWeights: 4
     textureQuality: 0
     anisotropicTextures: 2
-    antiAliasing: 2
+    antiAliasing: 4
     softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
-    vSyncCount: 1
+    vSyncCount: 0
     lodBias: 2
     maximumLODLevel: 0
     streamingMipmapsActive: 0

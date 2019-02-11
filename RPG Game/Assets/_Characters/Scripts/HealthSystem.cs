@@ -67,6 +67,7 @@ namespace RPG.Characters
         IEnumerator KillCharacter()
         {
             characterMovement.Kill();
+            characterMovement.GetCapsuleCollider().enabled = false; // Disabling the collider so when the enemy dies the player can path throgh thier dead bodys and not to have a glitch.
             animator.SetTrigger(DEATH_TRIGGER);
             var playerComponent = GetComponent<PlayerControl>();
             audioSource.clip = deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)];
