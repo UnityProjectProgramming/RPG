@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Characters;
 
-public class UltimateSlayer : Quest
+public class ThugSlayer : Quest
 {
 
 
@@ -11,8 +11,8 @@ public class UltimateSlayer : Quest
     void Start ()
     {
 
-        questName = "Ultimate Slayer";
-        questDescription = "Kill Thugs";
+        questName = "Thug Slayer";
+        questDescription = "Kill 6 Thugs";
         experienceAmountReward = 100;
         // Reward item....
 
