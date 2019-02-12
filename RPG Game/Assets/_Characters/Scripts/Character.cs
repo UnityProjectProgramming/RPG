@@ -98,6 +98,11 @@ namespace RPG.Characters
 
         void Update()
         {
+            if(!navMeshAgent)
+            {
+                Debug.Log("No Nav Mesh Agent Found");
+                return;
+            }
             if(navMeshAgent.remainingDistance > navMeshAgent.stoppingDistance && isAlive)
             {
                Move(navMeshAgent.desiredVelocity);

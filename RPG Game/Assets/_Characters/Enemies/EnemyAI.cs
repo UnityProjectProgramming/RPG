@@ -42,6 +42,11 @@ namespace RPG.Characters
 
         private void Update()
         {
+            if(!player)
+            {
+                return;
+            }
+
             distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
             currentWeaponRange = weaponSystem.GetCurrentWeapon().GetMaxAttackRange();
 
