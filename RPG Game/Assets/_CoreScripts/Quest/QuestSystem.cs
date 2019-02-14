@@ -6,18 +6,20 @@ using RPG.Core;
 
 public class QuestSystem : MonoBehaviour
 {
-
+    [Header("Dialogue Manager Reference")]
     [SerializeField] DialogueManager dialogueManager;
 
+    [Header("Dialogue")]
     [SerializeField] Dialogue startDialogue;
     [SerializeField] Dialogue givingQuestDialogue;
     [SerializeField] Dialogue endQuestDialogue;
     [SerializeField] Dialogue comingBackToNPCNotFinishingQuest;
     [SerializeField] Dialogue afterFinishingQuestDialogue;
 
-    [SerializeField] string questType;
-    [SerializeField] GameObject quests;
-
+    [Header("Questing")]
+    [SerializeField] string questTypeName;
+    [SerializeField] GameObject currentQuests;
+    [SerializeField] QuestUI questUI;
 
     private EnemyAI enemyAI;
     private Quest quest;
@@ -27,7 +29,7 @@ public class QuestSystem : MonoBehaviour
 
     public GameObject GetQuestsObject()
     {
-        return quests;
+        return currentQuests;
     }
 
     // Use this for initialization
@@ -60,7 +62,7 @@ public class QuestSystem : MonoBehaviour
     {
         dialogueManager.AddToDialogue(givingQuestDialogue);
         isQuestAssigned = true;
-        quest = (Quest)quests.AddComponent(System.Type.GetType(questType));
+        quest = (Quest)currentQuests.AddComponent(System.Type.GetType(questTypeName));
     }
 
 
@@ -84,5 +86,6 @@ public class QuestSystem : MonoBehaviour
         isQuestAssigned = false;
         hasRecivedReward = true;
         dialogueManager.StartDialogue(endQuestDialogue);
+        questUI.CleanQuestUI();
     }
 }

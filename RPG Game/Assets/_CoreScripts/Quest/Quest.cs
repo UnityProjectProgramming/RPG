@@ -13,7 +13,6 @@ public class Quest : MonoBehaviour
     // We can add here and item as a reward such as sword, potion, key .... etc.
     public bool completed;
 
-
     public void CheckGoals()
     {
         completed = goals.All(g => g.completed);
