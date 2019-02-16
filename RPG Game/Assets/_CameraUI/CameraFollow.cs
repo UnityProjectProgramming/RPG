@@ -6,8 +6,10 @@ namespace RPG.CameraUI
 {
     public class CameraFollow : MonoBehaviour
     {
-        private GameObject player;
 
+        [SerializeField] float smoothSpeed;
+
+        private GameObject player;
 
         // Use this for initialization
         void Start()
@@ -15,9 +17,11 @@ namespace RPG.CameraUI
             player = GameObject.FindGameObjectWithTag("Player");
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
-            transform.position = player.transform.position;
+            Vector3 desiredPos = player.transform.position;
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPos, smoothSpeed * Time.deltaTime);
+            transform.position = smoothedPosition;
         }
     }
 }

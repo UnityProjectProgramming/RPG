@@ -23,10 +23,6 @@ public class EnemySpawner : MonoBehaviour
         objectPooler = ObjectPooler.Instance;
     }
 
-    private void FixedUpdate()
-    {
-
-    }
 
     public void SpawnEnemies()
     {
