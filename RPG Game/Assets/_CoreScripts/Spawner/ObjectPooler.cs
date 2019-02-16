@@ -16,6 +16,8 @@ public class ObjectPooler : MonoBehaviour
     public List<Pool> pools;
     public Dictionary<EnemyType, Queue<Character>> poolDictionary;
 
+    Vector3 charPos = new Vector3(-106.72f, 23.39f, -185.58f);
+
     #region Singleton
     public static ObjectPooler Instance;
 
@@ -59,8 +61,10 @@ public class ObjectPooler : MonoBehaviour
         Character charToSpawn = poolDictionary[enemyType].Dequeue();
 
         charToSpawn.gameObject.SetActive(true);
-        charToSpawn.gameObject.transform.position = pos;
-        charToSpawn.gameObject.transform.rotation = rot;
+        charToSpawn.transform.position = charPos;
+        //Debug.Log("charToSpawn Position: " + charToSpawn.gameObject.transform.position);
+        //Debug.Log("Spawning Position: " + pos);
+        charToSpawn.transform.rotation = rot;
 
         poolDictionary[enemyType].Enqueue(charToSpawn);
 
