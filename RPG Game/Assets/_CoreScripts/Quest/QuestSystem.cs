@@ -13,13 +13,13 @@ public class QuestSystem : MonoBehaviour
     [SerializeField] Dialogue startDialogue;
     [SerializeField] Dialogue givingQuestDialogue;
     [SerializeField] Dialogue endQuestDialogue;
-    [SerializeField] Dialogue comingBackToNPCNotFinishingQuest;
-    [SerializeField] Dialogue afterFinishingQuestDialogue;
+
 
     [Header("Questing")]
     [SerializeField] string questTypeName;
     [SerializeField] GameObject currentQuests;
     [SerializeField] QuestUI questUI;
+    [SerializeField] GameObject questExclemenation;
 
     private EnemyAI enemyAI;
     private Quest quest;
@@ -60,6 +60,7 @@ public class QuestSystem : MonoBehaviour
 
 	void AssignQuest()
     {
+        questExclemenation.SetActive(false);
         dialogueManager.AddToDialogue(givingQuestDialogue);
         isQuestAssigned = true;
         quest = (Quest)currentQuests.AddComponent(System.Type.GetType(questTypeName));
