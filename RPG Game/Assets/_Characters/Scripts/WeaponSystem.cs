@@ -87,7 +87,6 @@ namespace RPG.Characters
         public void AttackTarget(GameObject targetToAttack)
         {
             target = targetToAttack;
-            print("Attacking  " + targetToAttack); 
             StartCoroutine(AttackTargetRepeatedly());
         }
 

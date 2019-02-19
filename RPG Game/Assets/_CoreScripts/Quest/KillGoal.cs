@@ -7,7 +7,6 @@ public class KillGoal : Goal
 {
     public EnemyType enemyType;
 
-
     public KillGoal(Quest quest, EnemyType enemyType, string description, bool completed, int currentAmount, int requiredAmount)
     {
         this.quest = quest;
@@ -16,22 +15,24 @@ public class KillGoal : Goal
         this.completed = completed;
         this.currentAmount = currentAmount;
         this.requiredAmount = requiredAmount;
-
     }
+
 
     public override void Init()
     {
         base.Init();
-        EnemyAI.OnEnemyDeath += EnemyDied;
+        Debug.Log("Kill Goal Init");
+        CombatEvents.onEnemyDeath += EnemyDied;
     }
 
-    void EnemyDied(EnemyAI enemy)
+    void EnemyDied(Character enemy)
     {
-        if(enemy.GetEnemyType() == this.enemyType)
+        if (this.enemyType == enemy.GetEnemyType())
         {
             this.currentAmount++;
-            Debug.Log("Enemy Died and CurrentAmount = " + currentAmount);
+            Debug.Log("Current Amount now : " + currentAmount);
             Evaluate();
         }
     }
+
 }

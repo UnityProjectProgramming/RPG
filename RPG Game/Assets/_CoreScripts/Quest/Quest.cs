@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using RPG.Characters;
 
 public class Quest : MonoBehaviour
 {

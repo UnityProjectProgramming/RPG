@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using System;
 
+public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, NPC };
+
 namespace RPG.Characters
 {
     [SelectionBase] //To selecet the root of the character component i.e the player
@@ -46,6 +48,10 @@ namespace RPG.Characters
         [SerializeField] float stoppingDistance       = 1.3f;
         [SerializeField] float obstcleAvoidanceRadius = 0.1f;
 
+        [Header("Enemy Type")]
+        [SerializeField] EnemyType enemyType = EnemyType.None;
+
+
         //====Private Section====
         float turnAmount;
         float forwardAmount;
@@ -53,6 +59,7 @@ namespace RPG.Characters
         Rigidbody myRigidBody;
         Animator animator;
         bool isAlive = true;
+        CapsuleCollider capsuleCollider;
 
         private void Awake()
         {
@@ -64,7 +71,7 @@ namespace RPG.Characters
             var audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.spatialBlend = audoiSourceSpatialBlend;
 
-            var capsuleCollider = gameObject.AddComponent<CapsuleCollider>();
+            capsuleCollider = gameObject.AddComponent<CapsuleCollider>();
             capsuleCollider.radius = capsuleRadius;
             capsuleCollider.height = capsuleHeight;
             capsuleCollider.center = colliderCenter;
@@ -91,6 +98,11 @@ namespace RPG.Characters
 
         void Update()
         {
+            if(!navMeshAgent)
+            {
+                Debug.Log("No Nav Mesh Agent Found");
+                return;
+            }
             if(navMeshAgent.remainingDistance > navMeshAgent.stoppingDistance && isAlive)
             {
                Move(navMeshAgent.desiredVelocity);
@@ -103,6 +115,7 @@ namespace RPG.Characters
 
         public void Kill()
         {
+            CombatEvents.EnemyDied(this);
             isAlive = false;
         }
         
@@ -124,6 +137,11 @@ namespace RPG.Characters
         public float GetAnimatorSpeedMultiplier()
         {
             return animator.speed;
+        }
+
+        public CapsuleCollider GetCapsuleCollider()
+        {
+            return capsuleCollider;
         }
 
         void Move(Vector3 movement)
@@ -169,6 +187,11 @@ namespace RPG.Characters
                 velocity.y = myRigidBody.velocity.y;
                 myRigidBody.velocity = velocity;
             }
+        }
+
+        public EnemyType GetEnemyType()
+        {
+            return enemyType;
         }
 
     }

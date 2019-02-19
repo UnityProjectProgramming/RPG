@@ -21,7 +21,6 @@ public class DialogueManager : MonoBehaviour {
 	
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Dialogue Started !");
         NPCNameText.text = dialogue.NPCName;
         dialogueGameObject.SetActive(true);
         sentences.Clear();
@@ -62,17 +61,6 @@ public class DialogueManager : MonoBehaviour {
         var sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(StreamLetters(sentence));
-        PrintAllQueue();
-    }
-
-    public void PrintAllQueue()
-    {
-        foreach(var sentence in sentences)
-        {
-            Debug.Log(sentence);
-        }
-
-        Debug.Log("___________________________");
     }
 
     IEnumerator StreamLetters(string sentence)

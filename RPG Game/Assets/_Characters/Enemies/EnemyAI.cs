@@ -6,8 +6,6 @@ using System;
 
 namespace RPG.Characters
 {
-    public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, NPC };
-
     [RequireComponent(typeof(HealthSystem))]
     [RequireComponent(typeof(WeaponSystem))]
     [RequireComponent(typeof(Character))]
@@ -22,12 +20,10 @@ namespace RPG.Characters
         [SerializeField] float waypointDwellTimeMin = 2.0f;
         [SerializeField] float waypointDwellTimeMax = 5.0f;
 
-        [SerializeField]  EnemyType enemyType = EnemyType.None;
-
-
-
         [SerializeField] enum State { idle, attacking, patrolling, chasing };
         [SerializeField] State state = State.idle;
+
+
         float distanceToPlayer;
         float currentWeaponRange = 3f;
         int nextWaypointIndex;
@@ -35,16 +31,6 @@ namespace RPG.Characters
         Character character;
         WeaponSystem weaponSystem;
 
-        public delegate void EnemyEventHandler(EnemyAI enemy);
-        public static event EnemyEventHandler OnEnemyDeath;
-
-        public static void EnemyDied(EnemyAI enemy)
-        {
-            if(OnEnemyDeath != null)
-            {
-                OnEnemyDeath(enemy);
-            }
-        }
 
         private void Start()
         {
@@ -56,10 +42,15 @@ namespace RPG.Characters
 
         private void Update()
         {
+            if(!player)
+            {
+                return;
+            }
+
             distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
             currentWeaponRange = weaponSystem.GetCurrentWeapon().GetMaxAttackRange();
 
-            if(distanceToPlayer > chaseRadious && state != State.patrolling)
+            if (distanceToPlayer > chaseRadious && state != State.patrolling)
             {
                 //stop what we'are doing
                 StopAllCoroutines();
@@ -141,9 +132,6 @@ namespace RPG.Characters
             Gizmos.DrawWireSphere(transform.position, chaseRadious);
         }
 
-        public EnemyType GetEnemyType()
-        {
-            return enemyType;
-        }
+
     }
 }
