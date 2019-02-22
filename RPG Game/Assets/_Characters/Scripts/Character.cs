@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using System;
 
-public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, NPC };
+public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, Dragon, NPC };
 
 namespace RPG.Characters
 {
@@ -186,6 +186,11 @@ namespace RPG.Characters
                 Vector3 velocity = (animator.deltaPosition * moveSpeedMultiplier) / Time.deltaTime;
                 velocity.y = myRigidBody.velocity.y;
                 myRigidBody.velocity = velocity;
+                if(enemyType == EnemyType.Dragon)
+                {
+                    Debug.Log("Velocity : " + animator.deltaPosition);
+                }
+                
             }
         }
 
