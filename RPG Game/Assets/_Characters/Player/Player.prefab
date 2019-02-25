@@ -1564,8 +1564,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1929268547355766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.7020597, y: 1.592843, z: 1.5694321}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 176.03, y: 0.153, z: -134.72}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 4535456566518224}
   - {fileID: 4919221515384516}
@@ -1994,6 +1994,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
+  enemyType: 0
 --- !u!114 &114725683347809222
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -319,6 +319,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
     type: 2}
   m_PrefabInternal: {fileID: 6950089}
+--- !u!1 &7152401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1538058128593596, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7152402}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Finger2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7152402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4963210022317094, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7152401}
+  m_LocalRotation: {x: -0.021669207, y: -0.0076982086, z: 0.16319188, w: 0.98632634}
+  m_LocalPosition: {x: -0.5406901, y: -0.0047067483, z: -0.014703628}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1412710097}
+  m_Father: {fileID: 1311717016}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7983206
 Prefab:
   m_ObjectHideFlags: 0
@@ -551,6 +582,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 476920, guid: a2fdfebba1c706e41b0fa8a819b914e9,
     type: 2}
   m_PrefabInternal: {fileID: 1359131367}
+--- !u!1 &16491884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1998155273688730, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 16491885}
+  m_Layer: 0
+  m_Name: DesertDragon_ L UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &16491885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4398453940490586, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 16491884}
+  m_LocalRotation: {x: -0.6236892, y: -0.021198314, z: 0.045751058, w: 0.78004444}
+  m_LocalPosition: {x: -0.588838, y: 0.000000083210516, z: -0.0000001387579}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 673867954}
+  m_Father: {fileID: 662148687}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &21011876
 Prefab:
   m_ObjectHideFlags: 0
@@ -1199,6 +1261,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1726941291}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &52938157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1480429385252734, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 52938158}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_ForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &52938158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4070731169226494, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52938157}
+  m_LocalRotation: {x: -0.00000028384318, y: 0.0000005586906, z: -0.47360897, w: 0.8807352}
+  m_LocalPosition: {x: -1.3053547, y: -0.00000031049478, z: 0.00000031965973}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_Children:
+  - {fileID: 1403805645}
+  m_Father: {fileID: 1172753958}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &53486846
 Prefab:
@@ -2612,6 +2705,148 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 482004, guid: 20a79b55466cdb84da379ae63fc30867,
     type: 2}
   m_PrefabInternal: {fileID: 90868632}
+--- !u!1 &93451074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1446822334337734, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 93451079}
+  - component: {fileID: 93451078}
+  - component: {fileID: 93451077}
+  - component: {fileID: 93451076}
+  - component: {fileID: 93451075}
+  m_Layer: 0
+  m_Name: Minion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &93451075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114641738385540728, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93451074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 353f1d90b65add34181af904578f61d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseRadious: 6
+  waypointTolerance: 1.5
+  patrolPath: {fileID: 372633893}
+  waypointDwellTimeMin: 2
+  waypointDwellTimeMax: 5
+  state: 0
+--- !u!114 &93451076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114269045292129064, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93451074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eca70b7e2f16c446a13cd5d3a4e74db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealthPoint: 48
+  deathVanishSeconds: 3
+  healthBar: {fileID: 653261504}
+  damageSounds:
+  - {fileID: 8300000, guid: 881c6c3c931ba224faae3c19a88e86f5, type: 3}
+  - {fileID: 8300000, guid: 5b347d71c29e0b54399b94de8f48a40f, type: 3}
+  - {fileID: 8300000, guid: 8b985d65501a45f4aa7bc2530b6a876e, type: 3}
+  - {fileID: 8300000, guid: f64b0d78cd76c1546bc66daa214a969d, type: 3}
+  - {fileID: 8300000, guid: 1532986e5fa74cb498a2ac8aa81b2952, type: 3}
+  - {fileID: 8300000, guid: ae063adf02511c64bb799be79a3805e4, type: 3}
+  - {fileID: 8300000, guid: 834b868f1bcaed24c8f43d6ddc4c6d5b, type: 3}
+  - {fileID: 8300000, guid: 5a68ae4b075c8994fade7c9da4d3fbc9, type: 3}
+  - {fileID: 8300000, guid: 3975ce560d563c244a8455155f376341, type: 3}
+  - {fileID: 8300000, guid: ace6dd16fa0531c4b8d8a10315558889, type: 3}
+  - {fileID: 8300000, guid: f259184794634e24e83830eaf4dce402, type: 3}
+  - {fileID: 8300000, guid: fc45aa1961ee3c647b9b9612e13e0c6b, type: 3}
+  - {fileID: 8300000, guid: 9022873b625939c48871449a68737f04, type: 3}
+  deathSounds:
+  - {fileID: 8300000, guid: c901d03ba4003654eb7b070b20014bdf, type: 3}
+  - {fileID: 8300000, guid: 2647c6b8be01b6947a4aac32a9a03466, type: 3}
+  - {fileID: 8300000, guid: 46e20c55c76520345b590d21a84e42b6, type: 3}
+  - {fileID: 8300000, guid: 7e189eb500abfee4db750441dd947098, type: 3}
+  - {fileID: 8300000, guid: 52eb8e1d96076a64d9fff8d686ada76c, type: 3}
+  - {fileID: 8300000, guid: e6a0f199e359e224ab94c441c8033a1d, type: 3}
+  - {fileID: 8300000, guid: 55f363f1f8818c740a8cbc1186e674ce, type: 3}
+--- !u!114 &93451077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114333533918603716, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93451074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b14c093f53b7e54bbd7b14e80b7922e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeaponConfig: {fileID: 11400000, guid: 489b87f7ffc8d5c4b8afa0d4f397021b,
+    type: 2}
+  isProjectileWeapon: 0
+  baseDamage: 6
+  criticalHitChance: 0
+  criticalHitMultiplier: 0
+  criticalHitParticle: {fileID: 0}
+--- !u!114 &93451078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114058473254762906, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93451074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038b59b4f3c9e3e439de8ae52a06dc75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audoiSourceSpatialBlend: 0.5
+  animatorController: {fileID: 9100000, guid: 32fa91e36b430f54aadf6d3ba7cb6824, type: 2}
+  animatorOverrideController: {fileID: 22100000, guid: 161ebf5eb9279114fbb5e2a946f42a25,
+    type: 2}
+  characterAvatar: {fileID: 9000000, guid: 957eb7d6115159a469b3b55b6161a27f, type: 3}
+  animForwardCap: 1
+  colliderCenter: {x: 0, y: 0.8, z: 0}
+  capsuleRadius: 0.2
+  capsuleHeight: 1.6
+  moveSpeedMultiplier: 2
+  moveThreshold: 1
+  movingTurnSpeed: 1200
+  stationaryTurnSpeed: 1200
+  runCycleLegOffset: 0.2
+  animSpeedMultiplier: 1.6
+  speed: 1
+  angularSpeed: 120
+  acceleration: 8
+  stoppingDistance: 1.7
+  obstcleAvoidanceRadius: 0.1
+  enemyType: 6
+--- !u!4 &93451079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93451074}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 196.62943, y: 0, z: -76.31029}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 990393563}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &97257966
 Prefab:
   m_ObjectHideFlags: 0
@@ -2675,6 +2910,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 97257966}
+--- !u!1 &99149283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1140651884593710, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 99149284}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_FingerC_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &99149284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4850184668532274, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 99149283}
+  m_LocalRotation: {x: -0.008430777, y: 0.0053379214, z: 0.8444782, w: 0.53549695}
+  m_LocalPosition: {x: -0.2081134, y: -0.44426522, z: 0.083698116}
+  m_LocalScale: {x: 1.0000001, y: 0.99999976, z: 1}
+  m_Children:
+  - {fileID: 1280571699}
+  m_Father: {fileID: 1403805645}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &99770236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 480352, guid: 47e037f2e2bc17c4680f75489a074e1e,
@@ -3262,6 +3528,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 498126, guid: f19c957688bdf7849aa321d60569a6b2,
     type: 2}
   m_PrefabInternal: {fileID: 104896846}
+--- !u!1 &108508292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1607976753473968, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108508293}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &108508293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4772502201664764, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108508292}
+  m_LocalRotation: {x: 0.40635723, y: -0.035945095, z: 0.23818591, w: 0.8813906}
+  m_LocalPosition: {x: -1.0605594, y: 0.00000018281955, z: -0.000000016849992}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_Children:
+  - {fileID: 436867815}
+  - {fileID: 1252222186}
+  - {fileID: 1612325075}
+  - {fileID: 776593832}
+  m_Father: {fileID: 1470241936}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &108750140
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,6 +3614,37 @@ Transform:
   - {fileID: 1340682294}
   m_Father: {fileID: 1328696206}
   m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &110108330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1556159776645390, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 110108331}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Toe2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &110108331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4553838937044178, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110108330}
+  m_LocalRotation: {x: -0.080340594, y: -0.0803406, z: -0.7025279, w: 0.7025278}
+  m_LocalPosition: {x: -0.21320747, y: 0.3010883, z: -0.19414085}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1182888579}
+  m_Father: {fileID: 400567781}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &111799564
 Prefab:
@@ -5813,6 +6144,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 476920, guid: a2fdfebba1c706e41b0fa8a819b914e9,
     type: 2}
   m_PrefabInternal: {fileID: 1045671996}
+--- !u!1 &194765517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1116379912881188, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194765518}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194765518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4898714230302106, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 194765517}
+  m_LocalRotation: {x: 0.49573612, y: -0.2997106, z: 0.79321694, w: -0.18768615}
+  m_LocalPosition: {x: -1.1444465, y: -0.0470615, z: -0.34961373}
+  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
+  m_Children:
+  - {fileID: 1095521569}
+  m_Father: {fileID: 1235034100}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &195655533
 Prefab:
   m_ObjectHideFlags: 0
@@ -7527,6 +7889,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a8990c3878d194fb6bf12fd9fffa65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &274433977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1392255367932330, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 274433978}
+  m_Layer: 0
+  m_Name: DesertDragon_Tongue_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &274433978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4598822379572098, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 274433977}
+  m_LocalRotation: {x: 5.3600825e-11, y: -4.1004843e-13, z: -0.007649816, w: 0.99997073}
+  m_LocalPosition: {x: -0.21668477, y: -0.000000054230945, z: 0.000000002244167}
+  m_LocalScale: {x: 0.9999997, y: 0.9999997, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1808734948}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &276152915
 Prefab:
   m_ObjectHideFlags: 0
@@ -7598,6 +7990,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 276152915}
+--- !u!1 &280934518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1222648066894064, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280934519}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &280934519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4586969619296542, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 280934518}
+  m_LocalRotation: {x: 5.3518533e-11, y: -0.00000005960761, z: 0.01091742, w: 0.9999404}
+  m_LocalPosition: {x: -0.44930252, y: -0.00037138816, z: -0.0000000010159873}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1742623675}
+  m_Father: {fileID: 619424333}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &281743904
 Prefab:
   m_ObjectHideFlags: 0
@@ -7786,6 +8209,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 430144, guid: b63743c34373d21438e97a6a864c1f49,
     type: 2}
   m_PrefabInternal: {fileID: 285724808}
+--- !u!1 &287930359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1110123950878482, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287930360}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_FingerA_1(
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &287930360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4534478533724716, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 287930359}
+  m_LocalRotation: {x: -0.031131603, y: 0.03389766, z: 0.28400245, w: 0.9577184}
+  m_LocalPosition: {x: -1.038281, y: -0.018800322, z: -0.0000012251741}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_Children:
+  - {fileID: 1122016497}
+  m_Father: {fileID: 1403805645}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &288200878
 Prefab:
   m_ObjectHideFlags: 0
@@ -8120,6 +8574,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 407540, guid: ae6bdfcc214d3724793d88728ea87a2b,
     type: 2}
   m_PrefabInternal: {fileID: 324428157}
+--- !u!1 &298522412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1872106550620166, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298522413}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_FingerB_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &298522413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4576195302829950, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 298522412}
+  m_LocalRotation: {x: 0.0000047450835, y: 0.000013398098, z: 0.30362365, w: 0.95279205}
+  m_LocalPosition: {x: -1.6339101, y: -0.0000002984255, z: 0.0000006753854}
+  m_LocalScale: {x: 1.0000005, y: 1.0000004, z: 1.0000001}
+  m_Children:
+  - {fileID: 1395579601}
+  m_Father: {fileID: 426288035}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &299370035
 Prefab:
   m_ObjectHideFlags: 0
@@ -9426,6 +9911,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 450442, guid: 6aab6a688220bd24fb3ed0efc8a33722,
     type: 2}
   m_PrefabInternal: {fileID: 328203190}
+--- !u!1 &329151913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1101038044953110, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329151914}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_FingerA_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &329151914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4914260288430734, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329151913}
+  m_LocalRotation: {x: -0.0000047913495, y: 0.0000004615774, z: -0.31534132, w: 0.9489783}
+  m_LocalPosition: {x: -2.0267637, y: -0.0000008954548, z: 0.000000002786956}
+  m_LocalScale: {x: 0.9999997, y: 1.0000001, z: 1}
+  m_Children:
+  - {fileID: 573275802}
+  m_Father: {fileID: 1690942440}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &330549727
 Prefab:
   m_ObjectHideFlags: 0
@@ -9540,6 +10056,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4762903522661780, guid: e474e0d16d5b47b4aada3b314c5dea55,
     type: 2}
   m_PrefabInternal: {fileID: 333713147}
+--- !u!1 &334957432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1966907845207930, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 334957433}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Toe3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &334957433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4712136232969066, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 334957432}
+  m_LocalRotation: {x: 0.50233334, y: 0.5367587, z: -0.49495888, w: 0.46321374}
+  m_LocalPosition: {x: -0.23140176, y: -0.020956857, z: 0.2518458}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1995399388}
+  m_Father: {fileID: 470923846}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &335232488
 Prefab:
   m_ObjectHideFlags: 0
@@ -9615,6 +10162,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 485184, guid: f5e310684d533124e895f9100f7931f4,
     type: 2}
   m_PrefabInternal: {fileID: 335232488}
+--- !u!1 &335430510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1942913314579494, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 335430511}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Finger21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &335430511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4298134100471292, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335430510}
+  m_LocalRotation: {x: 3.244616e-10, y: -7.889617e-12, z: -0.024308844, w: 0.99970454}
+  m_LocalPosition: {x: -0.21700248, y: -0.000000015852182, z: 0.000000004769616}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1612325075}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &336256952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476920, guid: a2fdfebba1c706e41b0fa8a819b914e9,
@@ -11515,6 +12092,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 399711397}
+--- !u!1 &400567780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1484896055971124, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400567781}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400567781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4336407929539986, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 400567780}
+  m_LocalRotation: {x: 0.06599381, y: -0.16395213, z: 0.15316173, w: 0.9722685}
+  m_LocalPosition: {x: -0.6185941, y: 0.000000065639206, z: -0.00000011123121}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 0.99999994}
+  m_Children:
+  - {fileID: 1949695951}
+  - {fileID: 1066314338}
+  - {fileID: 110108331}
+  - {fileID: 1092051172}
+  m_Father: {fileID: 1576485084}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &401204680
 Prefab:
   m_ObjectHideFlags: 0
@@ -11753,6 +12364,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &404904410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1456977648401352, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404904411}
+  m_Layer: 0
+  m_Name: DesertDragon_ Neck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404904411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4266930198896242, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 404904410}
+  m_LocalRotation: {x: 0.000000002113045, y: -0.00000023858416, z: 0.047137015, w: 0.99888843}
+  m_LocalPosition: {x: -1.4260101, y: -0.12825428, z: -0.00000020585401}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1422412336}
+  m_Father: {fileID: 1235034100}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &406255576 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114923841734383298, guid: 4a2b6e43e031a284e9af3fe6a109d8fd,
@@ -11940,169 +12582,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 485184, guid: f5e310684d533124e895f9100f7931f4,
     type: 2}
   m_PrefabInternal: {fileID: 409254341}
---- !u!1001 &411286322
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 192.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -104.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114325144233874040, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: patrolPath
-      value: 
-      objectReference: {fileID: 372633893}
-    - target: {fileID: 114037823872989540, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: capsuleHeight
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114037823872989540, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: capsuleRadius
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4584912466760366, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4584912466760366, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4584912466760366, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4584912466760366, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4584912466760366, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4584912466760366, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4584912466760366, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.0048755505
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.0021003382
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.0019600766
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -0.999984
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 6.075165
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 360.559
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.24000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.008148193
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 1.0765994
-      objectReference: {fileID: 0}
-    - target: {fileID: 224987786176100032, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.223
-      objectReference: {fileID: 0}
-    - target: {fileID: 224966432302723858, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 224966432302723858, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 57.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 224966432302723858, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 4.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 224966432302723858, guid: 8a96a0da9f3508047aa9522dcd25335f,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 70
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8a96a0da9f3508047aa9522dcd25335f, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1001 &412575250
 Prefab:
   m_ObjectHideFlags: 0
@@ -12506,6 +12985,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 421688348}
+--- !u!1 &423003231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1618756605820498, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423003232}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423003232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4026926594064684, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423003231}
+  m_LocalRotation: {x: -0.000000045749758, y: 0.00000003924838, z: 0.6534191, w: 0.75699645}
+  m_LocalPosition: {x: -1.3011416, y: -0.00000021213958, z: -0.00000015184924}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1576485084}
+  m_Father: {fileID: 1109836601}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &423693644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1698241545358000, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423693645}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423693645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4752170318944110, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423693644}
+  m_LocalRotation: {x: 0.00000004811322, y: 0.0000002970106, z: -0.022628097, w: 0.999744}
+  m_LocalPosition: {x: -0.53420156, y: -0.0003936428, z: -0.0000000011114589}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 930014331}
+  m_Father: {fileID: 1498529859}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425852491
 GameObject:
   m_ObjectHideFlags: 0
@@ -12579,6 +13120,37 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 425852491}
   m_CullTransparentMesh: 0
+--- !u!1 &426288034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1634805637704270, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 426288035}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_FingerB_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &426288035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4379895774381318, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 426288034}
+  m_LocalRotation: {x: -0.025974002, y: 0.034900356, z: 0.59658027, w: 0.80137336}
+  m_LocalPosition: {x: -0.83134395, y: -0.4361502, z: 0.075713016}
+  m_LocalScale: {x: 0.9999996, y: 0.99999994, z: 0.9999999}
+  m_Children:
+  - {fileID: 298522413}
+  m_Father: {fileID: 1403805645}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &429459902
 GameObject:
   m_ObjectHideFlags: 0
@@ -12858,6 +13430,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 436212104}
+--- !u!1 &436867814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1960141452871568, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 436867815}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Finger0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &436867815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4121442534158222, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 436867814}
+  m_LocalRotation: {x: -0.09316898, y: 0.652509, z: 0.135247, w: 0.7397701}
+  m_LocalPosition: {x: -0.1535147, y: 0.08561078, z: 0.32499066}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1.0000001}
+  m_Children:
+  - {fileID: 724024289}
+  m_Father: {fileID: 108508293}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &438878567
 GameObject:
   m_ObjectHideFlags: 0
@@ -13295,6 +13898,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4429151643904136, guid: e6f6edd3e7cf4b343b1ae8a0eccf3342,
     type: 2}
   m_PrefabInternal: {fileID: 447673821}
+--- !u!1 &448945466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1602551069938966, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 448945467}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_ForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &448945467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4142906457102470, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 448945466}
+  m_LocalRotation: {x: 0.0000011976185, y: 0.0000005763363, z: 0.4736099, w: 0.88073474}
+  m_LocalPosition: {x: -1.3053542, y: 0.00000002315092, z: -0.000000035655397}
+  m_LocalScale: {x: 1, y: 0.99999976, z: 1}
+  m_Children:
+  - {fileID: 1667508346}
+  m_Father: {fileID: 2047951095}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &455054599
 Prefab:
   m_ObjectHideFlags: 0
@@ -13787,6 +14421,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4485790557928886, guid: 9462365560fea9046a1b5a2b34b74a38,
     type: 2}
   m_PrefabInternal: {fileID: 849756485}
+--- !u!1 &470923845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1935291626726468, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470923846}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &470923846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4894932431993722, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470923845}
+  m_LocalRotation: {x: -0.06599364, y: 0.16395214, z: 0.15316167, w: 0.9722685}
+  m_LocalPosition: {x: -0.6185945, y: -0.000000100668025, z: -0.00000006624309}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
+  m_Children:
+  - {fileID: 1455864359}
+  - {fileID: 1646725420}
+  - {fileID: 1153707608}
+  - {fileID: 334957433}
+  m_Father: {fileID: 1185257150}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473509454
 GameObject:
   m_ObjectHideFlags: 0
@@ -14895,6 +15563,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 485184, guid: f5e310684d533124e895f9100f7931f4,
     type: 2}
   m_PrefabInternal: {fileID: 508695940}
+--- !u!1 &512771095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1035761851557700, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512771096}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_FingerC_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &512771096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4315552873727612, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 512771095}
+  m_LocalRotation: {x: 0.008430199, y: 0.0053377226, z: -0.8444782, w: 0.5354971}
+  m_LocalPosition: {x: -0.20811395, y: 0.44426554, z: 0.083697304}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
+  m_Children:
+  - {fileID: 858339922}
+  m_Father: {fileID: 1667508346}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &514021139
 Prefab:
   m_ObjectHideFlags: 0
@@ -15254,6 +15953,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4485790557928886, guid: 9462365560fea9046a1b5a2b34b74a38,
     type: 2}
   m_PrefabInternal: {fileID: 1260494687}
+--- !u!1 &531275681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1277393255857148, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 531275682}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Finger31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &531275682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4263369752062442, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 531275681}
+  m_LocalRotation: {x: 2.4616176e-10, y: -2.5882926e-12, z: -0.010514019, w: 0.99994475}
+  m_LocalPosition: {x: -0.18875366, y: 0.0000000052941345, z: 0.00000003959516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 776593832}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &534760739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1418467179686472, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 534760740}
+  m_Layer: 0
+  m_Name: SK_DesertDragon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &534760740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4584912466760366, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534760739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1853780105}
+  - {fileID: 1070294095}
+  m_Father: {fileID: 1555727100}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &535643721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476920, guid: a2fdfebba1c706e41b0fa8a819b914e9,
@@ -16403,6 +17164,36 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8f5004b56301db47a88660861a93324, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &573275801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1511353778545224, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 573275802}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_FingerA_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &573275802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4678320623691062, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573275801}
+  m_LocalRotation: {x: -0.000006951049, y: 0.000020865918, z: -0.30858687, w: 0.9511962}
+  m_LocalPosition: {x: -1.9561998, y: -0.000068774854, z: 0.00000013885436}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 329151914}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &576480560
 Prefab:
   m_ObjectHideFlags: 0
@@ -17545,6 +18336,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 438422, guid: 04dca8df65cfdbf4aa3e90ce6f224377,
     type: 2}
   m_PrefabInternal: {fileID: 611622572}
+--- !u!1 &612134446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1119649891653456, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 612134447}
+  - component: {fileID: 612134449}
+  - component: {fileID: 612134448}
+  m_Layer: 5
+  m_Name: Health Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &612134447
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224782159193814442, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612134446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1745532579}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -2.7}
+  m_SizeDelta: {x: 20, y: 2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &612134448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114786471720106690, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612134446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 83481d251da219d49b5db7bc51f6f784, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.389
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &612134449
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222328009990321572, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612134446}
+  m_CullTransparentMesh: 0
 --- !u!1001 &614277997
 Prefab:
   m_ObjectHideFlags: 0
@@ -17660,6 +18524,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4485790557928886, guid: 9462365560fea9046a1b5a2b34b74a38,
     type: 2}
   m_PrefabInternal: {fileID: 371217574}
+--- !u!1 &619424332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1420267957574458, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619424333}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619424333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4089818703104654, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619424332}
+  m_LocalRotation: {x: 3.1501454e-10, y: -0.000000059603902, z: 0.007040679, w: 0.9999752}
+  m_LocalPosition: {x: -0.54199153, y: -0.0003577346, z: -9.79094e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 280934519}
+  m_Father: {fileID: 1673116822}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &622355431
 Prefab:
   m_ObjectHideFlags: 0
@@ -18484,6 +19379,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 498126, guid: f19c957688bdf7849aa321d60569a6b2,
     type: 2}
   m_PrefabInternal: {fileID: 651937981}
+--- !u!1 &653261503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1119649891653456, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 653261506}
+  - component: {fileID: 653261505}
+  - component: {fileID: 653261504}
+  m_Layer: 5
+  m_Name: Health Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &653261504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114786471720106690, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 653261503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 83481d251da219d49b5db7bc51f6f784, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.389
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &653261505
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222328009990321572, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 653261503}
+  m_CullTransparentMesh: 0
+--- !u!224 &653261506
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224782159193814442, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 653261503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 990393563}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -2.7}
+  m_SizeDelta: {x: 20, y: 2}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &655236885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 456230, guid: cfe5d370eb7adbd43bead7f2e91204b1,
@@ -18821,6 +19789,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 477614, guid: 59c46909f95e9a94fae7eea9a6ddc7d9,
     type: 2}
   m_PrefabInternal: {fileID: 661677325}
+--- !u!1 &662148686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1743708630675976, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662148687}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &662148687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4812781307238586, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662148686}
+  m_LocalRotation: {x: -0.49573663, y: 0.29970834, z: 0.79321784, w: -0.18768473}
+  m_LocalPosition: {x: -1.1444465, y: -0.04706352, z: 0.3496134}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
+  m_Children:
+  - {fileID: 16491885}
+  m_Father: {fileID: 1235034100}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &662273367
 Prefab:
   m_ObjectHideFlags: 0
@@ -19281,6 +20280,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4485790557928886, guid: 9462365560fea9046a1b5a2b34b74a38,
     type: 2}
   m_PrefabInternal: {fileID: 672714896}
+--- !u!1 &673867953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1044796485176646, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 673867954}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &673867954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4180340013211834, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673867953}
+  m_LocalRotation: {x: -0.0000000064629506, y: -0.00000006732838, z: 0.3863176, w: 0.92236584}
+  m_LocalPosition: {x: -1.2935007, y: -0.000000033043055, z: 0.000000022200178}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1311717016}
+  m_Father: {fileID: 16491885}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &674608106
 Prefab:
   m_ObjectHideFlags: 0
@@ -20812,6 +21842,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 419846, guid: b3973fc6d839e1648bf8e4af0578e64c,
     type: 2}
   m_PrefabInternal: {fileID: 720719055}
+--- !u!1 &724024288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1595857587017116, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724024289}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Finger01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &724024289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4542486487210598, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 724024288}
+  m_LocalRotation: {x: -8.9286584e-10, y: -5.2654808e-12, z: 0.005897179, w: 0.99998266}
+  m_LocalPosition: {x: -0.17710045, y: 0.000000019874589, z: 0.0000000045231507}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 436867815}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &725262839
 Prefab:
   m_ObjectHideFlags: 0
@@ -21002,6 +22062,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4485790557928886, guid: 9462365560fea9046a1b5a2b34b74a38,
     type: 2}
   m_PrefabInternal: {fileID: 727691294}
+--- !u!1 &728570701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1879752581076622, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 728570702}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Toe31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &728570702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4735596694609708, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 728570701}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.13359056, y: 0.0000000041691885, z: -0.000000098112906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1092051172}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &729381593
 Prefab:
   m_ObjectHideFlags: 0
@@ -21065,6 +22155,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4485790557928886, guid: 9462365560fea9046a1b5a2b34b74a38,
     type: 2}
   m_PrefabInternal: {fileID: 729381593}
+--- !u!1 &730266855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1670190723396012, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 730266856}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Finger11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &730266856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4247116949994598, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 730266855}
+  m_LocalRotation: {x: -2.016177e-10, y: 3.6160482e-12, z: -0.01793229, w: 0.99983925}
+  m_LocalPosition: {x: -0.21157268, y: -0.000000005548858, z: -0.00000003273228}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1252222186}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &731061587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 477614, guid: 59c46909f95e9a94fae7eea9a6ddc7d9,
@@ -22336,6 +23456,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 488820, guid: bcecb47ea5c6ff945a4477cf0949925a,
     type: 2}
   m_PrefabInternal: {fileID: 2000123609}
+--- !u!1 &764813670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1037741267860934, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 764813671}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Finger11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &764813671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4788490660026240, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764813670}
+  m_LocalRotation: {x: -8.98298e-11, y: 1.6111133e-12, z: -0.017932294, w: 0.99983925}
+  m_LocalPosition: {x: -0.21157268, y: -0.000000014379469, z: -0.00000005322042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1317346504}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &765212483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1447406326426354, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765212484}
+  m_Layer: 0
+  m_Name: DesertDragon_Tongue_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &765212484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4664049472605170, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765212483}
+  m_LocalRotation: {x: 0.9869003, y: 0.16133142, z: -0.0000011795157, w: -0.0000042597244}
+  m_LocalPosition: {x: -0.5505871, y: -0.14886242, z: 0.0000012146608}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 918684212}
+  m_Father: {fileID: 1639324423}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &769023797
 Prefab:
   m_ObjectHideFlags: 0
@@ -22485,6 +23666,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481844, guid: bfe4be0aaa478f840adab80970fe26a8,
     type: 2}
   m_PrefabInternal: {fileID: 775738246}
+--- !u!1 &776593831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1966638006180682, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776593832}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Finger3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776593832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4939070331262498, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776593831}
+  m_LocalRotation: {x: 0.12057263, y: -0.26214644, z: 0.16279475, w: 0.94352496}
+  m_LocalPosition: {x: -0.43898216, y: 0.06380293, z: -0.22001253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 531275682}
+  m_Father: {fileID: 108508293}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &777180498
 Prefab:
   m_ObjectHideFlags: 0
@@ -23498,6 +24710,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 468370, guid: b91d607ee88cbd84d83fd6dca90b1338,
     type: 2}
   m_PrefabInternal: {fileID: 819802894}
+--- !u!1 &821273774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1198571917022624, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821273775}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Finger31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &821273775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4249626610933878, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 821273774}
+  m_LocalRotation: {x: -1.8451338e-10, y: 1.9400842e-12, z: -0.010514018, w: 0.99994475}
+  m_LocalPosition: {x: -0.18875389, y: 0.0000000018881123, z: 0.000000053763845}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2012385372}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &822339443
 Prefab:
   m_ObjectHideFlags: 0
@@ -24415,6 +25657,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4861119463269630, guid: eed16316c7789f1458b6b466e1054bf8,
     type: 2}
   m_PrefabInternal: {fileID: 856521994}
+--- !u!1 &857054341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1575845414211206, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857054342}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Toe01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &857054342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4833269309908452, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 857054341}
+  m_LocalRotation: {x: -6.9388935e-18, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.22502872, y: 0.000000037667068, z: 0.00000016228061}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1455864359}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &858339921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1490124418099762, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 858339922}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_FingerC_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &858339922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4295651675912266, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858339921}
+  m_LocalRotation: {x: -0.000007225705, y: 0.000016895534, z: -0.19149385, w: 0.98149383}
+  m_LocalPosition: {x: -1.2812649, y: -0.00000022983676, z: 0.00000013180194}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1413437846}
+  m_Father: {fileID: 512771096}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &858930323
 Prefab:
   m_ObjectHideFlags: 0
@@ -26355,6 +27658,78 @@ Transform:
   m_Father: {fileID: 1432636040}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &917355158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917355159}
+  - component: {fileID: 917355161}
+  - component: {fileID: 917355160}
+  m_Layer: 0
+  m_Name: Dirt Old Hoe(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &917355159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 917355158}
+  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1688273088}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &917355160
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 917355158}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 0754ff2960a855b4b9535c598af02f66, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &917355161
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 917355158}
+  m_Mesh: {fileID: 4300002, guid: eee292b300b8dfa41be00641ff83b2a1, type: 3}
 --- !u!1001 &917616559
 Prefab:
   m_ObjectHideFlags: 0
@@ -26418,6 +27793,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 917616559}
+--- !u!1 &918684211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1939271585550588, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918684212}
+  m_Layer: 0
+  m_Name: DesertDragon_Tongue_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &918684212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4760179292176116, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 918684211}
+  m_LocalRotation: {x: 5.8777017e-10, y: -0.000000059601774, z: 0.010827808, w: 0.9999414}
+  m_LocalPosition: {x: -0.17038473, y: 0.00000543906, z: -0.000000020161675}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_Children:
+  - {fileID: 1808734948}
+  m_Father: {fileID: 765212484}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &919658851
 Prefab:
   m_ObjectHideFlags: 0
@@ -26612,6 +28018,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.42, y: 0.02, z: 0.38}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!1 &930014330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1395873694195358, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930014331}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &930014331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4360388350385744, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 930014330}
+  m_LocalRotation: {x: 0.00000006141941, y: 0.00000023748804, z: -0.015622149, w: 0.999878}
+  m_LocalPosition: {x: -0.49487227, y: -0.00073057506, z: -0.0000000020847202}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 423693645}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &932997276
 Prefab:
   m_ObjectHideFlags: 0
@@ -27806,6 +29242,149 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 984306340}
+--- !u!1 &985619917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1205176697081278, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 985619918}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &985619918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4845837287966954, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 985619917}
+  m_LocalRotation: {x: 0.819075, y: -0.49680915, z: -0.21175374, w: -0.1935389}
+  m_LocalPosition: {x: 0.0000007524668, y: 0.00000073421046, z: 0.6033566}
+  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
+  m_Children:
+  - {fileID: 1506532185}
+  m_Father: {fileID: 1172042228}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &990393562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1862946920208366, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990393563}
+  - component: {fileID: 990393567}
+  - component: {fileID: 990393566}
+  - component: {fileID: 990393565}
+  - component: {fileID: 990393564}
+  m_Layer: 0
+  m_Name: Enemy Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &990393563
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224655868501838032, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 990393562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_Children:
+  - {fileID: 653261506}
+  m_Father: {fileID: 93451079}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 2.42}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &990393564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114483976295798050, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 990393562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1946e1c1bae1c34ba2666ebb3463952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &990393565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114460843542195644, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 990393562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &990393566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114236016209804766, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 990393562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &990393567
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 223025158955501588, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 990393562}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &991564295
 GameObject:
   m_ObjectHideFlags: 0
@@ -27953,6 +29532,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 494586, guid: f8ed91afdf7cecd47ba5102085b88cc0,
     type: 2}
   m_PrefabInternal: {fileID: 993118122}
+--- !u!1 &993159545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1743326792067904, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 993159546}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Finger01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &993159546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4029933961876318, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993159545}
+  m_LocalRotation: {x: 3.5123718e-10, y: 2.0713442e-12, z: 0.0058971783, w: 0.99998266}
+  m_LocalPosition: {x: -0.17710067, y: 0.000000009081813, z: 0.00000001890651}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1378791590}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &995051993
 Prefab:
   m_ObjectHideFlags: 0
@@ -28042,6 +29651,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481750, guid: df5b94a5c7b01ae4da71fe5dd12ddcad,
     type: 2}
   m_PrefabInternal: {fileID: 996731675}
+--- !u!1 &997166931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1565219460063772, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997166932}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &997166932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4049406901530798, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 997166931}
+  m_LocalRotation: {x: -0.0000000022630795, y: 0.00000011932971, z: -0.0297982, w: 0.99955595}
+  m_LocalPosition: {x: -0.51066124, y: -0.0004344366, z: -0.0000000011862384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1818952013}
+  m_Father: {fileID: 1742623675}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &998752234
 Prefab:
   m_ObjectHideFlags: 0
@@ -29112,6 +30752,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32c513dd4f75bc24692549a1a831b5c3, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1029449266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1327143564056066, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1029449267}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1029449267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4463849691738312, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029449266}
+  m_LocalRotation: {x: 0.000000004186765, y: 0.00000035766044, z: -0.02957077, w: 0.9995627}
+  m_LocalPosition: {x: -0.58360994, y: -0.00042821973, z: -0.0000000011688728}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1498529859}
+  m_Father: {fileID: 2110871768}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030826300
 GameObject:
   m_ObjectHideFlags: 0
@@ -29236,6 +30907,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 498126, guid: f19c957688bdf7849aa321d60569a6b2,
     type: 2}
   m_PrefabInternal: {fileID: 1037624242}
+--- !u!1 &1040655794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1291002802073952, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1040655795}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_FingerB_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1040655795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4783710088226358, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1040655794}
+  m_LocalRotation: {x: 0.025972866, y: 0.034900386, z: -0.5965803, w: 0.8013734}
+  m_LocalPosition: {x: -0.83134484, y: 0.4361505, z: 0.07571215}
+  m_LocalScale: {x: 1.0000004, y: 1, z: 0.9999999}
+  m_Children:
+  - {fileID: 1141269714}
+  m_Father: {fileID: 1667508346}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1040728725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 468370, guid: b91d607ee88cbd84d83fd6dca90b1338,
@@ -29747,6 +31449,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 476920, guid: a2fdfebba1c706e41b0fa8a819b914e9,
     type: 2}
   m_PrefabInternal: {fileID: 1065983767}
+--- !u!1 &1066314337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1576148101651726, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1066314338}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Toe1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1066314338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4746742447246948, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1066314337}
+  m_LocalRotation: {x: 0.051500216, y: 0.051500197, z: -0.70522887, w: 0.70522887}
+  m_LocalPosition: {x: -0.2643672, y: 0.33784246, z: 0.04185038}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1172625991}
+  m_Father: {fileID: 400567781}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1069066760
 Prefab:
   m_ObjectHideFlags: 0
@@ -29818,6 +31551,181 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 416180, guid: b2422d159a2884643ba9d94d7a1c57de,
     type: 2}
   m_PrefabInternal: {fileID: 1069066760}
+--- !u!1 &1070294094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1203408265746550, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1070294095}
+  - component: {fileID: 1070294096}
+  m_Layer: 0
+  m_Name: SK_DesertDragon 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1070294095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4672168683227194, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070294094}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 534760740}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &1070294096
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 137591907395090060, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070294094}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 162124f8d6f049741a99de0dfd54f258, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 957eb7d6115159a469b3b55b6161a27f, type: 3}
+  m_Bones:
+  - {fileID: 1853780105}
+  - {fileID: 1329433628}
+  - {fileID: 1172042228}
+  - {fileID: 1406423189}
+  - {fileID: 1235034100}
+  - {fileID: 404904411}
+  - {fileID: 1422412336}
+  - {fileID: 1924992466}
+  - {fileID: 1639324423}
+  - {fileID: 765212484}
+  - {fileID: 918684212}
+  - {fileID: 1808734948}
+  - {fileID: 274433978}
+  - {fileID: 662148687}
+  - {fileID: 16491885}
+  - {fileID: 673867954}
+  - {fileID: 1311717016}
+  - {fileID: 1378791590}
+  - {fileID: 993159546}
+  - {fileID: 1317346504}
+  - {fileID: 764813671}
+  - {fileID: 7152402}
+  - {fileID: 1412710097}
+  - {fileID: 2012385372}
+  - {fileID: 821273775}
+  - {fileID: 194765518}
+  - {fileID: 1095521569}
+  - {fileID: 1470241936}
+  - {fileID: 108508293}
+  - {fileID: 436867815}
+  - {fileID: 724024289}
+  - {fileID: 1252222186}
+  - {fileID: 730266856}
+  - {fileID: 1612325075}
+  - {fileID: 335430511}
+  - {fileID: 776593832}
+  - {fileID: 531275682}
+  - {fileID: 1172753958}
+  - {fileID: 52938158}
+  - {fileID: 1403805645}
+  - {fileID: 287930360}
+  - {fileID: 1122016497}
+  - {fileID: 1505829712}
+  - {fileID: 99149284}
+  - {fileID: 1280571699}
+  - {fileID: 1770931850}
+  - {fileID: 426288035}
+  - {fileID: 298522413}
+  - {fileID: 1395579601}
+  - {fileID: 2047951095}
+  - {fileID: 448945467}
+  - {fileID: 1667508346}
+  - {fileID: 1690942440}
+  - {fileID: 329151914}
+  - {fileID: 573275802}
+  - {fileID: 1040655795}
+  - {fileID: 1141269714}
+  - {fileID: 1784380415}
+  - {fileID: 512771096}
+  - {fileID: 858339922}
+  - {fileID: 1413437846}
+  - {fileID: 1109836601}
+  - {fileID: 423003232}
+  - {fileID: 1576485084}
+  - {fileID: 400567781}
+  - {fileID: 1949695951}
+  - {fileID: 1926679153}
+  - {fileID: 1066314338}
+  - {fileID: 1172625991}
+  - {fileID: 110108331}
+  - {fileID: 1182888579}
+  - {fileID: 1092051172}
+  - {fileID: 728570702}
+  - {fileID: 985619918}
+  - {fileID: 1506532185}
+  - {fileID: 1185257150}
+  - {fileID: 470923846}
+  - {fileID: 1455864359}
+  - {fileID: 857054342}
+  - {fileID: 1646725420}
+  - {fileID: 1235253165}
+  - {fileID: 1153707608}
+  - {fileID: 1790405249}
+  - {fileID: 334957433}
+  - {fileID: 1995399388}
+  - {fileID: 1673116822}
+  - {fileID: 619424333}
+  - {fileID: 280934519}
+  - {fileID: 1742623675}
+  - {fileID: 997166932}
+  - {fileID: 1818952013}
+  - {fileID: 2110871768}
+  - {fileID: 1029449267}
+  - {fileID: 1498529859}
+  - {fileID: 423693645}
+  - {fileID: 930014331}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1853780105}
+  m_AABB:
+    m_Center: {x: 0, y: 1.9351518, z: 4.787563}
+    m_Extent: {x: 4.5375166, y: 6.4799643, z: 5.239302}
+  m_DirtyAABB: 0
 --- !u!1001 &1070568349
 Prefab:
   m_ObjectHideFlags: 0
@@ -30486,6 +32394,37 @@ Transform:
   m_Father: {fileID: 813264334}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1092051171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1552390535893996, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1092051172}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Toe3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1092051172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4389388281245926, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1092051171}
+  m_LocalRotation: {x: 0.50233346, y: 0.5367586, z: 0.494959, w: -0.46321362}
+  m_LocalPosition: {x: -0.23140176, y: -0.020956865, z: -0.25184578}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_Children:
+  - {fileID: 728570702}
+  m_Father: {fileID: 400567781}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1092304271
 Prefab:
   m_ObjectHideFlags: 0
@@ -30545,6 +32484,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 454216, guid: 132d1de61c7a2714f9cff49ced16356d,
     type: 2}
   m_PrefabInternal: {fileID: 1092304271}
+--- !u!1 &1095521568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1914727122321472, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1095521569}
+  m_Layer: 0
+  m_Name: DesertDragon_ R UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1095521569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4626238035819750, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1095521568}
+  m_LocalRotation: {x: 0.62368894, y: 0.021198165, z: 0.045751277, w: 0.7800446}
+  m_LocalPosition: {x: -0.58883786, y: 0.00000008369816, z: 0.00000016350869}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1470241936}
+  m_Father: {fileID: 194765518}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1100391613
 Prefab:
   m_ObjectHideFlags: 0
@@ -30678,6 +32648,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2422d159a2884643ba9d94d7a1c57de, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1109836600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1216405130758026, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1109836601}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1109836601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4208878106547960, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1109836600}
+  m_LocalRotation: {x: 0.819075, y: -0.49680862, z: 0.2117531, w: 0.1935408}
+  m_LocalPosition: {x: -0.0000010716165, y: -0.000001024741, z: -0.6033566}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 423003232}
+  m_Father: {fileID: 1172042228}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1111956395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 407540, guid: ae6bdfcc214d3724793d88728ea87a2b,
@@ -30987,6 +32988,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 1120010850}
+--- !u!1 &1122016496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1956210215786520, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1122016497}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_FingerA_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1122016497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4599407874204298, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1122016496}
+  m_LocalRotation: {x: 0.0000051122565, y: -0.00000005987977, z: 0.31534126, w: 0.94897836}
+  m_LocalPosition: {x: -2.026764, y: 0.0000011300148, z: -0.00000061609825}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
+  m_Children:
+  - {fileID: 1505829712}
+  m_Father: {fileID: 287930360}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1123430191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 477614, guid: 59c46909f95e9a94fae7eea9a6ddc7d9,
@@ -31325,6 +33357,37 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 805441140}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1141269713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1856314738756286, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141269714}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_FingerB_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1141269714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4284774432706398, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1141269713}
+  m_LocalRotation: {x: -0.000004614709, y: 0.000013731897, z: -0.30362335, w: 0.95279217}
+  m_LocalPosition: {x: -1.6339091, y: 0.000000026508749, z: 0.000000051203088}
+  m_LocalScale: {x: 0.99999994, y: 1.0000004, z: 1}
+  m_Children:
+  - {fileID: 1784380415}
+  m_Father: {fileID: 1040655795}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1144644191
@@ -31864,6 +33927,37 @@ Transform:
   m_Father: {fileID: 1328696206}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1153707607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1349716539080670, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153707608}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Toe2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1153707608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4947891238896192, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1153707607}
+  m_LocalRotation: {x: 0.08034057, y: 0.080340624, z: -0.7025279, w: 0.7025278}
+  m_LocalPosition: {x: -0.21320748, y: 0.30108827, z: 0.19414084}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1790405249}
+  m_Father: {fileID: 470923846}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1156826214 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481256, guid: 39a8a7573df1520478f9921a9e7dd1c9,
@@ -32198,6 +34292,101 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1170383810}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1172042227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1799802336001742, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1172042228}
+  m_Layer: 0
+  m_Name: DesertDragon_ Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1172042228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4204603168953612, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1172042227}
+  m_LocalRotation: {x: -0.5486558, y: 0.44606712, z: 0.4460672, w: 0.5486574}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 985619918}
+  - {fileID: 1109836601}
+  - {fileID: 1406423189}
+  - {fileID: 1673116822}
+  m_Father: {fileID: 1329433628}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1172625990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1367838602280686, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1172625991}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Toe11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1172625991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4482821568093528, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1172625990}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.25285643, y: -0.000000008423832, z: 0.0000000022360434}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1066314338}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1172753957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1805507701782006, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1172753958}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_Arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1172753958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4455738598631574, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1172753957}
+  m_LocalRotation: {x: 0.2697322, y: -0.094691865, z: 0.83957475, w: 0.46194398}
+  m_LocalPosition: {x: -0.73306, y: -0.68085915, z: -0.4440021}
+  m_LocalScale: {x: 0.99999994, y: 1.0000004, z: 0.99999994}
+  m_Children:
+  - {fileID: 52938158}
+  m_Father: {fileID: 1235034100}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1173975847
 Prefab:
   m_ObjectHideFlags: 0
@@ -32376,6 +34565,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4860981425047504, guid: 0c74eb04651a2674cbe54464abe2e650,
     type: 2}
   m_PrefabInternal: {fileID: 487537723}
+--- !u!1 &1182888578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1685807752581254, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1182888579}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Toe21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1182888579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4029400533559464, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182888578}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.26465693, y: -0.0000000030333038, z: 0.000000007744475}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 110108331}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1183059292
 Prefab:
   m_ObjectHideFlags: 0
@@ -32563,6 +34782,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc229dfc40d9ae47be77c071dfa4e08, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1185257149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1716727828995412, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1185257150}
+  m_Layer: 0
+  m_Name: DesertDragon_ L HorseLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1185257150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4266105421409468, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1185257149}
+  m_LocalRotation: {x: -0.0000002116263, y: -0.000000007986268, z: -0.53133094, w: 0.84716433}
+  m_LocalPosition: {x: -0.94333035, y: -0.00000017313182, z: -0.00000005018341}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 1}
+  m_Children:
+  - {fileID: 470923846}
+  m_Father: {fileID: 1506532185}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1186079471
 Prefab:
   m_ObjectHideFlags: 0
@@ -34248,6 +36498,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 498126, guid: f19c957688bdf7849aa321d60569a6b2,
     type: 2}
   m_PrefabInternal: {fileID: 1233397785}
+--- !u!1 &1235034099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1384922681053830, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235034100}
+  m_Layer: 0
+  m_Name: DesertDragon_ Spine1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1235034100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4630870085399504, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235034099}
+  m_LocalRotation: {x: -0.000000085596696, y: -0.000000302429, z: 0.047485266, w: 0.998872}
+  m_LocalPosition: {x: -1.4388261, y: -0.0011406379, z: -0.0000000029910991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 662148687}
+  - {fileID: 404904411}
+  - {fileID: 194765518}
+  - {fileID: 2047951095}
+  - {fileID: 1172753958}
+  m_Father: {fileID: 1406423189}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1235253164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1292949198063476, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235253165}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Toe11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1235253165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4678122285118416, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235253164}
+  m_LocalRotation: {x: 0, y: 0, z: -3.4694467e-18, w: 1}
+  m_LocalPosition: {x: -0.2528564, y: -0.000000007243164, z: -0.000000024808324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1646725420}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1235831956
 Prefab:
   m_ObjectHideFlags: 0
@@ -34615,6 +36930,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47e037f2e2bc17c4680f75489a074e1e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1252222185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1580083538458486, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1252222186}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Finger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1252222186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4159753045360390, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1252222185}
+  m_LocalRotation: {x: -0.01884239, y: 0.26985985, z: 0.17597848, w: 0.9464947}
+  m_LocalPosition: {x: -0.46374887, y: -0.007286916, z: 0.2102254}
+  m_LocalScale: {x: 1, y: 1, z: 1.0000001}
+  m_Children:
+  - {fileID: 730266856}
+  m_Father: {fileID: 108508293}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1252318040
 Prefab:
   m_ObjectHideFlags: 0
@@ -35716,6 +38062,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 494586, guid: f8ed91afdf7cecd47ba5102085b88cc0,
     type: 2}
   m_PrefabInternal: {fileID: 1279989860}
+--- !u!1 &1280571698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1731766087832840, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280571699}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_FingerC_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1280571699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4650875146688430, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1280571698}
+  m_LocalRotation: {x: 0.000007247382, y: 0.000016717575, z: 0.19149375, w: 0.98149383}
+  m_LocalPosition: {x: -1.2812655, y: 0.00000040453955, z: 0.0000006532075}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
+  m_Children:
+  - {fileID: 1770931850}
+  m_Father: {fileID: 99149284}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1280826942
 Prefab:
   m_ObjectHideFlags: 0
@@ -37073,6 +39450,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 1310723260}
+--- !u!1 &1311717015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1729770383760442, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311717016}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1311717016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4030289127753522, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1311717015}
+  m_LocalRotation: {x: -0.40635735, y: 0.03594505, z: 0.23818591, w: 0.88139045}
+  m_LocalPosition: {x: -1.0605593, y: 0.000000032184808, z: -0.00000005526158}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_Children:
+  - {fileID: 1378791590}
+  - {fileID: 1317346504}
+  - {fileID: 7152402}
+  - {fileID: 2012385372}
+  m_Father: {fileID: 673867954}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1316222278
 Prefab:
   m_ObjectHideFlags: 0
@@ -37175,6 +39586,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1726941291}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1317346503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1356189388917128, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317346504}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Finger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1317346504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4554340175388692, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317346503}
+  m_LocalRotation: {x: 0.018842388, y: -0.26985985, z: 0.17597848, w: 0.9464947}
+  m_LocalPosition: {x: -0.46374887, y: -0.007286911, z: -0.21022548}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 764813671}
+  m_Father: {fileID: 1311717016}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1319801886
 Prefab:
@@ -37572,6 +40014,37 @@ Transform:
   - {fileID: 1372129625}
   m_Father: {fileID: 1889769018}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1329433627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1251123530763172, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1329433628}
+  m_Layer: 0
+  m_Name: DesertDragon_
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1329433628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4572829229371284, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1329433627}
+  m_LocalRotation: {x: 0.4330783, y: -0.43307778, z: 0.5589659, w: 0.5589668}
+  m_LocalPosition: {x: 0.000000012932784, y: 1.8479999, z: 2.258}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
+  m_Children:
+  - {fileID: 1172042228}
+  m_Father: {fileID: 1853780105}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1332340700
 Prefab:
@@ -39072,6 +41545,37 @@ MonoBehaviour:
   delay_EnemySpawn: 1.5
   numberToSpawn: 6
   enableGizmos: 1
+--- !u!1 &1378791589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1946593797741350, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1378791590}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Finger0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1378791590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4095607628943602, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1378791589}
+  m_LocalRotation: {x: 0.09316868, y: -0.65250856, z: 0.13524708, w: 0.73977053}
+  m_LocalPosition: {x: -0.15351468, y: 0.08561079, z: -0.3249906}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
+  m_Children:
+  - {fileID: 993159546}
+  m_Father: {fileID: 1311717016}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1380120043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 462612, guid: d5bde0c6c896d754bbcd0bbb743dc556,
@@ -39524,6 +42028,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 408704, guid: 0d6e5cb5406ecf648812fe2278838cf4,
     type: 2}
   m_PrefabInternal: {fileID: 1392960135}
+--- !u!1 &1395579600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1846843933781098, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1395579601}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_FingerB_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1395579601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4371554563645840, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1395579600}
+  m_LocalRotation: {x: 0.000019640045, y: 0.000004389628, z: 0.22101182, w: 0.9752711}
+  m_LocalPosition: {x: -1.4704939, y: 0.0000003257613, z: -0.00000008147025}
+  m_LocalScale: {x: 0.99999976, y: 0.9999997, z: 0.9999998}
+  m_Children: []
+  m_Father: {fileID: 298522413}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1398279367
 GameObject:
   m_ObjectHideFlags: 0
@@ -39875,6 +42409,39 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1403805644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1995246181195410, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403805645}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1403805645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4060293418041662, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1403805644}
+  m_LocalRotation: {x: 0.0000007394243, y: 0.0000030728656, z: -0.039122634, w: 0.99923444}
+  m_LocalPosition: {x: -1.4205433, y: 0.0000015107299, z: -0.0000000071081794}
+  m_LocalScale: {x: 0.9999998, y: 0.99999994, z: 0.9999999}
+  m_Children:
+  - {fileID: 287930360}
+  - {fileID: 426288035}
+  - {fileID: 99149284}
+  m_Father: {fileID: 52938158}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1404072230
 Prefab:
   m_ObjectHideFlags: 0
@@ -40101,6 +42668,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1406423188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1345502341314062, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1406423189}
+  m_Layer: 0
+  m_Name: DesertDragon_ Spine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1406423189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4779104160340606, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1406423188}
+  m_LocalRotation: {x: -0.0000020800621, y: 0.0000007963608, z: -0.010316036, w: 0.99994683}
+  m_LocalPosition: {x: -0.66861016, y: 0.053977147, z: 0.000000590608}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1235034100}
+  m_Father: {fileID: 1172042228}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1406633393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476920, guid: a2fdfebba1c706e41b0fa8a819b914e9,
@@ -40177,6 +42775,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4485790557928886, guid: 9462365560fea9046a1b5a2b34b74a38,
     type: 2}
   m_PrefabInternal: {fileID: 2132397418}
+--- !u!1 &1412710096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1635839680552346, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1412710097}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Finger21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1412710097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4436876004774166, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412710096}
+  m_LocalRotation: {x: -6.132513e-10, y: 1.4911836e-11, z: -0.024308845, w: 0.99970454}
+  m_LocalPosition: {x: -0.21700242, y: -0.000000015345613, z: -0.000000023769216}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7152402}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1413437845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1327149695109202, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413437846}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_FingerC_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1413437846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4701938958376118, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413437845}
+  m_LocalRotation: {x: -0.00003196612, y: -0.000003434859, z: -0.23491456, w: 0.97201604}
+  m_LocalPosition: {x: -1.3125845, y: 0.00000008517096, z: -0.000000098462266}
+  m_LocalScale: {x: 0.9999999, y: 0.9999998, z: 1}
+  m_Children: []
+  m_Father: {fileID: 858339922}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1414085601
 Prefab:
   m_ObjectHideFlags: 0
@@ -40927,6 +43585,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 427918, guid: f028244a47462e3449e09903dedd7955,
     type: 2}
   m_PrefabInternal: {fileID: 1422257366}
+--- !u!1 &1422412335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1540646666243590, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422412336}
+  m_Layer: 0
+  m_Name: DesertDragon_ Neck1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1422412336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4845843130621888, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422412335}
+  m_LocalRotation: {x: 0.000000014186599, y: -0.00000023801442, z: 0.047137044, w: 0.99888843}
+  m_LocalPosition: {x: -0.5712859, y: -0.00045298733, z: -0.0000000012820812}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_Children:
+  - {fileID: 1924992466}
+  m_Father: {fileID: 404904411}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1423919300
 Prefab:
   m_ObjectHideFlags: 0
@@ -42002,40 +44691,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114826563152868392, guid: faa33ea9e93ffee42943e5473eae9add,
-        type: 2}
-      propertyPath: energyBar
-      value: 
-      objectReference: {fileID: 354906974}
     - target: {fileID: 114933618764190752, guid: faa33ea9e93ffee42943e5473eae9add,
         type: 2}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 406255576}
-    - target: {fileID: 4913097894195018, guid: faa33ea9e93ffee42943e5473eae9add, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4913097894195018, guid: faa33ea9e93ffee42943e5473eae9add, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4913097894195018, guid: faa33ea9e93ffee42943e5473eae9add, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4913097894195018, guid: faa33ea9e93ffee42943e5473eae9add, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4913097894195018, guid: faa33ea9e93ffee42943e5473eae9add, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4913097894195018, guid: faa33ea9e93ffee42943e5473eae9add, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.2
-      objectReference: {fileID: 0}
+    - target: {fileID: 114826563152868392, guid: faa33ea9e93ffee42943e5473eae9add,
+        type: 2}
+      propertyPath: energyBar
+      value: 
+      objectReference: {fileID: 354906974}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faa33ea9e93ffee42943e5473eae9add, type: 2}
   m_IsPrefabAsset: 0
@@ -42170,6 +44835,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4489140927154420, guid: cdb35b1e4e9fbdf46b434c997b7fb214,
     type: 2}
   m_PrefabInternal: {fileID: 1622986501}
+--- !u!1 &1455864358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1064436820257274, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455864359}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Toe0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1455864359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4590213391520592, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455864358}
+  m_LocalRotation: {x: -0.30256754, y: -0.30256742, z: -0.6391033, w: 0.63910323}
+  m_LocalPosition: {x: -0.25273275, y: 0.22960925, z: -0.2517829}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children:
+  - {fileID: 857054342}
+  m_Father: {fileID: 470923846}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1456501277
 Prefab:
   m_ObjectHideFlags: 0
@@ -42714,6 +45410,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4485790557928886, guid: 9462365560fea9046a1b5a2b34b74a38,
     type: 2}
   m_PrefabInternal: {fileID: 1470010288}
+--- !u!1 &1470241935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1826708667626294, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470241936}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1470241936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4529112334618766, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1470241935}
+  m_LocalRotation: {x: -0.000000032312165, y: 0.000000051088062, z: 0.3863176, w: 0.92236584}
+  m_LocalPosition: {x: -1.2935007, y: -0.000000045820304, z: 0.000000003059843}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children:
+  - {fileID: 108508293}
+  m_Father: {fileID: 1095521569}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1470705465
 Prefab:
   m_ObjectHideFlags: 0
@@ -43374,6 +46101,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4429151643904136, guid: e6f6edd3e7cf4b343b1ae8a0eccf3342,
     type: 2}
   m_PrefabInternal: {fileID: 1497031887}
+--- !u!1 &1498529858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1527169972681540, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498529859}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1498529859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4528676597993148, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498529858}
+  m_LocalRotation: {x: 0.000000023987742, y: 0.00000023809262, z: -0.014653466, w: 0.99989265}
+  m_LocalPosition: {x: -0.53857, y: -0.00042513903, z: -0.0000000011815662}
+  m_LocalScale: {x: 0.9999999, y: 0.99999994, z: 1}
+  m_Children:
+  - {fileID: 423693645}
+  m_Father: {fileID: 1029449267}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1498685665
 Prefab:
   m_ObjectHideFlags: 0
@@ -43674,6 +46432,36 @@ Transform:
   m_Father: {fileID: 1327793103}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1505829711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1373302527174616, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1505829712}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_FingerA_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1505829712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4688895850930406, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505829711}
+  m_LocalRotation: {x: 0.000007182636, y: 0.000020439747, z: 0.30858696, w: 0.9511962}
+  m_LocalPosition: {x: -1.9561994, y: 0.00006835081, z: -0.0000020133534}
+  m_LocalScale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+  m_Children: []
+  m_Father: {fileID: 1122016497}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1505855823
 Prefab:
   m_ObjectHideFlags: 0
@@ -43720,6 +46508,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfe5d370eb7adbd43bead7f2e91204b1, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1506532184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1368760218599716, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1506532185}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1506532185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4955270105497028, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1506532184}
+  m_LocalRotation: {x: 0.00000014667758, y: -0.00000003086854, z: 0.6534191, w: 0.75699645}
+  m_LocalPosition: {x: -1.3011416, y: -0.00000021114934, z: 0.00000021170538}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1185257150}
+  m_Father: {fileID: 985619918}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1506682929
 Prefab:
   m_ObjectHideFlags: 0
@@ -45169,6 +47988,129 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 205764237efb02645a424381e40a147d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1555727095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1467671694735378, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1555727100}
+  - component: {fileID: 1555727099}
+  - component: {fileID: 1555727098}
+  - component: {fileID: 1555727097}
+  - component: {fileID: 1555727096}
+  m_Layer: 0
+  m_Name: Dragon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1555727096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114602207883429822, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555727095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b14c093f53b7e54bbd7b14e80b7922e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeaponConfig: {fileID: 11400000, guid: 694c70fbccaa056439f6f1e18dd1a088,
+    type: 2}
+  isProjectileWeapon: 0
+  baseDamage: 10
+  criticalHitChance: 0.1
+  criticalHitMultiplier: 1.25
+  criticalHitParticle: {fileID: 0}
+--- !u!114 &1555727097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114325144233874040, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555727095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 353f1d90b65add34181af904578f61d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseRadious: 6
+  waypointTolerance: 1.5
+  patrolPath: {fileID: 372633893}
+  waypointDwellTimeMin: 2
+  waypointDwellTimeMax: 5
+  state: 0
+--- !u!114 &1555727098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114703397710285492, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555727095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eca70b7e2f16c446a13cd5d3a4e74db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealthPoint: 100
+  deathVanishSeconds: 2
+  healthBar: {fileID: 0}
+  damageSounds: []
+  deathSounds: []
+--- !u!114 &1555727099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114037823872989540, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555727095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038b59b4f3c9e3e439de8ae52a06dc75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audoiSourceSpatialBlend: 0.5
+  animatorController: {fileID: 9100000, guid: 32fa91e36b430f54aadf6d3ba7cb6824, type: 2}
+  animatorOverrideController: {fileID: 22100000, guid: 161ebf5eb9279114fbb5e2a946f42a25,
+    type: 2}
+  characterAvatar: {fileID: 9000000, guid: 957eb7d6115159a469b3b55b6161a27f, type: 3}
+  animForwardCap: 0.518
+  colliderCenter: {x: 0, y: 0.8, z: 0}
+  capsuleRadius: 0.4
+  capsuleHeight: 2
+  moveSpeedMultiplier: 4
+  moveThreshold: 1
+  movingTurnSpeed: 360
+  stationaryTurnSpeed: 180
+  runCycleLegOffset: 0.2
+  animSpeedMultiplier: 1.2
+  speed: 1
+  angularSpeed: 120
+  acceleration: 8
+  stoppingDistance: 1.3
+  obstcleAvoidanceRadius: 0.1
+  enemyType: 6
+--- !u!4 &1555727100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4575417840519072, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555727095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 192.55, y: 0.88, z: -103.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 534760740}
+  - {fileID: 1745532579}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1556350158
 Prefab:
   m_ObjectHideFlags: 0
@@ -45721,6 +48663,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 457138, guid: f7450267c43948b499d908a4688fa2cb,
     type: 2}
   m_PrefabInternal: {fileID: 1572825442}
+--- !u!1 &1576485083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1981083783867914, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1576485084}
+  m_Layer: 0
+  m_Name: DesertDragon_ R HorseLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1576485084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4370336355031594, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1576485083}
+  m_LocalRotation: {x: 0.00000010680067, y: 0.0000000033737746, z: -0.53133094, w: 0.84716433}
+  m_LocalPosition: {x: -0.9433306, y: -0.00000007944184, z: 0.000000117621994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400567781}
+  m_Father: {fileID: 423003232}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1577929504 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4485790557928886, guid: 9462365560fea9046a1b5a2b34b74a38,
@@ -46545,6 +49518,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 402012, guid: ab6ea215bbf83ba4b83fb52db15d1cc3,
     type: 2}
   m_PrefabInternal: {fileID: 104455153}
+--- !u!1 &1612325074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1742746396783010, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1612325075}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Finger2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1612325075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4117423613420750, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1612325074}
+  m_LocalRotation: {x: 0.021669205, y: 0.0076982086, z: 0.16319188, w: 0.98632634}
+  m_LocalPosition: {x: -0.54069006, y: -0.0047067655, z: 0.0147037655}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 335430511}
+  m_Father: {fileID: 108508293}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1614335941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 450442, guid: 6aab6a688220bd24fb3ed0efc8a33722,
@@ -47171,6 +50175,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 408704, guid: 0d6e5cb5406ecf648812fe2278838cf4,
     type: 2}
   m_PrefabInternal: {fileID: 1636764920}
+--- !u!1 &1639324422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1359093415390172, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1639324423}
+  m_Layer: 0
+  m_Name: DesertDragon_ Ponytail1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1639324423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4030269834392838, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1639324422}
+  m_LocalRotation: {x: -0.0000038349094, y: 0.00000086445766, z: -0.4639179, w: 0.8858782}
+  m_LocalPosition: {x: -0.09994529, y: 0.21944329, z: -0.00000026756}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_Children:
+  - {fileID: 765212484}
+  m_Father: {fileID: 1924992466}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1641798807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 456230, guid: cfe5d370eb7adbd43bead7f2e91204b1,
@@ -47236,6 +50271,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 476920, guid: a2fdfebba1c706e41b0fa8a819b914e9,
     type: 2}
   m_PrefabInternal: {fileID: 416325041}
+--- !u!1 &1646725419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1827159003262308, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1646725420}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Toe1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1646725420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4920790346663572, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1646725419}
+  m_LocalRotation: {x: -0.05150024, y: -0.051500175, z: -0.70522887, w: 0.70522887}
+  m_LocalPosition: {x: -0.2643672, y: 0.33784246, z: -0.041850396}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
+  m_Children:
+  - {fileID: 1235253165}
+  m_Father: {fileID: 470923846}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1647168050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 456230, guid: cfe5d370eb7adbd43bead7f2e91204b1,
@@ -48127,6 +51193,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
     type: 2}
   m_PrefabInternal: {fileID: 1666164891}
+--- !u!1 &1667508345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1526098728068860, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1667508346}
+  - component: {fileID: 1667508347}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1667508346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4869139228529020, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667508345}
+  m_LocalRotation: {x: -0.0000006009438, y: 0.0000029589871, z: 0.03912239, w: 0.99923444}
+  m_LocalPosition: {x: -1.4205432, y: -0.00000055158984, z: -0.000000024573598}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  m_Children:
+  - {fileID: 1690942440}
+  - {fileID: 1040655795}
+  - {fileID: 512771096}
+  m_Father: {fileID: 448945467}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1667508347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114470573419082282, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667508345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23be890fdae8fd547b7b9f332240082a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1668397756
 GameObject:
   m_ObjectHideFlags: 0
@@ -48312,6 +51424,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 1672934549}
+--- !u!1 &1673116821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1448619891507760, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1673116822}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1673116822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4102437186999276, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673116821}
+  m_LocalRotation: {x: 0.00000079862696, y: -0.000000714321, z: 0.99946606, w: -0.032674633}
+  m_LocalPosition: {x: 0.45993286, y: 0.076998755, z: 0.00000012084199}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children:
+  - {fileID: 619424333}
+  m_Father: {fileID: 1172042228}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1680796109
 Prefab:
   m_ObjectHideFlags: 0
@@ -48817,7 +51960,7 @@ Transform:
   m_LocalPosition: {x: 69.802, y: -0.012994647, z: 16.775}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2110362526}
+  - {fileID: 917355159}
   m_Father: {fileID: 232498576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 22.047, y: -88.546005, z: 0.546}
@@ -49071,6 +52214,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 1689662622}
+--- !u!1 &1690942439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1537472306428538, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1690942440}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_FingerA_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1690942440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4356892521034968, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690942439}
+  m_LocalRotation: {x: 0.031129802, y: 0.033897758, z: -0.28400224, w: 0.95771843}
+  m_LocalPosition: {x: -1.0382816, y: 0.01880063, z: -0.0000019369677}
+  m_LocalScale: {x: 0.9999998, y: 1, z: 1}
+  m_Children:
+  - {fileID: 329151914}
+  m_Father: {fileID: 1667508346}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1691050873
 Prefab:
   m_ObjectHideFlags: 0
@@ -50694,6 +53868,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 462612, guid: d5bde0c6c896d754bbcd0bbb743dc556,
     type: 2}
   m_PrefabInternal: {fileID: 1741655477}
+--- !u!1 &1742623674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1319604368617256, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1742623675}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1742623675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4053650621944384, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1742623674}
+  m_LocalRotation: {x: -5.010606e-10, y: 0.000000059616426, z: -0.0131797055, w: 0.99991316}
+  m_LocalPosition: {x: -0.46660334, y: -0.0004064348, z: -0.0000000011116101}
+  m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 1}
+  m_Children:
+  - {fileID: 997166932}
+  m_Father: {fileID: 280934519}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743115365
 GameObject:
   m_ObjectHideFlags: 0
@@ -50856,6 +54061,118 @@ Transform:
   m_Father: {fileID: 1726941291}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1745532578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1862946920208366, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1745532579}
+  - component: {fileID: 1745532583}
+  - component: {fileID: 1745532582}
+  - component: {fileID: 1745532581}
+  - component: {fileID: 1745532580}
+  m_Layer: 0
+  m_Name: Enemy Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1745532579
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224655868501838032, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745532578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 612134447}
+  m_Father: {fileID: 1555727100}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1745532580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114483976295798050, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745532578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1946e1c1bae1c34ba2666ebb3463952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1745532581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114460843542195644, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745532578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1745532582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114236016209804766, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745532578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1745532583
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 223025158955501588, guid: 6a6e1162c21205d4ca07b49b5d11a3ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745532578}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1001 &1751595975
 Prefab:
   m_ObjectHideFlags: 0
@@ -51271,6 +54588,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 489410, guid: d9990814fad01bc40982daa055540d5a,
     type: 2}
   m_PrefabInternal: {fileID: 215576647}
+--- !u!1 &1770931849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1287965149898560, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770931850}
+  m_Layer: 0
+  m_Name: DesertDragon_WingR_FingerC_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1770931850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4735535466619194, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770931849}
+  m_LocalRotation: {x: 0.00003197532, y: -0.0000035552703, z: 0.23491475, w: 0.972016}
+  m_LocalPosition: {x: -1.3125851, y: -0.000000663157, z: 0.00000023605485}
+  m_LocalScale: {x: 0.99999976, y: 0.9999998, z: 0.9999999}
+  m_Children: []
+  m_Father: {fileID: 1280571699}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1781661423
 Prefab:
   m_ObjectHideFlags: 0
@@ -51465,6 +54812,36 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b91d607ee88cbd84d83fd6dca90b1338, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1784380414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1617318483564812, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1784380415}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_FingerB_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1784380415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4893329530095940, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1784380414}
+  m_LocalRotation: {x: -0.00001969636, y: 0.0000047690874, z: -0.22101189, w: 0.9752711}
+  m_LocalPosition: {x: -1.4704944, y: 0.000000047170595, z: 0.00000027949844}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1141269714}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1784839336
 Prefab:
   m_ObjectHideFlags: 0
@@ -51709,6 +55086,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 476920, guid: a2fdfebba1c706e41b0fa8a819b914e9,
     type: 2}
   m_PrefabInternal: {fileID: 13284680}
+--- !u!1 &1790405248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1636683240859152, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790405249}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Toe21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790405249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4801210038973496, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790405248}
+  m_LocalRotation: {x: 1.3877787e-17, y: -4.8148243e-35, z: -3.4694467e-18, w: 1}
+  m_LocalPosition: {x: -0.264657, y: 0.00000001108994, z: 0.00000005730935}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153707608}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1790650636
 Prefab:
   m_ObjectHideFlags: 0
@@ -56621,6 +60028,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4489140927154420, guid: cdb35b1e4e9fbdf46b434c997b7fb214,
     type: 2}
   m_PrefabInternal: {fileID: 1804644729}
+--- !u!1 &1808734947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1290490719485588, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1808734948}
+  m_Layer: 0
+  m_Name: DesertDragon_Tongue_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1808734948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4824812346631704, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1808734947}
+  m_LocalRotation: {x: -2.1567369e-10, y: -6.188678e-12, z: 0.02868283, w: 0.99958855}
+  m_LocalPosition: {x: -0.19747268, y: -0.000032926677, z: -3.400641e-12}
+  m_LocalScale: {x: 1.0000002, y: 1.0000002, z: 1}
+  m_Children:
+  - {fileID: 274433978}
+  m_Father: {fileID: 918684212}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1809533759
 Prefab:
   m_ObjectHideFlags: 0
@@ -57155,6 +60593,37 @@ MonoBehaviour:
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
   enemyType: 0
+--- !u!1 &1818952012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1012029313483444, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818952013}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1818952013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4834261395015072, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1818952012}
+  m_LocalRotation: {x: -0.000000005422281, y: 0.00000011925103, z: -0.0071387, w: 0.99997455}
+  m_LocalPosition: {x: -0.54641294, y: -0.00040421705, z: -0.000000001101459}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2110871768}
+  m_Father: {fileID: 997166932}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1820974814
 Prefab:
   m_ObjectHideFlags: 0
@@ -58295,6 +61764,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 498126, guid: f19c957688bdf7849aa321d60569a6b2,
     type: 2}
   m_PrefabInternal: {fileID: 1853079244}
+--- !u!1 &1853780104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1734269609999544, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853780105}
+  m_Layer: 0
+  m_Name: root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1853780105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4521862184007014, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853780104}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1329433628}
+  m_Father: {fileID: 534760740}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1854450944
 GameObject:
   m_ObjectHideFlags: 0
@@ -60544,6 +64044,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2fdfebba1c706e41b0fa8a819b914e9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1924992465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1208593888334342, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1924992466}
+  m_Layer: 0
+  m_Name: DesertDragon_ Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1924992466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4752719107130606, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1924992465}
+  m_LocalRotation: {x: 0.000000118534096, y: -0.00000028721558, z: 0.10442494, w: 0.9945328}
+  m_LocalPosition: {x: -0.5713288, y: 0.00000007113168, z: -3.8809936e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1639324423}
+  m_Father: {fileID: 1422412336}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1925769008
 Prefab:
   m_ObjectHideFlags: 0
@@ -60719,6 +64250,36 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1926679152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1163717232198516, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1926679153}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Toe01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1926679153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4349635729260544, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1926679152}
+  m_LocalRotation: {x: 0, y: 0, z: 1.3877787e-17, w: 1}
+  m_LocalPosition: {x: -0.22502893, y: -0.000000018970383, z: 0.0000000883594}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1949695951}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1927285556
 Prefab:
   m_ObjectHideFlags: 0
@@ -61233,6 +64794,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 1948518926}
+--- !u!1 &1949695950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1503130602831034, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1949695951}
+  m_Layer: 0
+  m_Name: DesertDragon_ R Toe0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1949695951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4409876418747082, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949695950}
+  m_LocalRotation: {x: 0.30256748, y: 0.30256742, z: -0.6391033, w: 0.6391032}
+  m_LocalPosition: {x: -0.25273275, y: 0.22960931, z: 0.2517829}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1926679153}
+  m_Father: {fileID: 400567781}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1950143681
 Prefab:
   m_ObjectHideFlags: 0
@@ -62331,6 +65923,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4449663648426590, guid: dd42c7c77a575b443a50acb06a681cb7,
     type: 2}
   m_PrefabInternal: {fileID: 1994487313}
+--- !u!1 &1995399387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1259467854871320, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995399388}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Toe31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1995399388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4516490550905750, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995399387}
+  m_LocalRotation: {x: 1.7347234e-18, y: 2.4074121e-35, z: 1.3877787e-17, w: 1}
+  m_LocalPosition: {x: -0.13359049, y: -0.000000007394851, z: 0.000000017317777}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 334957433}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1997497701
 Prefab:
   m_ObjectHideFlags: 0
@@ -62841,6 +66463,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 120fb479ca3edf9429dfd758ab5e698a, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &2012385371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1185045638582194, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2012385372}
+  m_Layer: 0
+  m_Name: DesertDragon_ L Finger3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2012385372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4742215488312112, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2012385371}
+  m_LocalRotation: {x: -0.12057261, y: 0.2621464, z: 0.16279474, w: 0.943525}
+  m_LocalPosition: {x: -0.43898222, y: 0.06380292, z: 0.22001275}
+  m_LocalScale: {x: 1, y: 1, z: 1.0000001}
+  m_Children:
+  - {fileID: 821273775}
+  m_Father: {fileID: 1311717016}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2014182541
 Prefab:
   m_ObjectHideFlags: 0
@@ -64573,6 +68226,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4429151643904136, guid: e6f6edd3e7cf4b343b1ae8a0eccf3342,
     type: 2}
   m_PrefabInternal: {fileID: 2047585191}
+--- !u!1 &2047951094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1307057173135586, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047951095}
+  m_Layer: 0
+  m_Name: DesertDragon_WingL_Arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047951095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4759156516392654, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2047951094}
+  m_LocalRotation: {x: 0.4619439, y: 0.8395751, z: -0.094690695, w: 0.26973158}
+  m_LocalPosition: {x: -0.7330598, y: -0.6808606, z: 0.44440913}
+  m_LocalScale: {x: 1.0000004, y: 1, z: 0.99999934}
+  m_Children:
+  - {fileID: 448945467}
+  m_Father: {fileID: 1235034100}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2049328093
 Prefab:
   m_ObjectHideFlags: 0
@@ -65849,78 +69533,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 487960, guid: 62180f02a86555049a8b4bc3fe456b38,
     type: 2}
   m_PrefabInternal: {fileID: 2105650875}
---- !u!1 &2110362525
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2110362526}
-  - component: {fileID: 2110362528}
-  - component: {fileID: 2110362527}
-  m_Layer: 0
-  m_Name: Dirt Old Hoe(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2110362526
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2110362525}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1688273088}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &2110362527
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2110362525}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 0754ff2960a855b4b9535c598af02f66, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &2110362528
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2110362525}
-  m_Mesh: {fileID: 4300002, guid: eee292b300b8dfa41be00641ff83b2a1, type: 3}
 --- !u!1001 &2110697807
 Prefab:
   m_ObjectHideFlags: 0
@@ -66059,6 +69671,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 2110768704}
+--- !u!1 &2110871767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1375351139453754, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2110871768}
+  m_Layer: 0
+  m_Name: DesertDragon_ Tail6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2110871768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4470430942839064, guid: 8a96a0da9f3508047aa9522dcd25335f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110871767}
+  m_LocalRotation: {x: -8.27961e-10, y: 0.00000011923002, z: -0.01295685, w: 0.9999161}
+  m_LocalPosition: {x: -0.50753015, y: -0.0004642804, z: -0.0000000012685865}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1029449267}
+  m_Father: {fileID: 1818952013}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2115385135
 Prefab:
   m_ObjectHideFlags: 0
@@ -66114,48 +69757,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 2115385135}
---- !u!1001 &2115930257
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 196.62943
-      objectReference: {fileID: 0}
-    - target: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -76.31029
-      objectReference: {fileID: 0}
-    - target: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4462804779423924, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6a6e1162c21205d4ca07b49b5d11a3ad, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &2117370878
 GameObject:
   m_ObjectHideFlags: 0

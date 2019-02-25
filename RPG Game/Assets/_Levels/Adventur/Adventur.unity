@@ -111632,13 +111632,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca194da241f26649a974da1fe41f62e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
-  enemyType: 0
-  spawningPositions: []
-  delay_GroupSpawn: 0
-  delay_EnemySpawn: 0
-  numberToSpawn: 0
-  enableGizmos: 0
+  enemyPrefab: {fileID: 114463412887152890, guid: e6f6edd3e7cf4b343b1ae8a0eccf3342,
+    type: 2}
+  enemyType: 4
+  spawningPositions:
+  - {fileID: 1882084827}
+  - {fileID: 1057263289}
+  - {fileID: 1799615128}
+  - {fileID: 1798099627}
+  - {fileID: 149479868}
+  - {fileID: 1178749478}
+  - {fileID: 1559986827}
+  delay_GroupSpawn: 10
+  delay_EnemySpawn: 1.5
+  numberToSpawn: 6
+  enableGizmos: 1
 --- !u!1 &2099826580
 GameObject:
   m_ObjectHideFlags: 0
