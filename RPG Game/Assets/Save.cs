@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Save : MonoBehaviour{
 
-	public void SavePosition()
+public class Save : MonoBehaviour{
+ 
+    public void SavePosition()
     {
         PlayerPrefs.SetFloat("PlayerX", transform.position.x);
         PlayerPrefs.SetFloat("PlayerY", transform.position.y);
         PlayerPrefs.SetFloat("PlayerZ", transform.position.z);
+
+    
 
     }
     public void LoadPosition()
@@ -17,6 +20,7 @@ public class Save : MonoBehaviour{
         float y = PlayerPrefs.GetFloat("PlayerY");
         float z = PlayerPrefs.GetFloat("PlayerZ");
 
-        transform.position = new Vector3 (x, y, z);
+        transform.position = new Vector3(x, y, z);
+
     }
 }
