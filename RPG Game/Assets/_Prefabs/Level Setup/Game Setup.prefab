@@ -193,13 +193,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1548201425553248}
-  m_LocalRotation: {x: 0.35294047, y: -0.3536584, z: 0.14619271, w: 0.85380703}
-  m_LocalPosition: {x: 11.55, y: 17.7, z: -11.55}
+  m_LocalRotation: {x: 0.45926848, y: -0.3287422, z: 0.18789163, w: 0.8035533}
+  m_LocalPosition: {x: 5.6, y: 20.1, z: -6.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4014576768641438}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 44.918003, y: -45.000004, z: 0}
+  m_LocalEulerAnglesHint: {x: 59.5, y: -44.5, z: 0}
 --- !u!4 &4550385583833712
 Transform:
   m_ObjectHideFlags: 1
@@ -247,8 +247,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 200
+  field of view: 55
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -405,6 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07a16e0cc9836943ae1f8cba9743155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothSpeed: 6
 --- !u!114 &114062372924688010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -436,7 +437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkCursor: {fileID: 2800000, guid: b553f05834903c447859d757c25f942e, type: 3}
   enemyCursor: {fileID: 2800000, guid: b328943f476b3ad4e8c69a150b26904d, type: 3}
-  npcCursor: {fileID: 2800000, guid: 712c952ee28923243b30503c99d9d58f, type: 3}
+  npcCursor: {fileID: 2800000, guid: 099f8e555e0423c45b00838ce9b2cfd5, type: 3}
   cursorHotspot: {x: 96, y: 96}
 --- !u!114 &114178678365142988
 MonoBehaviour:
