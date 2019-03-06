@@ -123,6 +123,11 @@ namespace RPG.Characters
         }
 
 
+        public void SetPatrolPath(WaypointContainer patrolToSet)
+        {
+            patrolPath = patrolToSet;
+        }
+
         private void OnDrawGizmos()
         {
             Gizmos.color = new Color(255f, 0f, 0f, 0.5f);
