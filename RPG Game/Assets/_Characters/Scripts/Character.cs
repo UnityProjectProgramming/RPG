@@ -60,10 +60,21 @@ namespace RPG.Characters
         Animator animator;
         bool isAlive = true;
         CapsuleCollider capsuleCollider;
+        EnemyAI enemyAI;
 
         private void Awake()
         {
             AddRequierdComponents();
+        }
+
+        private void Start()
+        {
+            enemyAI = GetComponent<EnemyAI>();
+        }
+
+        public EnemyAI GetEnemyAI()
+        {
+            return enemyAI;
         }
 
         private void AddRequierdComponents()
