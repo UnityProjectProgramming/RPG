@@ -31365,6 +31365,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 616863034}
   m_Mesh: {fileID: 4300000, guid: 2ad2ca8e95f721b499b1443619925f99, type: 3}
+--- !u!1 &617320248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1553161241509694, guid: eb9c0c404de21d541bf802268ecdf37e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2009063670}
 --- !u!1 &617783607
 GameObject:
   m_ObjectHideFlags: 0
@@ -51425,20 +51430,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7202d3a1f5188a4aa2ff81f930fda72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 0}
+  dialogueManager: {fileID: 610858962}
   startDialogue:
-    NPCName: 
-    sentences: []
+    NPCName: Kery
+    sentences:
+    - "Hello There my friend\t\t"
+    - welcome to Egypt
   givingQuestDialogue:
-    NPCName: 
-    sentences: []
+    NPCName: Kery
+    sentences:
+    - I have a quest for you
   endQuestDialogue:
-    NPCName: 
-    sentences: []
-  questTypeName: 
-  currentQuests: {fileID: 0}
-  questUI: {fileID: 0}
-  questExclemenation: {fileID: 0}
+    NPCName: Kery
+    sentences:
+    - Well done
+    - you saved us , here is your reward
+  questTypeName: ThugSlayer
+  currentQuests: {fileID: 617320248}
+  questUI: {fileID: 408181911}
+  questExclemenation: {fileID: 1590261995}
 --- !u!114 &1036766606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81416,6 +81426,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1587783652}
   m_Mesh: {fileID: 4300000, guid: 2ad2ca8e95f721b499b1443619925f99, type: 3}
+--- !u!1 &1590261995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1215963952252414, guid: eed16316c7789f1458b6b466e1054bf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1036766601}
 --- !u!1 &1590334295
 GameObject:
   m_ObjectHideFlags: 0
@@ -111643,6 +111658,7 @@ MonoBehaviour:
   - {fileID: 149479868}
   - {fileID: 1178749478}
   - {fileID: 1559986827}
+  patrolPaths: []
   delay_GroupSpawn: 10
   delay_EnemySpawn: 1.5
   numberToSpawn: 6
