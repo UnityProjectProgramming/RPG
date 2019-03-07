@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] Character enemyPrefab;
     [SerializeField] EnemyType enemyType;
     [SerializeField] Transform[] spawningPositions;
+    [SerializeField] WaypointContainer[] patrolPaths;
     [SerializeField] [Tooltip("Delay in seconds")] float delay_GroupSpawn;
     [SerializeField] [Tooltip("Delay in seconds")] float delay_EnemySpawn;
     [SerializeField] int numberToSpawn;
@@ -20,6 +21,7 @@ public class Spawner : MonoBehaviour
 
     //
     int spawnedEnemies;
+
 
     private void Start()
     {
@@ -48,7 +50,14 @@ public class Spawner : MonoBehaviour
 
         for (int i = 0; i < numberToSpawn; i++)
         {
-            Instantiate(enemyPrefab, spawningPositions[i].position, spawningPositions[i].rotation);
+            Character instantiatedChar = Instantiate(enemyPrefab, spawningPositions[i].position, spawningPositions[i].rotation);
+            EnemyAI instantiatedEnemy = instantiatedChar.GetEnemyAI();
+            if (instantiatedEnemy)
+            {
+                Debug.Log("Setting patrol path for : " + instantiatedEnemy);
+                instantiatedEnemy.StopAllCoroutines();
+                instantiatedEnemy.SetPatrolPath(patrolPaths[i]);
+            }
             yield return new WaitForSeconds(delay_EnemySpawn);
         }
     }

@@ -17,7 +17,7 @@ namespace RPG.CameraUI
             player = GameObject.FindGameObjectWithTag("Player");
         }
 
-        private void FixedUpdate()
+        private void LateUpdate()
         {
             Vector3 desiredPos = player.transform.position;
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPos, smoothSpeed * Time.deltaTime);
