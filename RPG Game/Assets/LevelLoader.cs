@@ -7,11 +7,17 @@ public class LevelLoader : MonoBehaviour {
     public GameObject LoadingScreen;
     public Slider slider;
     public Text progressText;
+    private static int currentSceneIndex = 0;
 
 	public void LoadLevel( int sceneIndex)
     {
-        Debug.Log("Start Loading Level");
+        currentSceneIndex = sceneIndex;
         StartCoroutine(LoadAsynchronously(sceneIndex));
+    }
+
+    public static int GetCurrentSceneIndex()
+    {
+        return currentSceneIndex;
     }
 
     IEnumerator LoadAsynchronously (int sceneIndex)
