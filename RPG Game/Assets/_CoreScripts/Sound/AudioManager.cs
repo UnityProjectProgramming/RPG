@@ -47,4 +47,12 @@ public class AudioManager : MonoBehaviour
         s.audioSource.Play();
         // Put this anywhere FindObjOfType<AudioManager>().Play("SOUND NAME");
     }
+
+    public void StopAll()
+    {
+        foreach(Sound s in sounds)
+        {
+            s.audioSource.Stop();
+        }
+    }
 }
