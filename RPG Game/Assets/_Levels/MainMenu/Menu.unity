@@ -10630,7 +10630,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 90
+  far clip plane: 100
   field of view: 60.445568
   orthographic: 0
   orthographic size: 5
@@ -29420,12 +29420,27 @@ Prefab:
     - target: {fileID: 218952939078020190, guid: f7591e66567677c4fac8df3f8c75860d,
         type: 2}
       propertyPath: m_DetailObjectDistance
-      value: 120
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 218952939078020190, guid: f7591e66567677c4fac8df3f8c75860d,
         type: 2}
       propertyPath: m_TreeDistance
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 218952939078020190, guid: f7591e66567677c4fac8df3f8c75860d,
+        type: 2}
+      propertyPath: m_DetailObjectDensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 218952939078020190, guid: f7591e66567677c4fac8df3f8c75860d,
+        type: 2}
+      propertyPath: m_TreeCrossFadeLength
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 218952939078020190, guid: f7591e66567677c4fac8df3f8c75860d,
+        type: 2}
+      propertyPath: m_TreeMaximumFullLODCount
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7591e66567677c4fac8df3f8c75860d, type: 2}
