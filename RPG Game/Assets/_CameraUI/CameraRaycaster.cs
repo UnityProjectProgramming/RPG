@@ -77,7 +77,7 @@ namespace RPG.CameraUI
             }
             if (enemyHit && enemyHit.tag != "NPC")
             {
-                Cursor.SetCursor(enemyCursor, cursorHotspot, CursorMode.Auto);
+                Cursor.SetCursor(enemyCursor, cursorHotspot * 1.7f, CursorMode.Auto);
                 onMouseOverEnemy(enemyHit);
                 return true;
             }
