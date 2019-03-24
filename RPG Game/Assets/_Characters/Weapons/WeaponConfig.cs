@@ -15,6 +15,7 @@ namespace RPG.Characters
         [SerializeField] float maxAttackRange = 2f;
         [SerializeField] float additionalDamage = 10f;
         [SerializeField] float damageDelay = 0.5f;
+        [SerializeField] float timeToWaitBetweenHits = 2.5f;
         
 
         //public GameObject GetProjectileToUse()
@@ -26,6 +27,11 @@ namespace RPG.Characters
         //{
         //    return projectileSocket;
         //}
+
+        public float GetTimeToWaitBetweenHits()
+        {
+            return timeToWaitBetweenHits;
+        }
 
         public float GetMinTimeBetweenAnimationCycles()
         {

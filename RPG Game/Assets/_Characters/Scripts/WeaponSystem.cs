@@ -20,6 +20,8 @@ namespace RPG.Characters
         [Header("Particle Setup")]
         [SerializeField] ParticleSystem criticalHitParticle;
 
+        
+
 
         GameObject target;
         GameObject weaponObject;
@@ -101,8 +103,14 @@ namespace RPG.Characters
             {
                 //know how often to attack
                 var animationClip = currentWeaponConfig.GetAnimClip();
-                float animationClipTime = animationClip.length / character.GetAnimatorSpeedMultiplier();
-                float timeToWait = animationClipTime + currentWeaponConfig.GetMinTimeBetweenAnimationCycles();
+                float animationClipTime = animationClip.length  / character.GetAnimatorSpeedMultiplier();
+                //float timeToWait = animationClipTime + currentWeaponConfig.GetMinTimeBetweenAnimationCycles();
+                float timeToWait = currentWeaponConfig.GetTimeToWaitBetweenHits();
+                if(character.GetEnemyType() == EnemyType.None) // TODO Remove Debug Later
+                {
+                    Debug.Log("Anim Speed Multiplier: " + character.GetAnimatorSpeedMultiplier());
+                    Debug.Log("Time to Wait: " + timeToWait);
+                }
                 //if time to hit again
                 bool isTimeToHitAgain = Time.time - lastHitTime > timeToWait;
                 
