@@ -60,7 +60,6 @@ namespace RPG.Characters
             }
         }
 
-
         private void RegenEnergyBar()
         {
             if (currentEnegryPoint != 100 && currentEnegryPoint < 100)
@@ -76,7 +75,6 @@ namespace RPG.Characters
         {
             return abilities.Length;
         }
-
         public void ConsumeEnergy(float amount)
         {
             float newEnergyPoint = currentEnegryPoint - amount;
