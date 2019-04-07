@@ -106,11 +106,6 @@ namespace RPG.Characters
                 float animationClipTime = animationClip.length  / character.GetAnimatorSpeedMultiplier();
                 //float timeToWait = animationClipTime + currentWeaponConfig.GetMinTimeBetweenAnimationCycles();
                 float timeToWait = currentWeaponConfig.GetTimeToWaitBetweenHits();
-                if(character.GetEnemyType() == EnemyType.None) // TODO Remove Debug Later
-                {
-                    Debug.Log("Anim Speed Multiplier: " + character.GetAnimatorSpeedMultiplier());
-                    Debug.Log("Time to Wait: " + timeToWait);
-                }
                 //if time to hit again
                 bool isTimeToHitAgain = Time.time - lastHitTime > timeToWait;
                 
