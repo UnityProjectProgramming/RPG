@@ -104,7 +104,7 @@ namespace RPG.Characters
             animator = gameObject.AddComponent<Animator>();
             animator.runtimeAnimatorController = animatorController;
             animator.avatar = characterAvatar;
-            animator.applyRootMotion = true;
+            animator.applyRootMotion = false;
         }
 
         void Update()
