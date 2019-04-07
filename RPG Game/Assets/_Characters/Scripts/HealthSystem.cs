@@ -35,10 +35,6 @@ namespace RPG.Characters
             audioSource = GetComponent<AudioSource>();
             characterMovement = GetComponent<Character>();
             currentHealthPoint = maxHealthPoint;
-            if(characterMovement.GetEnemyType() == EnemyType.None)
-            {
-                print("Current HP: " + currentHealthPoint);
-            }
         }
 
         void Update()
