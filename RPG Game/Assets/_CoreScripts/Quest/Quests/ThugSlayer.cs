@@ -11,7 +11,7 @@ public class ThugSlayer : Quest
     {
         
         questName = "Thug Slayer";
-        questDescription = "<color=#6c6250ff>" + 0 + "</color>/ " + 2 + "Thugs Killed";
+        questDescription = "<color=#6c6250ff>" + 0 + "</color>/ " + 2 + " Thugs Killed";
         experienceAmountReward = 100;
 
         // Reward item....
