@@ -13,7 +13,6 @@ public class CombatEvents : MonoBehaviour
         if (onEnemyDeath != null)
         {
             onEnemyDeath(enemy);
-        }
-            
+        }   
     }
 }

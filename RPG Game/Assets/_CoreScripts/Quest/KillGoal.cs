@@ -31,6 +31,7 @@ public class KillGoal : Goal
         {
             this.currentAmount++;
             Debug.Log("Current Amount now : " + currentAmount);
+            UpdateQuestDescription("<color=#6c6250ff>" + currentAmount + "</color>/ " + requiredAmount + "Thugs Killed");
             Evaluate();
         }
     }

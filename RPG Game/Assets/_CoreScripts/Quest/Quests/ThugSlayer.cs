@@ -10,8 +10,8 @@ public class ThugSlayer : Quest
     void Start ()
     {
         
-        questName = "Thug Slayer !";
-        questDescription = "Kill all the 4 thugs";
+        questName = "Thug Slayer";
+        questDescription = "<color=#6c6250ff>" + 0 + "</color>/ " + 4 + "Thugs Killed";
         experienceAmountReward = 100;
 
         // Reward item....

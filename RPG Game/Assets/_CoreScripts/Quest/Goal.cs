@@ -29,7 +29,14 @@ public class Goal
     {
         quest.CheckGoals();
         completed = true;
+        quest.questUI.SetCheckmarkVisibility(completed);
         Debug.Log("Goal Marked Completed !");
+    }
+
+    public void UpdateQuestDescription(string newQuestDesc)
+    {
+        quest.questDescription = newQuestDesc;
+        quest.questUI.UpdateQuestDescription();
     }
 
 }
