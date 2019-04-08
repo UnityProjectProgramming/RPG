@@ -10,6 +10,8 @@ public class Quest : MonoBehaviour
     public string questName;
     public string questDescription;
     public int experienceAmountReward;
+    public QuestUI questUI;
+
     // We can add here and item as a reward such as sword, potion, key .... etc.
     public bool completed;
 

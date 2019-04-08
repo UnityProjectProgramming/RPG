@@ -6,14 +6,27 @@ using UnityEngine.UI;
 
 public class QuestUI : MonoBehaviour {
 
-    [SerializeField] GameObject questCanvas;
     [SerializeField] Text questName;
     [SerializeField] Text questDescription;
+    [SerializeField] GameObject quest1;
+    [SerializeField] GameObject checkMark;
 
+    Quest currentQuest;
 
-    public void ActivateQuestUI()
+    private void Start()
     {
-        questCanvas.SetActive(true);
+        questDescription.text = "";
+        questName.text = "";
+    }
+
+    public Quest GetCurrentQuest()
+    {
+        return currentQuest;
+    }
+
+    public void SetCurrentQuest(Quest quest)
+    {
+        currentQuest = quest;
     }
 
     public void PopulateQuestUI(string questName, string questDescription)
@@ -28,8 +41,20 @@ public class QuestUI : MonoBehaviour {
         this.questDescription.text = "";
     }
 
-    public void DisableQuestUI()
+
+    public void SetQuestUIVisibility(bool b)
     {
-        questCanvas.SetActive(false);
+        quest1.SetActive(b);
     }
+
+    public void SetCheckmarkVisibility(bool b)
+    {
+        checkMark.SetActive(b);
+    }
+
+    public void UpdateQuestDescription()
+    {
+        this.questDescription.text = currentQuest.questDescription;
+    }
+
 }

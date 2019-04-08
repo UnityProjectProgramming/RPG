@@ -64,6 +64,9 @@ public class QuestSystem : MonoBehaviour
         dialogueManager.AddToDialogue(givingQuestDialogue);
         isQuestAssigned = true;
         quest = (Quest)currentQuests.AddComponent(System.Type.GetType(questTypeName));
+        quest.questUI = questUI;
+        questUI.SetQuestUIVisibility(true);
+        questUI.SetCurrentQuest(quest);
     }
 
 
@@ -71,6 +74,7 @@ public class QuestSystem : MonoBehaviour
     {
         if(quest.completed)
         {
+            questUI.SetCheckmarkVisibility(true);
             EndQuest();
         }
         else
@@ -87,6 +91,13 @@ public class QuestSystem : MonoBehaviour
         isQuestAssigned = false;
         hasRecivedReward = true;
         dialogueManager.StartDialogue(endQuestDialogue);
+        ResetQuestUI();
+    }
+
+    void ResetQuestUI()
+    {
         questUI.CleanQuestUI();
+        questUI.SetCheckmarkVisibility(false);
+        questUI.SetQuestUIVisibility(false);
     }
 }

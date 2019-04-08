@@ -10,8 +10,8 @@ public class ThugSlayer : Quest
     void Start ()
     {
         
-        questName = "Thug Slayer !";
-        questDescription = "Kill all the 4 thugs";
+        questName = "Thug Slayer";
+        questDescription = "<color=#6c6250ff>" + 0 + "</color>/ " + 2 + " Thugs Killed";
         experienceAmountReward = 100;
 
         // Reward item....
@@ -19,7 +19,8 @@ public class ThugSlayer : Quest
         Debug.Log("Starting quest: " + questName);
         QuestUI questUI = (QuestUI)FindObjectOfType(typeof(QuestUI));
         questUI.PopulateQuestUI(questName, questDescription);
-        goals.Add(new KillGoal(this, EnemyType.Thug, "Kill 4 Thugs", false, 0, 4));
+        goals.Clear();
+        goals.Add(new KillGoal(this, EnemyType.Thug, "Kill 4 Thugs", false, 0, 2));
         goals.ForEach(g => g.Init());
 	}
 

@@ -27,9 +27,16 @@ public class Goal
 
     public void Complete()
     {
-        quest.CheckGoals();
         completed = true;
+        quest.CheckGoals();
+        quest.questUI.SetCheckmarkVisibility(completed);
         Debug.Log("Goal Marked Completed !");
+    }
+
+    public void UpdateQuestDescription(string newQuestDesc)
+    {
+        quest.questDescription = newQuestDesc;
+        quest.questUI.UpdateQuestDescription();
     }
 
 }
