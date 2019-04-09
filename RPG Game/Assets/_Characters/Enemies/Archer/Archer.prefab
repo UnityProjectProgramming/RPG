@@ -3843,7 +3843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audoiSourceSpatialBlend: 0.5
-  animatorController: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
+  animatorController: {fileID: 9100000, guid: d450334e6c4773844b4fe71dfab693ed, type: 2}
   animatorOverrideController: {fileID: 22100000, guid: ab2b6121cdff6ad4f8018dc520b903d9,
     type: 2}
   characterAvatar: {fileID: 9000000, guid: 409520c9226982345a49c9803624f208, type: 3}
@@ -3857,6 +3857,7 @@ MonoBehaviour:
   stationaryTurnSpeed: 180
   runCycleLegOffset: 0.2
   animSpeedMultiplier: 1.5
+  rootMotion: 0
   speed: 1
   angularSpeed: 120
   acceleration: 8

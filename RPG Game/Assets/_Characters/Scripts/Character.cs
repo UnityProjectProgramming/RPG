@@ -38,6 +38,7 @@ namespace RPG.Characters
         [SerializeField] float stationaryTurnSpeed  = 180;
         [SerializeField] float runCycleLegOffset    = 0.2f;
         [SerializeField] float animSpeedMultiplier  = 1.5f;
+        [SerializeField] bool rootMotion = false;
 
         [Space]
 
@@ -104,7 +105,7 @@ namespace RPG.Characters
             animator = gameObject.AddComponent<Animator>();
             animator.runtimeAnimatorController = animatorController;
             animator.avatar = characterAvatar;
-            animator.applyRootMotion = false;
+            animator.applyRootMotion = rootMotion;
         }
 
         void Update()
