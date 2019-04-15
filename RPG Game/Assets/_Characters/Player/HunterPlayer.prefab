@@ -420,6 +420,7 @@ GameObject:
   - component: {fileID: 114721768078620744}
   - component: {fileID: 114059257912205382}
   - component: {fileID: 114884606005064020}
+  - component: {fileID: 114762067727464892}
   m_Layer: 0
   m_Name: HunterPlayer
   m_TagString: Player
@@ -3984,6 +3985,7 @@ MonoBehaviour:
   stationaryTurnSpeed: 350
   runCycleLegOffset: 0.5
   animSpeedMultiplier: 1.65
+  rootMotion: 0
   speed: 1
   angularSpeed: 120
   acceleration: 8
@@ -4026,6 +4028,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 52eb8e1d96076a64d9fff8d686ada76c, type: 3}
   - {fileID: 8300000, guid: e6a0f199e359e224ab94c441c8033a1d, type: 3}
   - {fileID: 8300000, guid: 55f363f1f8818c740a8cbc1186e674ce, type: 3}
+--- !u!114 &114762067727464892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204991609112830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56210d9c69607d54aa4da841b2f0d13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114884606005064020
 MonoBehaviour:
   m_ObjectHideFlags: 1
