@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using RPG.Characters;
+using RPG.CameraUI;
 
 namespace RPG.Cinematics
 {
@@ -19,11 +21,23 @@ namespace RPG.Cinematics
 
         void DisableControl(PlayableDirector playableDirector)
         {
+            GameObject Player = GameObject.FindWithTag("Player");
+            Player.GetComponent<PlayerControl>().enabled = false;
+
+            GameObject MainCamera = GameObject.FindWithTag("MainCamera");
+            MainCamera.GetComponent<CameraRaycaster>().enabled = false;
+
             print("DisableControl");
         }
 
         void EnableControl(PlayableDirector playableDirector)
         {
+            GameObject Player = GameObject.FindWithTag("Player");
+            Player.GetComponent<PlayerControl>().enabled = true;
+
+            GameObject MainCamera = GameObject.FindWithTag("MainCamera");
+            MainCamera.GetComponent<CameraRaycaster>().enabled = true;
+
             print("EnableControl");
         }
     }
