@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class DialogueManager : MonoBehaviour {
 
@@ -12,8 +13,15 @@ public class DialogueManager : MonoBehaviour {
     [SerializeField] Text continueDialogueText;
     [SerializeField] GameObject dialogueGameObject;
 
-	// Use this for initialization
-	void Start ()
+
+    [HideInInspector]
+    public bool finishedDialogue = false;
+
+    public event Action<bool> onFinishedDialogue;
+
+
+    // Use this for initialization
+    void Start ()
     {
         sentences = new Queue<string>();
         dialogueGameObject.SetActive(false);
@@ -76,6 +84,8 @@ public class DialogueManager : MonoBehaviour {
     void EndDialogue()
     {
         dialogueGameObject.SetActive(false);
+        finishedDialogue = true;
+        onFinishedDialogue.Invoke(true);
     }
 }
 
