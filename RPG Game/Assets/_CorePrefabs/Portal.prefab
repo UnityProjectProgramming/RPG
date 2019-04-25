@@ -109,6 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccde52c3c0a2809498a21c04bb5d8825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoadIndex: -1
+  sceneToLoadIndex: 5
   spawnTransform: {fileID: 4023311813770750}
-  destinationType: 0
+  destinationType: 1
+  fadeOutTime: 1
+  fadeInTime: 2
+  fadeWaitTime: 0.5

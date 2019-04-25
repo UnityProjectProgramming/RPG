@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,16 +7,20 @@ namespace RPG.Core
 {
     public class PersistantObjectSpawner : MonoBehaviour
     {
-        // Use this for initialization
-        void Start()
-        {
+        [SerializeField] GameObject persistantGameObject;
 
+        static bool hasSpawned = false;
+
+        private void Awake()
+        {
+            if (hasSpawned) return;
+            SpawnPersistantObjects();
+            hasSpawned = true;
         }
 
-        // Update is called once per frame
-        void Update()
+        private void SpawnPersistantObjects()
         {
-
+            DontDestroyOnLoad(Instantiate(persistantGameObject));
         }
     }
 }
