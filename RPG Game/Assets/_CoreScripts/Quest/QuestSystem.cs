@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using RPG.Characters;
-using RPG.Core;
+using UnityEngine.Playables;
 
 public class QuestSystem : MonoBehaviour
 {
@@ -20,12 +20,15 @@ public class QuestSystem : MonoBehaviour
     [SerializeField] GameObject currentQuests;
     [SerializeField] QuestUI questUI;
     [SerializeField] GameObject questExclemenation;
+    [SerializeField] PlayableDirector playableDirector;
 
     private EnemyAI enemyAI;
     private Quest quest;
     private bool isQuestAssigned;
     private bool hasFinishedQuest;
     private bool hasRecivedReward;
+
+    
 
     public GameObject GetQuestsObject()
     {
@@ -39,7 +42,10 @@ public class QuestSystem : MonoBehaviour
         hasFinishedQuest = false;
         hasRecivedReward = false;
         enemyAI = GetComponent<EnemyAI>();
-	}
+
+        dialogueManager.onFinishedDialogue += StartCinematicsSequence;
+
+    }
 	
     public void Interact()
     {
@@ -67,6 +73,11 @@ public class QuestSystem : MonoBehaviour
         quest.questUI = questUI;
         questUI.SetQuestUIVisibility(true);
         questUI.SetCurrentQuest(quest);
+    }
+
+    public Quest GetQuest()
+    {
+        return quest;
     }
 
 
@@ -99,5 +110,14 @@ public class QuestSystem : MonoBehaviour
         questUI.CleanQuestUI();
         questUI.SetCheckmarkVisibility(false);
         questUI.SetQuestUIVisibility(false);
+    }
+
+    void StartCinematicsSequence(bool start)
+    {
+        print("Starting Cinematics Sequence");
+        if(playableDirector)
+        {
+            playableDirector.Play();
+        }
     }
 }

@@ -45,7 +45,7 @@ namespace DuloGames.UI
             }
             else
             {
-                Debug.LogWarning("The slot cooldown script cannot operate without a target slot with a IUISlotHasCooldown interface, disabling script.");
+                //Debug.LogWarning("The slot cooldown script cannot operate without a target slot with a IUISlotHasCooldown interface, disabling script.");
                 this.enabled = false;
                 return;
             }
