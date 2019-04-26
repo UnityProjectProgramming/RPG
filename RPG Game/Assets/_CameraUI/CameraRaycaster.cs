@@ -44,7 +44,6 @@ namespace RPG.CameraUI
             }
             else
             {
-                Debug.Log("Performing Raycast ");
                 PerformRaycasts();
             }
         }
@@ -114,7 +113,6 @@ namespace RPG.CameraUI
             if (potentiallyWalkableHit)
             {
                 Cursor.SetCursor(walkCursor, cursorHotspot, CursorMode.Auto);
-                Debug.Log("Raycasting for Potentially Walkable Layer");
                 onMouseOverpotentiallyWalkable(hitInfo.point);
                 return true;
             }
