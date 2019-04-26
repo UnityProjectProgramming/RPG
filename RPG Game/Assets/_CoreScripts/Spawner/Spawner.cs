@@ -37,7 +37,6 @@ public class Spawner : MonoBehaviour
             spawnedEnemies--;
             if(spawnedEnemies <= 0)
             {
-                StopAllCoroutines();
                 StartCoroutine(RespawnEnemies(delay_GroupSpawn, delay_EnemySpawn));
                 spawnedEnemies = numberToSpawn;
             }

@@ -84,7 +84,8 @@ namespace RPG.Characters
             else // Assume is enemy for now, reconsider other NPCs Later 
             {
                 characterMovement.GetNavMeshAgent().speed = 0;
-                DestroyObject(gameObject, deathVanishSeconds + audioSource.clip.length); // TODO use obj.Destory instead.
+                //DestroyObject(gameObject, deathVanishSeconds + audioSource.clip.length); // TODO use obj.Destory instead.
+                Destroy(gameObject, deathVanishSeconds + audioSource.clip.length);
             }
         }
     }
