@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
 namespace RPG.Saving
@@ -22,6 +20,8 @@ namespace RPG.Saving
             {
                 GetComponent<SavingSystem>().Load(DEFAULT_SAVE_FILE);
             }
+
+         
         }
     }
 
