@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 114059257912205382}
   - component: {fileID: 114884606005064020}
   - component: {fileID: 114762067727464892}
-  - component: {fileID: 114709009522564776}
+  - component: {fileID: 114360152819824072}
   m_Layer: 0
   m_Name: HunterPlayer
   m_TagString: Player
@@ -4011,6 +4011,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb0c6f8c8a13e149bb5672a842e8564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114360152819824072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204991609112830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e78d3512e88494cb95218fdaacf771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114619332197779164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4055,17 +4066,6 @@ MonoBehaviour:
   stoppingDistance: 2.1
   obstcleAvoidanceRadius: 0.1
   enemyType: 0
---- !u!114 &114709009522564776
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1204991609112830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56210d9c69607d54aa4da841b2f0d13a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114721768078620744
 MonoBehaviour:
   m_ObjectHideFlags: 1

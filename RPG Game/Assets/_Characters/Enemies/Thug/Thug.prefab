@@ -846,6 +846,7 @@ GameObject:
   - component: {fileID: 114240991238364158}
   - component: {fileID: 114667747759194610}
   - component: {fileID: 136930745892903714}
+  - component: {fileID: 114755852365998600}
   m_Layer: 0
   m_Name: Thug
   m_TagString: Untagged
@@ -1859,6 +1860,17 @@ MonoBehaviour:
   waypointDwellTimeMin: 2
   waypointDwellTimeMax: 5
   state: 0
+--- !u!114 &114755852365998600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943043067564946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e78d3512e88494cb95218fdaacf771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114865131609103590
 MonoBehaviour:
   m_ObjectHideFlags: 1

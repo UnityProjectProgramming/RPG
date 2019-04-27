@@ -966,6 +966,7 @@ GameObject:
   - component: {fileID: 114897918978081000}
   - component: {fileID: 114903248860513948}
   - component: {fileID: 114597534747998922}
+  - component: {fileID: 114890193939148604}
   m_Layer: 0
   m_Name: Soldire
   m_TagString: Untagged
@@ -2446,6 +2447,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114890193939148604
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983795908854500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e78d3512e88494cb95218fdaacf771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114897918978081000
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 114006367007972662}
   - component: {fileID: 114529883751983136}
   - component: {fileID: 114562277069514876}
+  - component: {fileID: 114567935389809252}
   m_Layer: 0
   m_Name: Heavy Soldire LV_5
   m_TagString: Untagged
@@ -1870,6 +1871,17 @@ MonoBehaviour:
   waypointDwellTimeMin: 2
   waypointDwellTimeMax: 5
   state: 0
+--- !u!114 &114567935389809252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265702635736998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e78d3512e88494cb95218fdaacf771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114646062485087354
 MonoBehaviour:
   m_ObjectHideFlags: 1
