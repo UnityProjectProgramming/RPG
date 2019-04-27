@@ -2,11 +2,14 @@
 
 namespace RPG.Saving
 {
+    [ExecuteInEditMode]
     public class SaveableEntity : MonoBehaviour
     {
+        [SerializeField] string uniqueIdentifier = "";
+
         public string GetUniqueIdentifier()
         {
-            return "";
+            return uniqueIdentifier;
         }
 
         public object CaptureState()
@@ -18,6 +21,14 @@ namespace RPG.Saving
         public void RestoreState(object state)
         {
             print("Restoring State for " + GetUniqueIdentifier());
+        }
+
+        private void Update()
+        {
+            if(!Application.isPlaying)
+            {
+                Debug.Log("Editing");
+            }
         }
     }
 }
