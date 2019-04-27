@@ -10,15 +10,25 @@ namespace RPG.Saving
         {
             string path = GetPathFromSavingFile(saveFile);
             Debug.Log("Saving To " + path);
-            FileStream stream = File.Open(path, FileMode.Create);
-            byte[] bytes = Encoding.UTF8.GetBytes("Kore De Owari Da !!");
-            stream.Write(bytes, 0, bytes.Length);
-            stream.Close(); // main reason why we close file is because when we File.Open it sends a msg to the OS to give us a file handle and we must free the file handle incase we run out of resuource
+            using (FileStream stream = File.Open(path, FileMode.Create)) // it will close the file on its own.
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes("Kore De Owari Da !!");
+                stream.Write(bytes, 0, bytes.Length);
+            }
+
         }
 
         public void Load(string saveFile)
         {
-            Debug.Log("Loading From " + GetPathFromSavingFile(saveFile));
+            string path = GetPathFromSavingFile(saveFile);
+            Debug.Log("Loading From " + path);
+            using (FileStream stream = File.Open(path, FileMode.Open))
+            {
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                string saveData = Encoding.UTF8.GetString(buffer);
+                Debug.Log("Save Data: " + saveData);
+            }
         }
 
         private string GetPathFromSavingFile(string saveFile)
