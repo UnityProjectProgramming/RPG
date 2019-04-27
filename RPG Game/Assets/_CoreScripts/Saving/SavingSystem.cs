@@ -2,6 +2,7 @@
 using System.IO;
 using System.Text;
 using System;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace RPG.Saving
 {
@@ -14,8 +15,9 @@ namespace RPG.Saving
             using (FileStream stream = File.Open(path, FileMode.Create)) // it will close the file on its own.
             {
                 Transform playerTransform = GetPlayerTransform();
-                byte[] buffer = SerializeVector(playerTransform.position);
-                stream.Write(buffer, 0, buffer.Length);
+                BinaryFormatter formatter = new BinaryFormatter();
+                SerializableVector position = new SerializableVector(playerTransform.position);
+                formatter.Serialize(stream, position);
             }
 
         }
@@ -26,10 +28,9 @@ namespace RPG.Saving
             Debug.Log("Loading From " + path);
             using (FileStream stream = File.Open(path, FileMode.Open))
             {
-                byte[] buffer = new byte[stream.Length];
-                stream.Read(buffer, 0, buffer.Length);
-                Vector3 playerPos = DeseralizeVector(buffer);
-                SetPlayerTransform(playerPos);
+                BinaryFormatter formatter = new BinaryFormatter();
+                var obj = (SerializableVector)formatter.Deserialize(stream);
+                SetPlayerTransform(SerializableVector.ToVector3(obj));
             }
         }
 
