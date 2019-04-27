@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEditor;
 
 namespace RPG.Saving
 {
@@ -25,10 +26,19 @@ namespace RPG.Saving
 
         private void Update()
         {
-            if(!Application.isPlaying)
+            if (Application.isPlaying) return;
+            if (string.IsNullOrEmpty(gameObject.scene.path)) return;
+
+            Debug.Log("Editing");
+            SerializedObject serializedObject = new SerializedObject(this);
+            SerializedProperty serializedProperty = serializedObject.FindProperty("uniqueIdentifier");
+
+            if(string.IsNullOrEmpty(serializedProperty.stringValue))
             {
-                Debug.Log("Editing");
+                serializedProperty.stringValue = System.Guid.NewGuid().ToString();
+                serializedObject.ApplyModifiedProperties();
             }
+
         }
     }
 }
