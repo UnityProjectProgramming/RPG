@@ -27,7 +27,6 @@ namespace RPG.Saving
             GetComponent<NavMeshAgent>().enabled = false;
             transform.position = vec.ToVector3();
             GetComponent<NavMeshAgent>().enabled = true;
-
             print("Restoring State for " + GetUniqueIdentifier());
         }
 
