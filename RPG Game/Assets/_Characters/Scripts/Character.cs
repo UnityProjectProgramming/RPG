@@ -1,13 +1,14 @@
 using UnityEngine; 
 using UnityEngine.AI;
 using System;
+using RPG.Saving;
 
 public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, Dragon, NPC, Grunt, Warrior };
 
 namespace RPG.Characters
 {
     [SelectionBase] //To selecet the root of the character component i.e the player
-    public class Character : MonoBehaviour
+    public class Character : MonoBehaviour, ISaveable
     {
         //====Serliaized Section====
 
@@ -101,6 +102,7 @@ namespace RPG.Characters
             navMeshAgent.updateRotation = false;
             navMeshAgent.autoBraking = false;
             navMeshAgent.updatePosition = true;
+
 
             animator = gameObject.AddComponent<Animator>();
             animator.runtimeAnimatorController = animatorController;
@@ -211,6 +213,19 @@ namespace RPG.Characters
             return enemyType;
         }
 
+        public object CaptureState()
+        {
+            return new SerializableVector(transform.position);
+        }
+
+        public void RestoreState(object state)
+        {
+            SerializableVector vec = (SerializableVector)state;
+            GetComponent<NavMeshAgent>().isStopped = true;
+            GetComponent<NavMeshAgent>().enabled = false;
+            transform.position = vec.ToVector3();
+            GetComponent<NavMeshAgent>().enabled = true;
+        }
     }
 }
 

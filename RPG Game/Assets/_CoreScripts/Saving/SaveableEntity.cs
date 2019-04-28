@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using UnityEngine.AI;
+using System.Collections.Generic;
 
 namespace RPG.Saving
 {
@@ -16,18 +17,27 @@ namespace RPG.Saving
 
         public object CaptureState()
         {
-            
-            return new SerializableVector(transform.position);
+            Dictionary<string, object> state = new Dictionary<string, object>();
+            foreach (ISaveable saveable in GetComponents<ISaveable>())
+            {
+                // the key line means that we get the type of the saveable, assume it is HealthSystem so we get HealthSystem and covert it to string.
+                state[saveable.GetType().ToString()] = saveable.CaptureState();
+            }
+            return state;
+           // return new SerializableVector(transform.position);
         }
 
         public void RestoreState(object state)
         {
-            SerializableVector vec = (SerializableVector)state;
-            GetComponent<NavMeshAgent>().isStopped = true;
-            GetComponent<NavMeshAgent>().enabled = false;
-            transform.position = vec.ToVector3();
-            GetComponent<NavMeshAgent>().enabled = true;
-            print("Restoring State for " + GetUniqueIdentifier());
+            Dictionary<string, object> stateDict = (Dictionary<string, object>)state;
+            foreach (ISaveable saveable in GetComponents<ISaveable>())
+            {
+                string typeString = saveable.GetType().ToString();
+                if(stateDict.ContainsKey(typeString))
+                {
+                    saveable.RestoreState(stateDict[typeString]);
+                }
+            }
         }
 
         private void Update()

@@ -8,20 +8,32 @@ namespace RPG.Saving
 
         const string DEFAULT_SAVE_FILE = "save";
 
+        private void Start()
+        {
+            Load();
+        }
         // Update is called once per frame
         void Update()
         {
             if(Input.GetKeyDown(KeyCode.S))
             {
-                GetComponent<SavingSystem>().Save(DEFAULT_SAVE_FILE);
+                Save();
             }
 
             if (Input.GetKeyDown(KeyCode.L))
             {
-                GetComponent<SavingSystem>().Load(DEFAULT_SAVE_FILE);
+                Load();
             }
+        }
 
-         
+        public void Save()
+        {
+            GetComponent<SavingSystem>().Save(DEFAULT_SAVE_FILE);
+        }
+
+        public void Load()
+        {
+            GetComponent<SavingSystem>().Load(DEFAULT_SAVE_FILE);
         }
     }
 

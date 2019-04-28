@@ -420,7 +420,6 @@ GameObject:
   - component: {fileID: 114721768078620744}
   - component: {fileID: 114059257912205382}
   - component: {fileID: 114884606005064020}
-  - component: {fileID: 114762067727464892}
   - component: {fileID: 114360152819824072}
   m_Layer: 0
   m_Name: HunterPlayer
@@ -1988,7 +1987,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1204991609112830}
   m_LocalRotation: {x: -0, y: 0.33037347, z: -0, w: 0.9438503}
-  m_LocalPosition: {x: -126.33, y: 21.54, z: -209.14}
+  m_LocalPosition: {x: -104.179306, y: -0.058480024, z: 53.269783}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_Children:
   - {fileID: 4262922645404210}
@@ -4022,6 +4021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e78d3512e88494cb95218fdaacf771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!114 &114619332197779164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4102,17 +4102,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 52eb8e1d96076a64d9fff8d686ada76c, type: 3}
   - {fileID: 8300000, guid: e6a0f199e359e224ab94c441c8033a1d, type: 3}
   - {fileID: 8300000, guid: 55f363f1f8818c740a8cbc1186e674ce, type: 3}
---- !u!114 &114762067727464892
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1204991609112830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56210d9c69607d54aa4da841b2f0d13a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114884606005064020
 MonoBehaviour:
   m_ObjectHideFlags: 1

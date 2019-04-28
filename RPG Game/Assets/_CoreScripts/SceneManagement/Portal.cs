@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using RPG.Saving;
+using RPG.CameraUI;
 
 namespace RPG.SceneManagement
 {
@@ -50,14 +52,18 @@ namespace RPG.SceneManagement
             // Fade Out
             yield return fader.FadeOut(fadeOutTime);
 
+            FindObjectOfType<SavingWrapper>().Save();
+
             yield return SceneManager.LoadSceneAsync(sceneToLoadIndex);
+
+            FindObjectOfType<SavingWrapper>().Load();
 
             Portal otherPortal = GetOtherPortal();
             UpdatePlayerTransform(otherPortal);
-
             yield return new WaitForSeconds(fadeWaitTime);
             yield return fader.FadeIn(fadeInTime);
-            
+
+
             Destroy(gameObject);
         }
 

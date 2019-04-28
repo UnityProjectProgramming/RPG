@@ -84,6 +84,11 @@ namespace RPG.Characters
         
        void UpdateEnergyBar()
         {
+            if (!energyBar)
+            {
+                Debug.Log("No Energy bar assigned, please assign energy bar for " + gameObject.name);
+                return;
+            }
             energyBar.fillAmount = energyAsPercent;
         }
 
