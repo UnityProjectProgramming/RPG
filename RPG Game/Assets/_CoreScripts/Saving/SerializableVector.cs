@@ -19,9 +19,9 @@ namespace RPG.Saving
             z = vector.z;
         }
 
-        public static Vector3 ToVector3(SerializableVector obj)
+        public  Vector3 ToVector3()
         {
-            return new Vector3(obj.x, obj.y, obj.z);
+            return new Vector3(x, y, z);
         }
     }
 }
