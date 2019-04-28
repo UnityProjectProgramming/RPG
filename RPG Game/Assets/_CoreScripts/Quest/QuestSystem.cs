@@ -27,7 +27,7 @@ public class QuestSystem : MonoBehaviour
     private bool isQuestAssigned;
     private bool hasFinishedQuest;
     private bool hasRecivedReward;
-
+    private bool hasSequencePlayed = false;
     
 
     public GameObject GetQuestsObject()
@@ -115,9 +115,10 @@ public class QuestSystem : MonoBehaviour
     void StartCinematicsSequence(bool start)
     {
         print("Starting Cinematics Sequence");
-        if(playableDirector)
+        if(playableDirector && !hasSequencePlayed)
         {
             playableDirector.Play();
+            hasSequencePlayed = true;
         }
     }
 }
