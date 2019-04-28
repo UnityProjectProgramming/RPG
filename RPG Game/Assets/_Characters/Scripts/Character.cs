@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using System;
 
-public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, Dragon, NPC };
+public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, Dragon, NPC, Grunt, Warrior };
 
 namespace RPG.Characters
 {
