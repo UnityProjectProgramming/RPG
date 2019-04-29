@@ -8,10 +8,11 @@ using RPG.Saving;
 
 namespace RPG.Characters
 {
-    public class HealthSystem : MonoBehaviour
+    public class HealthSystem : MonoBehaviour, ISaveable
     {
         // Serlized
         [SerializeField] float maxHealthPoint        = 100f;
+        [SerializeField] float currentHealthPoint    = 100f;
         [SerializeField] float deathVanishSeconds    = 2.0f;
         [SerializeField] Image healthBar;
         [SerializeField] AudioClip[] damageSounds;
@@ -19,8 +20,8 @@ namespace RPG.Characters
 
         //Private
         const string DEATH_TRIGGER = "Death";
-        private float currentHealthPoint ;
         Animator animator;
+
         AudioSource audioSource;
         Character characterMovement;
         public float healthAsPercentage { get { return currentHealthPoint / maxHealthPoint; } }
@@ -35,7 +36,8 @@ namespace RPG.Characters
             animator = GetComponent<Animator>();
             audioSource = GetComponent<AudioSource>();
             characterMovement = GetComponent<Character>();
-            currentHealthPoint = maxHealthPoint;
+            //currentHealthPoint = maxHealthPoint;
+            Debug.Log("Called");
         }
 
         void Update()
@@ -80,15 +82,31 @@ namespace RPG.Characters
             yield return new WaitForSecondsRealtime(audioSource.clip.length);
             if (playerComponent && playerComponent.isActiveAndEnabled) // relying on Lazy Evaluation (Google if you need help)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(0); // TODO check for scene Error
             }
             else // Assume is enemy for now, reconsider other NPCs Later 
             {
                 characterMovement.GetNavMeshAgent().speed = 0;
-                //DestroyObject(gameObject, deathVanishSeconds + audioSource.clip.length); // TODO use obj.Destory instead.
+                //DestroyObject(gameObject, deathVanishSeconds + audioSource.clip.length);
                 Destroy(gameObject, deathVanishSeconds + audioSource.clip.length);
             }
         }
 
+
+        public object CaptureState()
+        {
+            return currentHealthPoint;
+        }
+
+        public void RestoreState(object state)
+        {
+            // Restore health points
+            currentHealthPoint = (float)state;
+         
+            if (currentHealthPoint <= 0.0f)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

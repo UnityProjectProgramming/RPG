@@ -3851,6 +3851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoint: 100
+  currentHealthPoint: 0
   deathVanishSeconds: 2
   healthBar: {fileID: 1382741186}
   damageSounds: []
@@ -31338,6 +31339,11 @@ Prefab:
       propertyPath: uniqueIdentifier
       value: 2a53db69-7bb5-4042-8553-997230095220
       objectReference: {fileID: 0}
+    - target: {fileID: 114240991238364158, guid: e6f6edd3e7cf4b343b1ae8a0eccf3342,
+        type: 2}
+      propertyPath: currentHealthPoint
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6f6edd3e7cf4b343b1ae8a0eccf3342, type: 2}
   m_IsPrefabAsset: 0
@@ -33397,6 +33403,30 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 83.355705
       objectReference: {fileID: 0}
+    - target: {fileID: 4341649008840612, guid: 853224ff3d594b8459ded3b5c70a7e18, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -51.337265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341649008840612, guid: 853224ff3d594b8459ded3b5c70a7e18, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 22.234617
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341649008840612, guid: 853224ff3d594b8459ded3b5c70a7e18, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 50.159172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757425804524564, guid: 853224ff3d594b8459ded3b5c70a7e18, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -51.337265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757425804524564, guid: 853224ff3d594b8459ded3b5c70a7e18, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 22.234617
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757425804524564, guid: 853224ff3d594b8459ded3b5c70a7e18, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 50.159172
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853224ff3d594b8459ded3b5c70a7e18, type: 2}
   m_IsPrefabAsset: 0
@@ -33723,6 +33753,78 @@ Transform:
   m_Father: {fileID: 1328696206}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1137381286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1137381287}
+  - component: {fileID: 1137381289}
+  - component: {fileID: 1137381288}
+  m_Layer: 0
+  m_Name: Dirt Old Hoe(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1137381287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1137381286}
+  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1688273088}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1137381288
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1137381286}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 0754ff2960a855b4b9535c598af02f66, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1137381289
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1137381286}
+  m_Mesh: {fileID: 4300002, guid: eee292b300b8dfa41be00641ff83b2a1, type: 3}
 --- !u!1001 &1139237524
 Prefab:
   m_ObjectHideFlags: 0
@@ -34767,78 +34869,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432600, guid: 0ae11fd94d7641b42a28d2b996c3d2c1,
     type: 2}
   m_PrefabInternal: {fileID: 1165514863}
---- !u!1 &1166080083
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1166080084}
-  - component: {fileID: 1166080086}
-  - component: {fileID: 1166080085}
-  m_Layer: 0
-  m_Name: Dirt Old Hoe(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1166080084
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1166080083}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1688273088}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1166080085
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1166080083}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 0754ff2960a855b4b9535c598af02f66, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1166080086
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1166080083}
-  m_Mesh: {fileID: 4300002, guid: eee292b300b8dfa41be00641ff83b2a1, type: 3}
 --- !u!4 &1168451459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 468370, guid: b91d607ee88cbd84d83fd6dca90b1338,
@@ -39724,6 +39754,11 @@ Prefab:
       propertyPath: uniqueIdentifier
       value: 3e2c2297-8d2a-4294-a075-baf3059a2cb5
       objectReference: {fileID: 0}
+    - target: {fileID: 114786361726143698, guid: 3e1b9595ff475e84b93975c1f1c2fca6,
+        type: 2}
+      propertyPath: currentHealthPoint
+      value: 240
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e1b9595ff475e84b93975c1f1c2fca6, type: 2}
   m_IsPrefabAsset: 0
@@ -43606,6 +43641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoint: 100
+  currentHealthPoint: 0
   deathVanishSeconds: 2
   healthBar: {fileID: 425852493}
   damageSounds: []
@@ -49769,6 +49805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoint: 100
+  currentHealthPoint: 0
   deathVanishSeconds: 2
   healthBar: {fileID: 463720561}
   damageSounds: []
@@ -51284,7 +51321,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1663764275}
-  m_LocalRotation: {x: 0.027082141, y: 0.5521964, z: -0.017951032, w: 0.83308077}
+  m_LocalRotation: {x: 0.027082117, y: 0.5521963, z: -0.017951014, w: 0.83308077}
   m_LocalPosition: {x: -104.9586, y: 38.920284, z: -193.71886}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -51366,7 +51403,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4113616769057576, guid: cfc98b52bff45964bbac2b29600ff698, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -104.179306
+      value: -104.96
       objectReference: {fileID: 0}
     - target: {fileID: 4113616769057576, guid: cfc98b52bff45964bbac2b29600ff698, type: 2}
       propertyPath: m_LocalPosition.y
@@ -51374,7 +51411,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4113616769057576, guid: cfc98b52bff45964bbac2b29600ff698, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 53.269783
+      value: 54.99
       objectReference: {fileID: 0}
     - target: {fileID: 4113616769057576, guid: cfc98b52bff45964bbac2b29600ff698, type: 2}
       propertyPath: m_LocalRotation.x
@@ -51406,6 +51443,11 @@ Prefab:
       propertyPath: energyBar
       value: 
       objectReference: {fileID: 280972307}
+    - target: {fileID: 114721768078620744, guid: cfc98b52bff45964bbac2b29600ff698,
+        type: 2}
+      propertyPath: currentHealthPoint
+      value: 360
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfc98b52bff45964bbac2b29600ff698, type: 2}
   m_IsPrefabAsset: 0
@@ -52357,7 +52399,7 @@ Transform:
   m_LocalPosition: {x: 69.802, y: -0.012994647, z: 16.775}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1166080084}
+  - {fileID: 1137381287}
   m_Father: {fileID: 232498576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 22.047, y: -88.546005, z: 0.546}
@@ -61134,6 +61176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoint: 100
+  currentHealthPoint: 0
   deathVanishSeconds: 2
   healthBar: {fileID: 583625425}
   damageSounds: []
@@ -62154,6 +62197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoint: 100
+  currentHealthPoint: 0
   deathVanishSeconds: 2
   healthBar: {fileID: 1207784245}
   damageSounds: []
@@ -66177,6 +66221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoint: 100
+  currentHealthPoint: 0
   deathVanishSeconds: 2
   healthBar: {fileID: 680458135}
   damageSounds: []

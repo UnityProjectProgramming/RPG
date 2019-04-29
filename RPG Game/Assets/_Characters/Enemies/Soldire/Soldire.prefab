@@ -2391,6 +2391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoint: 120
+  currentHealthPoint: 120
   deathVanishSeconds: 2
   healthBar: {fileID: 114448874608165886}
   damageSounds:
@@ -2458,6 +2459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e78d3512e88494cb95218fdaacf771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!114 &114897918978081000
 MonoBehaviour:
   m_ObjectHideFlags: 1

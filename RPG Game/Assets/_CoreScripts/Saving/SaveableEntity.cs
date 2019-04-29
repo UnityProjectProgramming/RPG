@@ -44,6 +44,7 @@ namespace RPG.Saving
             }
         }
 
+#if UNITY_EDITOR
         private void Update()
         {
             if (Application.isPlaying) return;
@@ -60,6 +61,8 @@ namespace RPG.Saving
             }
             globalLookup[serializedProperty.stringValue] = this;
         }
+#endif
+
 
         private bool IsUnique(string candidate)
         {
