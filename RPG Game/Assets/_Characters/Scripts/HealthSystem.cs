@@ -88,10 +88,18 @@ namespace RPG.Characters
             {
                 characterMovement.GetNavMeshAgent().speed = 0;
                 //DestroyObject(gameObject, deathVanishSeconds + audioSource.clip.length);
-                Destroy(gameObject, deathVanishSeconds + audioSource.clip.length);
+                //Destroy(gameObject, deathVanishSeconds + audioSource.clip.length);
             }
         }
 
+        void KillCharacterWithoutDestroy()
+        {
+            Character character = GetComponent<Character>();
+            character.Kill();
+            character.GetCapsuleCollider().enabled = false;
+            GetComponent<Animator>().SetTrigger(DEATH_TRIGGER);
+
+        }
 
         public object CaptureState()
         {
@@ -102,10 +110,10 @@ namespace RPG.Characters
         {
             // Restore health points
             currentHealthPoint = (float)state;
-         
+            
             if (currentHealthPoint <= 0.0f)
             {
-                Destroy(gameObject);
+                KillCharacterWithoutDestroy(); // TODO save death animation when the player is dead.
             }
         }
     }

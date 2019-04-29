@@ -28,7 +28,6 @@ namespace RPG.Saving
                 state[saveable.GetType().ToString()] = saveable.CaptureState();
             }
             return state;
-           // return new SerializableVector(transform.position);
         }
 
         public void RestoreState(object state)
