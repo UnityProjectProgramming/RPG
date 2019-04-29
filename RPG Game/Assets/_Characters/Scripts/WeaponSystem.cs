@@ -20,9 +20,6 @@ namespace RPG.Characters
         [Header("Particle Setup")]
         [SerializeField] ParticleSystem criticalHitParticle;
 
-        
-
-
         GameObject target;
         GameObject weaponObject;
         Animator animator;

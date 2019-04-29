@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using RPG.Saving;
 
 namespace RPG.Characters
 {
@@ -88,5 +89,6 @@ namespace RPG.Characters
                 Destroy(gameObject, deathVanishSeconds + audioSource.clip.length);
             }
         }
+
     }
 }
