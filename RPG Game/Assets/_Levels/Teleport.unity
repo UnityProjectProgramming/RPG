@@ -23675,6 +23675,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114013053567228292, guid: 853224ff3d594b8459ded3b5c70a7e18,
+        type: 2}
+      propertyPath: profile
+      value: 
+      objectReference: {fileID: 11400000, guid: d22f8df824607674aab0ade413bd8b9b,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 114043873625609836, guid: 853224ff3d594b8459ded3b5c70a7e18, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 853224ff3d594b8459ded3b5c70a7e18, type: 2}
@@ -39332,6 +39338,16 @@ Prefab:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 822294637}
+    - target: {fileID: 114721768078620744, guid: cfc98b52bff45964bbac2b29600ff698,
+        type: 2}
+      propertyPath: currentHealthPoint
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 114884606005064020, guid: cfc98b52bff45964bbac2b29600ff698,
+        type: 2}
+      propertyPath: energyBar
+      value: 
+      objectReference: {fileID: 1321514422}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfc98b52bff45964bbac2b29600ff698, type: 2}
   m_IsPrefabAsset: 0
@@ -39699,6 +39715,12 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300128, guid: e3e93bff5167ed94ead97cc498f6efa1, type: 3}
+--- !u!114 &1321514422 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114910917418444082, guid: 853224ff3d594b8459ded3b5c70a7e18,
+    type: 2}
+  m_PrefabInternal: {fileID: 822294634}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1326091428
 GameObject:
   m_ObjectHideFlags: 0
