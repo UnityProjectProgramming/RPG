@@ -1987,7 +1987,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1204991609112830}
   m_LocalRotation: {x: -0, y: 0.33037347, z: -0, w: 0.9438503}
-  m_LocalPosition: {x: -104.179306, y: -0.058480024, z: 53.269783}
+  m_LocalPosition: {x: -104.96, y: -0.058480024, z: 54.99}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_Children:
   - {fileID: 4262922645404210}
@@ -4078,7 +4078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoint: 360
-  currentHealthPoint: 0
+  currentHealthPoint: 360
   deathVanishSeconds: 2
   healthBar: {fileID: 0}
   damageSounds:
@@ -4115,7 +4115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energyBar: {fileID: 0}
-  maxEnergyPoint: 100
+  currentEnegryPoint: 100
   regenPointsPerSeconds: 2
   abilities:
   - {fileID: 11400000, guid: 03543547e83d549409a9616828be4301, type: 2}

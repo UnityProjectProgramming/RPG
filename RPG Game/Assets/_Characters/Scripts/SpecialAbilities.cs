@@ -2,20 +2,20 @@
 using UnityEngine;
 using UnityEngine.UI;
 using RPG.CameraUI;
-
+using RPG.Saving;
 
 namespace RPG.Characters
 {
-    public class SpecialAbilities : MonoBehaviour
+    public class SpecialAbilities : MonoBehaviour, ISaveable
     {
         
         [SerializeField] Image energyBar;
-        [SerializeField] float maxEnergyPoint = 100;
+        [SerializeField] float currentEnegryPoint = 100;
         [SerializeField] float regenPointsPerSeconds = 2;
         [SerializeField] AbilityConfig[] abilities;
         [SerializeField] AudioClip outOfEnergy;
-        
-        float currentEnegryPoint;
+
+        float maxEnergyPoint = 100;
         AudioSource audioSource;
 
 
@@ -25,7 +25,6 @@ namespace RPG.Characters
         void Start()
         {          
             audioSource = GetComponent<AudioSource>();
-            currentEnegryPoint = maxEnergyPoint;
             AttachInitialAbilities();
             UpdateEnergyBar();
         }
@@ -92,5 +91,14 @@ namespace RPG.Characters
             energyBar.fillAmount = energyAsPercent;
         }
 
+        public object CaptureState()
+        {
+            return currentEnegryPoint;
+        }
+
+        public void RestoreState(object state)
+        {
+            currentEnegryPoint = (float)state;
+        }
     }
 }
