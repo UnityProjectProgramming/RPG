@@ -25,9 +25,9 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(RespawnEnemies(0, 0));
-        spawnedEnemies = numberToSpawn;
-        CombatEvents.onEnemyDeath += EnemyDied;
+        //StartCoroutine(RespawnEnemies(0, 0));
+        //spawnedEnemies = numberToSpawn;
+        //CombatEvents.onEnemyDeath += EnemyDied;
     }
 
     void EnemyDied(Character enemy)
@@ -37,8 +37,8 @@ public class Spawner : MonoBehaviour
             spawnedEnemies--;
             if(spawnedEnemies <= 0)
             {
-                StartCoroutine(RespawnEnemies(delay_GroupSpawn, delay_EnemySpawn));
-                spawnedEnemies = numberToSpawn;
+                //StartCoroutine(RespawnEnemies(delay_GroupSpawn, delay_EnemySpawn));
+                //spawnedEnemies = numberToSpawn;
             }
         }
     }

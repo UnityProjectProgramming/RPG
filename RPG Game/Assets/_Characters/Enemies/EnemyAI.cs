@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Core;
 using System;
+using RPG.Saving;
 
 namespace RPG.Characters
 {
@@ -136,7 +137,6 @@ namespace RPG.Characters
             Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(transform.position, chaseRadious);
         }
-
 
     }
 }

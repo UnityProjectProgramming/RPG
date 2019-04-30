@@ -98,7 +98,7 @@ namespace RPG.Characters
             character.Kill();
             character.GetCapsuleCollider().enabled = false;
             GetComponent<Animator>().SetTrigger(DEATH_TRIGGER);
-
+            gameObject.SetActive(false); // Getting around the idea of saving each destroied object. instead we set it to active so it won't be renderd.
         }
 
         public object CaptureState()
