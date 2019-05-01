@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Characters;
 using UnityEngine.Playables;
+using RPG.Saving;
 
 public class QuestSystem : MonoBehaviour
 {
@@ -75,6 +76,15 @@ public class QuestSystem : MonoBehaviour
         questUI.SetCurrentQuest(quest);
     }
 
+    void AssignQuestBackFromSaving()
+    {
+        isQuestAssigned = true;
+        quest = (Quest)currentQuests.AddComponent(System.Type.GetType(questTypeName));
+        questUI.SetQuestUIVisibility(true);
+        questUI.SetCurrentQuest(quest);
+
+    }
+
     public Quest GetQuest()
     {
         return quest;
@@ -121,4 +131,34 @@ public class QuestSystem : MonoBehaviour
             hasSequencePlayed = true;
         }
     }
+
+
+    // For the isaveable interface
+    /*public object CaptureState()
+    {
+        Dictionary<string, object> state = new Dictionary<string, object>();
+        state["isQuestAssigned"] = isQuestAssigned;
+        SerializableQuest serializableQuest = new SerializableQuest(quest);
+        state["currentQuest"] = serializableQuest;
+
+
+        return state;
+    }
+
+    public void RestoreState(object state)
+    {
+        Dictionary<string, object> stateDict = (Dictionary<string, object>)state;
+        isQuestAssigned = (bool)stateDict["isQuestAssigned"];
+        SerializableQuest serializableQuest = (SerializableQuest)stateDict["currentQuest"];
+        quest = serializableQuest.ToQuest();
+        quest.questUI = FindObjectOfType<QuestUI>();
+        Debug.Log(quest.questUI);
+        if (!quest.completed)
+        {
+            Debug.Log("Assigning Quest");
+            AssignQuestBackFromSaving();
+        }
+        
+       
+    }*/
 }

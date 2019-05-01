@@ -845,7 +845,6 @@ GameObject:
   - component: {fileID: 114887473746442808}
   - component: {fileID: 114240991238364158}
   - component: {fileID: 114667747759194610}
-  - component: {fileID: 136930745892903714}
   - component: {fileID: 114755852365998600}
   m_Layer: 0
   m_Name: Thug
@@ -1812,9 +1811,9 @@ MonoBehaviour:
     type: 2}
   characterAvatar: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
   animForwardCap: 1
-  colliderCenter: {x: 0, y: 0.8, z: 0}
-  capsuleRadius: 0.2
-  capsuleHeight: 1.6
+  colliderCenter: {x: 0, y: 1.05, z: 0}
+  capsuleRadius: 0.5
+  capsuleHeight: 1.75
   moveSpeedMultiplier: 1.2
   moveThreshold: 1
   movingTurnSpeed: 1200
@@ -1909,22 +1908,9 @@ MonoBehaviour:
     type: 2}
   isProjectileWeapon: 0
   baseDamage: 7
-  criticalHitChance: 0
-  criticalHitMultiplier: 0
+  criticalHitChance: 0.15
+  criticalHitMultiplier: 2
   criticalHitParticle: {fileID: 0}
---- !u!136 &136930745892903714
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1943043067564946}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.75
-  m_Direction: 1
-  m_Center: {x: 0, y: 1.05, z: 0}
 --- !u!137 &137068525363686614
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -37,7 +37,6 @@ namespace RPG.Characters
             audioSource = GetComponent<AudioSource>();
             characterMovement = GetComponent<Character>();
             //currentHealthPoint = maxHealthPoint;
-            Debug.Log("Called");
         }
 
         void Update()

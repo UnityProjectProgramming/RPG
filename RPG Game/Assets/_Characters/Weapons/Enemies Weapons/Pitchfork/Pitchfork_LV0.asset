@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -14,6 +14,7 @@ MonoBehaviour:
   grip: {fileID: 4443640645496284, guid: de7022632f483e044b1e469377a35ffc, type: 2}
   weaponPrefab: {fileID: 116530, guid: ba790c6fd6f7ab24d88313172ed55d92, type: 2}
   attackAnimation: {fileID: 7400000, guid: 96f8270c0e4678d4580d41b43babe823, type: 3}
-  maxAttackRange: 2
-  additionalDamage: 0
+  maxAttackRange: 3
+  additionalDamage: 3
   damageDelay: 0.5
+  timeToWaitBetweenHits: 2.5

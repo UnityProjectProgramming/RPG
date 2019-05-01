@@ -7,6 +7,7 @@ using RPG.Characters;
 public class Quest : MonoBehaviour
 {
     public List<Goal> goals = new List<Goal>();
+    
     public string questName;
     public string questDescription;
     public int experienceAmountReward;
@@ -14,6 +15,18 @@ public class Quest : MonoBehaviour
 
     // We can add here and item as a reward such as sword, potion, key .... etc.
     public bool completed;
+
+    public Quest()
+    {
+
+    }
+
+    public Quest(string questName, string questDesc, int experienceAmout)
+    {
+        this.questName = questName;
+        questDescription = questDesc;
+        experienceAmountReward = experienceAmout;
+    }
 
     public void CheckGoals()
     {

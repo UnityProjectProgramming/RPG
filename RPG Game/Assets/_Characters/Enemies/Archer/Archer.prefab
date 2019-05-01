@@ -3791,6 +3791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoint: 100
+  currentHealthPoint: 100
   deathVanishSeconds: 2
   healthBar: {fileID: 114083120323246954}
   damageSounds:
@@ -3849,9 +3850,9 @@ MonoBehaviour:
     type: 2}
   characterAvatar: {fileID: 9000000, guid: 409520c9226982345a49c9803624f208, type: 3}
   animForwardCap: 1
-  colliderCenter: {x: 0, y: 0.8, z: 0}
-  capsuleRadius: 0.2
-  capsuleHeight: 1.6
+  colliderCenter: {x: 0, y: 1.05, z: 0}
+  capsuleRadius: 0.5
+  capsuleHeight: 1.75
   moveSpeedMultiplier: 0.5
   moveThreshold: 1
   movingTurnSpeed: 360
@@ -3864,7 +3865,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.3
   obstcleAvoidanceRadius: 0.1
-  enemyType: 0
+  enemyType: 10
 --- !u!114 &114494308855780806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3935,6 +3936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e78d3512e88494cb95218fdaacf771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!114 &114937416829160170
 MonoBehaviour:
   m_ObjectHideFlags: 1

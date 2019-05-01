@@ -3,7 +3,7 @@ using UnityEngine.AI;
 using System;
 using RPG.Saving;
 
-public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, Dragon, NPC, Grunt, Warrior };
+public enum EnemyType { None, HeavySoldire, Knight, Minion, Thug, Soldire, Dragon, NPC, Grunt, Warrior, Archer };
 
 namespace RPG.Characters
 {

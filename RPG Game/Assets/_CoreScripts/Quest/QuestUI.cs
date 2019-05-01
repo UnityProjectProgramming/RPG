@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public class QuestUI : MonoBehaviour
+{
 
-public class QuestUI : MonoBehaviour {
-
-    [SerializeField] Text questName;
-    [SerializeField] Text questDescription;
+    [SerializeField] public Text questName;
+    [SerializeField] public Text questDescription;
     [SerializeField] GameObject quest1;
     [SerializeField] GameObject checkMark;
+
 
     Quest currentQuest;
 
@@ -17,6 +18,7 @@ public class QuestUI : MonoBehaviour {
     {
         questDescription.text = "";
         questName.text = "";
+        
     }
 
     public Quest GetCurrentQuest()

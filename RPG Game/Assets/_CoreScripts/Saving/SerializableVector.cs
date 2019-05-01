@@ -7,11 +7,6 @@ namespace RPG.Saving
     {
         public float x, y, z;
 
-
-        public SerializableVector()
-        {
-        }
-
         public SerializableVector(Vector3 vector)
         {
             x = vector.x;

@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using RPG.Saving;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
 namespace RPG.Cinematics
 {
-    public class CinematicsTrigger : MonoBehaviour
+    public class CinematicsTrigger : MonoBehaviour, ISaveable
     {
         // Private
         private bool hasTriggerd = false;
@@ -18,6 +19,17 @@ namespace RPG.Cinematics
                 hasTriggerd = true;
             }
         }
+
+        public object CaptureState()
+        {
+            return hasTriggerd;
+        }
+
+        public void RestoreState(object state)
+        {
+            hasTriggerd = (bool)state;
+        }
+
     }
 }
 
