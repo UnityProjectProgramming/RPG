@@ -8,12 +8,6 @@ namespace RPG.Gameplay
 {
     public class LootChest : MonoBehaviour, ISaveable
     {
-        // TODO: Play Open Animation
-        // TODO: Play Sound
-        // TODO: Play Particle Effect
-        // TODO: Implement ISaveable
-
-
         [Header("Rewards")]
 
         [SerializeField] GameObject rewardPrefab;
@@ -45,7 +39,6 @@ namespace RPG.Gameplay
 
         private void GiveReward()
         {
-
             Debug.Log("Giving Player Rewards");
         }
 
