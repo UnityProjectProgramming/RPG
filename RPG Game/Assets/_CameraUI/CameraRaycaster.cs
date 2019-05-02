@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 using System.Collections.Generic;
 using System;
 using RPG.Characters; // so we can detect by type.
+using RPG.Gameplay;
 
 namespace RPG.CameraUI
 {
@@ -12,6 +13,7 @@ namespace RPG.CameraUI
         [SerializeField] Texture2D walkCursor = null;
         [SerializeField] Texture2D enemyCursor = null;
         [SerializeField] Texture2D npcCursor = null;
+        [SerializeField] Texture2D lootChestCursor = null;
         [SerializeField] Vector2 cursorHotspot = new Vector2(96, 96);
 
         const int POTENTIALLY_WALKABLE_LAYER = 8;
@@ -32,6 +34,10 @@ namespace RPG.CameraUI
         //Setting Up delegate for DialogueNPC
         public delegate void OnMouseOverNPC(EnemyAI NPC);
         public event OnMouseOverNPC onMouseOverNPC;
+
+        //Setting Up delegate for LootChests
+        public delegate void OnMouseOverLootChest(LootChest lootChest);
+        public event OnMouseOverLootChest onMouseOverLootChest;
 
         // Event means (you can't override this class accidenlty , YOU CAN ONLY ADD TO IT).
         void Update()
@@ -57,7 +63,8 @@ namespace RPG.CameraUI
 
                 //specify layer priorities below.
                 if (RaycastForEnemy(ray)) { return; }
-                else if(RaycastForNPC(ray)) { return; }
+                else if (RaycastForNPC(ray)) { return; }
+                else if (RaycastForLootChest(ray)) { return; }
 
                 if (RaycastForPotentiallyWalkable(ray)) { return; }
                 
@@ -99,6 +106,26 @@ namespace RPG.CameraUI
             {
                 Cursor.SetCursor(npcCursor, cursorHotspot, CursorMode.Auto);
                 onMouseOverNPC(NPC);
+                return true;
+            }
+            return false;
+        }
+
+        private bool RaycastForLootChest(Ray ray)
+        {
+            RaycastHit hitInfo;
+            LootChest lootChest = null;
+            var performRaycast = Physics.Raycast(ray, out hitInfo, maxRaycastDepth);
+            if (!performRaycast) { return false; }
+            GameObject gameObjectHit = hitInfo.collider.gameObject;
+            if(gameObjectHit)
+            {
+                lootChest = gameObjectHit.GetComponent<LootChest>();
+            }
+            if(lootChest && lootChest.tag == "LootChest")
+            {
+                Cursor.SetCursor(lootChestCursor, cursorHotspot, CursorMode.Auto);
+                onMouseOverLootChest(lootChest);
                 return true;
             }
             return false;

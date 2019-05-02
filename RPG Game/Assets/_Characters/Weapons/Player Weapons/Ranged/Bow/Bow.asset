@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: Bow
   m_EditorClassIdentifier: 
   grip: {fileID: 4400551247379338, guid: 710da2dfe9676844fac90c00fa1dd2e0, type: 2}
-  weaponPrefab: {fileID: 1713674773227922, guid: 9cbcacbbea719f9488a7cf04e338d9fc,
+  weaponPrefab: {fileID: 1563655986059756, guid: 7f105c0c272e6c146b4b41cdc53ea356,
     type: 2}
   attackAnimation: {fileID: 7400000, guid: 24d693751e9fd0b42ba8f9595d8b5f5e, type: 3}
-  maxAttackRange: 11
-  additionalDamage: 0
-  damageDelay: 0.7
+  maxAttackRange: 23
+  additionalDamage: 5
+  damageDelay: 0.4
+  timeToWaitBetweenHits: 2.5

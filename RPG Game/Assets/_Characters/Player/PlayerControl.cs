@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using RPG.CameraUI;
+using RPG.Gameplay;
 
 namespace RPG.Characters
 {
@@ -26,6 +27,7 @@ namespace RPG.Characters
             cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy; //Delegate
             cameraRaycaster.onMouseOverpotentiallyWalkable += onMouseOverpotentiallyWalkable;
             cameraRaycaster.onMouseOverNPC += onMouseOverNPC;
+            cameraRaycaster.onMouseOverLootChest += onMouseOverLootChest;
         }
 
         private void Update()
@@ -39,6 +41,18 @@ namespace RPG.Characters
             {
                 weaponSystem.StopAttacking();
                 character.SetDestination(destination);
+            }
+        }
+
+        void onMouseOverLootChest(LootChest lootChest)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                StartCoroutine(MoveToTarget(lootChest.gameObject));
+                if (Vector3.Distance(lootChest.transform.position, this.gameObject.transform.position) < 5)
+                {
+                    StartCoroutine(lootChest.OpenLootChest());
+                }
             }
         }
 
