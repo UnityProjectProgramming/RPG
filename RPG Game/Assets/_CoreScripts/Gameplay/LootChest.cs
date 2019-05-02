@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using RPG.Saving;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
 namespace RPG.Gameplay
 {
-    public class LootChest : MonoBehaviour
+    public class LootChest : MonoBehaviour, ISaveable
     {
         // TODO: Play Open Animation
         // TODO: Play Sound
@@ -48,6 +49,19 @@ namespace RPG.Gameplay
             Debug.Log("Giving Player Rewards");
         }
 
+        public object CaptureState()
+        {
+            return isOpened;
+        }
+
+        public void RestoreState(object state)
+        {
+            isOpened = (bool)state;
+            if(isOpened)
+            {
+                GetComponent<Animator>().SetTrigger("OpenLootChest");
+            }
+        }
     }
 }
 
