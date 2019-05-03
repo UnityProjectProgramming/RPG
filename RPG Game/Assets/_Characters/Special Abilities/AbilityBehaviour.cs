@@ -14,22 +14,13 @@ namespace RPG.Characters
         const string DEFAULT_ATTACK = "DEFAULT ATTACK";
 
         public bool canCastAbility = true;
+        protected float timeUsed;
 
         public void SetConfig(AbilityConfig configToSet)
         {
             config = configToSet;
         }
         public abstract void Use(GameObject target = null);
-
-        protected IEnumerator StartCooldown(AbilityBehaviour behaviour)
-        {
-            float coolDown = config.GetCoolDown();
-            canCastAbility = false;
-            // Start ui cooldown.
-            yield return new WaitForSeconds(coolDown);
-            canCastAbility = true;
-            Debug.Log("Finished Cooldown");
-        }
 
         protected void PlayParticleEffect()
         {
@@ -50,10 +41,29 @@ namespace RPG.Characters
             yield return new WaitForEndOfFrame();
         }
 
-        protected void StartUICooldown(int abilityIndex)
+        protected IEnumerator StartCooldown(AbilityBehaviour behaviour)
+        {
+            float coolDown = config.GetCoolDown();
+            canCastAbility = false;
+            // Start ui cooldown.
+            yield return new WaitForSeconds(coolDown);
+            canCastAbility = true;
+            Debug.Log("Finished Cooldown");
+        }
+
+        protected IEnumerator StartUICooldown(int abilityIndex, float time)
         {
             Image[] cooldownImages = GetComponent<SpecialAbilities>().GetCooldownImageAbilities();
             cooldownImages[abilityIndex].fillAmount = 1;
+            float fillAmount = 0;
+            while(cooldownImages[abilityIndex].fillAmount >= 0.01)
+            {
+                float currentTime = Time.time;
+                fillAmount = (config.GetCoolDown() - (currentTime - time)) / config.GetCoolDown();
+                Debug.Log("Fill Amount = " + fillAmount);
+                cooldownImages[abilityIndex].fillAmount = fillAmount;
+                yield return new WaitForEndOfFrame();
+            }
         }
 
         protected void PlayAbilityAnimation()

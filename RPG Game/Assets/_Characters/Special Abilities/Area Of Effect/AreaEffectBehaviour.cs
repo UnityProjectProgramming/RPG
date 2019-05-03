@@ -16,7 +16,8 @@ namespace RPG.Characters
 	            PlayAbilitySound();
 	            PlayParticleEffect();
 	            PlayAbilityAnimation();
-                StartUICooldown(1);
+                timeUsed = Time.time;
+                StartCoroutine(StartUICooldown(1, timeUsed));
 	            StartCoroutine(StartCooldown(this));
             }
         }
