@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace RPG.Characters
 {
@@ -24,6 +25,7 @@ namespace RPG.Characters
         {
             float coolDown = config.GetCoolDown();
             canCastAbility = false;
+            // Start ui cooldown.
             yield return new WaitForSeconds(coolDown);
             canCastAbility = true;
             Debug.Log("Finished Cooldown");
@@ -48,7 +50,11 @@ namespace RPG.Characters
             yield return new WaitForEndOfFrame();
         }
 
-
+        protected void StartUICooldown(int abilityIndex)
+        {
+            Image[] cooldownImages = GetComponent<SpecialAbilities>().GetCooldownImageAbilities();
+            cooldownImages[abilityIndex].fillAmount = 1;
+        }
 
         protected void PlayAbilityAnimation()
         {

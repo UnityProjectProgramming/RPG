@@ -14,6 +14,7 @@ namespace RPG.Characters
         [SerializeField] float regenPointsPerSeconds = 2;
         [SerializeField] AbilityConfig[] abilities;
         [SerializeField] AudioClip outOfEnergy;
+        [SerializeField] Image[] cooldownImageAbilities; 
 
         float maxEnergyPoint = 100;
         AudioSource audioSource;
@@ -39,6 +40,11 @@ namespace RPG.Characters
             {
                 abilities[abilityIndex].AttachAbilityTo(gameObject);
             }
+        }
+
+        public Image[] GetCooldownImageAbilities()
+        {
+            return cooldownImageAbilities;
         }
 
         public void AttemptSpecialAbility(int abilityIndex, GameObject target = null)

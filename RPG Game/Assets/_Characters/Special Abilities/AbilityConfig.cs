@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using RPG.Core;
+using UnityEngine.UI;
 
 namespace RPG.Characters
 {
@@ -13,11 +14,11 @@ namespace RPG.Characters
         [SerializeField] float energyCost = 10f;
         [SerializeField] float cooldown = 3.0f;
         [SerializeField] GameObject particlePrefab = null;
-        [SerializeField] AnimationClip abilityAnimation = null; 
+        [SerializeField] AnimationClip abilityAnimation = null;
         [SerializeField] AudioClip[] audioClips = null;
+
+
         protected AbilityBehaviour behaviour;
-
-
 
         public abstract AbilityBehaviour GetBehaviourComponent(GameObject objectToAttachTo);
         public void AttachAbilityTo(GameObject objectToAttachTo)
@@ -26,6 +27,7 @@ namespace RPG.Characters
             behaviourComponent.SetConfig(this);
             behaviour = behaviourComponent;
         }
+
         public AbilityBehaviour GetAbilityBehaviour()
         {
             return behaviour;

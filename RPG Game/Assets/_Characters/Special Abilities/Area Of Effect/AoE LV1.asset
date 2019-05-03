@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Name: AoE LV1
   m_EditorClassIdentifier: 
   energyCost: 10
+  cooldown: 3
   particlePrefab: {fileID: 1770134888874916, guid: 921f1e26b64971241948d280dd989d18,
     type: 2}
   abilityAnimation: {fileID: 7400000, guid: 3414c515c6a2f334da03b4ab3d547691, type: 3}
   audioClips:
   - {fileID: 8300000, guid: 1b76a2474de693040a86c0207c007daf, type: 3}
+  cooldownImage: {fileID: 114651318399316952, guid: 518423021f14a824d86f5e5b2e63bb05,
+    type: 2}
   radius: 5
   damageToEachTarget: 100
