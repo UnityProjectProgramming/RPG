@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Self Heal LV1
   m_EditorClassIdentifier: 
   energyCost: 10
+  cooldown: 5
   particlePrefab: {fileID: 1809111525862902, guid: 817c3995e511ad74f86db850407fc408,
     type: 2}
   abilityAnimation: {fileID: 7400000, guid: dafa7e8bcf1bfa24a8c53ec17164800e, type: 3}

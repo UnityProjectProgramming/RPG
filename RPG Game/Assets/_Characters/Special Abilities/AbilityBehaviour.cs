@@ -12,12 +12,22 @@ namespace RPG.Characters
         const string ATTACK_TRIGGER = "Attack";
         const string DEFAULT_ATTACK = "DEFAULT ATTACK";
 
+        public bool canCastAbility = true;
 
         public void SetConfig(AbilityConfig configToSet)
         {
             config = configToSet;
         }
         public abstract void Use(GameObject target = null);
+
+        protected IEnumerator StartCooldown(AbilityBehaviour behaviour)
+        {
+            float coolDown = config.GetCoolDown();
+            canCastAbility = false;
+            yield return new WaitForSeconds(coolDown);
+            canCastAbility = true;
+            Debug.Log("Finished Cooldown");
+        }
 
         protected void PlayParticleEffect()
         {
@@ -37,6 +47,8 @@ namespace RPG.Characters
             Destroy(particlePrefab);
             yield return new WaitForEndOfFrame();
         }
+
+
 
         protected void PlayAbilityAnimation()
         {

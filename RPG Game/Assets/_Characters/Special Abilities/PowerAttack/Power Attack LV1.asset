@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4144fc757ef58cd44aa226f20e0ebb62, type: 3}
   m_Name: Power Attack LV1
   m_EditorClassIdentifier: 
-  energyCost: 10
-  particlePrefab: {fileID: 1646382336242440, guid: 7f1e3230f9983704092539c9ccfc40d8,
+  energyCost: 20
+  particlePrefab: {fileID: 1770134888874916, guid: 09f68dd7d9570d641bdd6158c1659ec3,
     type: 2}
-  abilityAnimation: {fileID: 7400000, guid: 96f8270c0e4678d4580d41b43babe823, type: 3}
+  abilityAnimation: {fileID: 7400138, guid: 26c93cb914d9a9d44bfe7d49071f8dd1, type: 3}
   audioClips:
   - {fileID: 8300000, guid: 5b895c420bd6b3f408896ebc41e96dba, type: 3}
-  extraDamage: 10
+  extraDamage: 80

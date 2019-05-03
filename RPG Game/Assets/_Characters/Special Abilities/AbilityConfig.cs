@@ -11,10 +11,13 @@ namespace RPG.Characters
 
         [Header("Special Ability General")]
         [SerializeField] float energyCost = 10f;
+        [SerializeField] float cooldown = 3.0f;
         [SerializeField] GameObject particlePrefab = null;
         [SerializeField] AnimationClip abilityAnimation = null; 
         [SerializeField] AudioClip[] audioClips = null;
         protected AbilityBehaviour behaviour;
+
+
 
         public abstract AbilityBehaviour GetBehaviourComponent(GameObject objectToAttachTo);
         public void AttachAbilityTo(GameObject objectToAttachTo)
@@ -23,6 +26,10 @@ namespace RPG.Characters
             behaviourComponent.SetConfig(this);
             behaviour = behaviourComponent;
         }
+        public AbilityBehaviour GetAbilityBehaviour()
+        {
+            return behaviour;
+        }
         public void Use(GameObject target)
         {
             behaviour.Use(target);
@@ -30,6 +37,10 @@ namespace RPG.Characters
         public float GetEnergyCost()
         {
             return energyCost;
+        }
+        public float GetCoolDown()
+        {
+            return cooldown;
         }
         public GameObject GetParticlePrefab()
         {

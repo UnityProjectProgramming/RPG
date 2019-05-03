@@ -9,9 +9,16 @@ namespace RPG.Characters
 
         public override void Use(GameObject target)
         {
-            DealDamage(target);
-            PlayAbilitySound();
-            PlayParticleEffect();
+            if (canCastAbility)
+            {
+	            DealDamage(target);
+	            transform.LookAt(target.transform);
+	            PlayAbilitySound();
+	            PlayParticleEffect();
+	            PlayAbilityAnimation();
+	            StartCoroutine(StartCooldown(this));
+            }
+
         }
 
         private void DealDamage(GameObject target)

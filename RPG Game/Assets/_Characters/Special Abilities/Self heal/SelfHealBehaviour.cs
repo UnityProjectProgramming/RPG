@@ -16,11 +16,15 @@ namespace RPG.Characters
 
         public override void Use(GameObject target)
         {
-            var playerHealth = GetComponent<HealthSystem>();
-            playerHealth.Heal((config as SelfHealConfig).GetHealAmount());
-            PlayAbilitySound();
-            PlayParticleEffect();
-            PlayAbilityAnimation();
+            if(canCastAbility)
+            {
+                var playerHealth = GetComponent<HealthSystem>();
+                playerHealth.Heal((config as SelfHealConfig).GetHealAmount());
+                PlayAbilitySound();
+                PlayParticleEffect();
+                PlayAbilityAnimation();
+                StartCoroutine(StartCooldown(this));
+            }
         }
     }
 }
