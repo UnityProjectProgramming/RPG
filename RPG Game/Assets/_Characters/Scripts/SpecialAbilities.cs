@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using RPG.CameraUI;
 using RPG.Saving;
@@ -14,7 +13,10 @@ namespace RPG.Characters
         [SerializeField] float regenPointsPerSeconds = 2;
         [SerializeField] AbilityConfig[] abilities;
         [SerializeField] AudioClip outOfEnergy;
-        [SerializeField] Image[] cooldownImageAbilities; 
+        [Space]
+        [Header("UI Cooldown")]
+        [SerializeField] Image[] cooldownImageAbilities;
+        [SerializeField] Text[] cooldownNumbers;
 
         float maxEnergyPoint = 100;
         AudioSource audioSource;
@@ -28,6 +30,7 @@ namespace RPG.Characters
             audioSource = GetComponent<AudioSource>();
             AttachInitialAbilities();
             UpdateEnergyBar();
+            DisableCooldownNumbers();
         }
         void Update()
         {
@@ -47,6 +50,11 @@ namespace RPG.Characters
             return cooldownImageAbilities;
         }
 
+        public Text[] GetCooldownNumbers()
+        {
+            return cooldownNumbers;
+        }
+
         public void AttemptSpecialAbility(int abilityIndex, GameObject target = null)
         {
             //var energyComponent = GetComponent<SpecialAbilities>();
@@ -64,6 +72,14 @@ namespace RPG.Characters
                 {
                     audioSource.PlayOneShot(outOfEnergy);
                 }
+            }
+        }
+
+        private void DisableCooldownNumbers()
+        {
+            foreach (var cdNum in cooldownNumbers)
+            {
+                cdNum.gameObject.SetActive(false);
             }
         }
 

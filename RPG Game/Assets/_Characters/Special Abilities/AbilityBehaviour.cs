@@ -14,7 +14,6 @@ namespace RPG.Characters
         const string DEFAULT_ATTACK = "DEFAULT ATTACK";
 
         public bool canCastAbility = true;
-        protected float timeUsed;
 
         public void SetConfig(AbilityConfig configToSet)
         {
@@ -53,14 +52,25 @@ namespace RPG.Characters
 
         protected IEnumerator StartUICooldown(int abilityIndex, float time)
         {
-            Image[] cooldownImages = GetComponent<SpecialAbilities>().GetCooldownImageAbilities();
+            SpecialAbilities specialAbilities = GetComponent<SpecialAbilities>();
+            Image[] cooldownImages = specialAbilities.GetCooldownImageAbilities();
+            Text[] cooldownNumbers = specialAbilities.GetCooldownNumbers();
+
             cooldownImages[abilityIndex].fillAmount = 1;
             float fillAmount = 0;
-            while(cooldownImages[abilityIndex].fillAmount >= 0.01)
+            while(cooldownImages[abilityIndex].fillAmount >= 0)
             {
+                if(canCastAbility)
+                {
+                    cooldownNumbers[abilityIndex].gameObject.SetActive(false);
+                    cooldownImages[abilityIndex].fillAmount = 0;
+                    yield break;
+                }
                 float currentTime = Time.time;
-                fillAmount = (config.GetCoolDown() - (currentTime - time)) / config.GetCoolDown();
-                Debug.Log("Fill Amount = " + fillAmount);
+                float remainingCooldownTime = config.GetCoolDown() - (currentTime - time);
+                fillAmount = (remainingCooldownTime) / config.GetCoolDown();
+                cooldownNumbers[abilityIndex].gameObject.SetActive(true);
+                cooldownNumbers[abilityIndex].text = ((int)remainingCooldownTime + 1).ToString();
                 cooldownImages[abilityIndex].fillAmount = fillAmount;
                 yield return new WaitForEndOfFrame();
             }

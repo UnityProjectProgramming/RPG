@@ -1987,7 +1987,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1204991609112830}
   m_LocalRotation: {x: -0, y: 0.33037347, z: -0, w: 0.9438503}
-  m_LocalPosition: {x: -104.96, y: -0.058480024, z: 54.99}
+  m_LocalPosition: {x: -127.3, y: 21.91, z: -208}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_Children:
   - {fileID: 4262922645404210}
@@ -3997,8 +3997,7 @@ MonoBehaviour:
   baseDamage: 30
   criticalHitChance: 0.1
   criticalHitMultiplier: 1.25
-  criticalHitParticle: {fileID: 198519477083358970, guid: 7f1e3230f9983704092539c9ccfc40d8,
-    type: 2}
+  criticalHitParticle: {fileID: 0}
 --- !u!114 &114242896321947046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4122,6 +4121,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a473121211f613249a1ebad077e52a10, type: 2}
   - {fileID: 11400000, guid: 208b92ffc76f50d47801563ff66eb679, type: 2}
   outOfEnergy: {fileID: 8300000, guid: 18cf7e755482099488b330b3b113f5cd, type: 3}
+  cooldownImageAbilities:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  cooldownNumbers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!137 &137021544512945414
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
