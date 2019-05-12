@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5308a80fdc16bf459b7f1015f6f41dc, type: 3}
+  m_Name: Legendary Axe
+  m_EditorClassIdentifier: 
+  grip: {fileID: 4443640645496284, guid: 12b1402fe0dfee34eaef8c32bda2b2cf, type: 2}
+  weaponPrefab: {fileID: 153104, guid: e74d77e9b4db0c142851f49ef40b6ace, type: 2}
+  attackAnimation: {fileID: 7400000, guid: f9a41b3feea198048b4d8a29a9268d72, type: 3}
+  maxAttackRange: 8
+  additionalDamage: 30
+  damageDelay: 0.9
+  timeToWaitBetweenHits: 2.5

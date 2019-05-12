@@ -1615,15 +1615,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1983795908854500}
-  m_LocalRotation: {x: -0, y: -0.54065806, z: -0, w: 0.8412425}
-  m_LocalPosition: {x: 185.30304, y: 0, z: -84.633804}
-  m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.14, y: 12.51, z: -54.73}
+  m_LocalScale: {x: 2.1, y: 2.1, z: 2.1}
   m_Children:
   - {fileID: 4712311952020472}
   - {fileID: 224418848255854102}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -65.457, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4706355668820898
 Transform:
   m_ObjectHideFlags: 1
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   animatorController: {fileID: 9100000, guid: d450334e6c4773844b4fe71dfab693ed, type: 2}
   animatorOverrideController: {fileID: 22100000, guid: c49732e9ee0d4554997706cc416bae9a,
     type: 2}
-  characterAvatar: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
+  characterAvatar: {fileID: 9000000, guid: a177b0e6ff26a894180468c168e802cc, type: 3}
   animForwardCap: 1
   colliderCenter: {x: 0, y: 1.05, z: 0}
   capsuleRadius: 0.5
@@ -2390,9 +2390,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eca70b7e2f16c446a13cd5d3a4e74db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealthPoint: 120
-  currentHealthPoint: 120
-  deathVanishSeconds: 2
+  maxHealthPoint: 400
+  currentHealthPoint: 400
+  deathVanishSeconds: 5
   healthBar: {fileID: 114448874608165886}
   damageSounds:
   - {fileID: 8300000, guid: 881c6c3c931ba224faae3c19a88e86f5, type: 3}
@@ -2459,7 +2459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e78d3512e88494cb95218fdaacf771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueIdentifier: 
+  uniqueIdentifier: 2cc2c3de-31ea-4458-b46a-3cb70a7ce2fb
 --- !u!114 &114897918978081000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2471,10 +2471,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b14c093f53b7e54bbd7b14e80b7922e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWeaponConfig: {fileID: 11400000, guid: d5523595e2133994c9a62faa4cf3d261,
+  currentWeaponConfig: {fileID: 11400000, guid: 25b6c9ecdd3b4f046be00ba749c9e270,
     type: 2}
   isProjectileWeapon: 0
-  baseDamage: 14
+  baseDamage: 25
   criticalHitChance: 0
   criticalHitMultiplier: 0
   criticalHitParticle: {fileID: 0}
@@ -2489,7 +2489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353f1d90b65add34181af904578f61d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseRadious: 6
+  chaseRadious: 14
   waypointTolerance: 1.5
   patrolPath: {fileID: 0}
   waypointDwellTimeMin: 2
