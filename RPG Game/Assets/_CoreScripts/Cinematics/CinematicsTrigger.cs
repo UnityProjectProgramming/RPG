@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using RPG.SceneManagement;
 
 namespace RPG.Cinematics
 {
@@ -17,6 +18,7 @@ namespace RPG.Cinematics
             {
                 GetComponent<PlayableDirector>().Play();
                 hasTriggerd = true;
+                FindObjectOfType<SavingWrapper>().Save();
             }
         }
 

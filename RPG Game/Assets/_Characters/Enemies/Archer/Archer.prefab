@@ -1664,15 +1664,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1393083282783162}
-  m_LocalRotation: {x: -0, y: -0.54065806, z: -0, w: 0.8412425}
-  m_LocalPosition: {x: 189.38928, y: 0, z: -77.27667}
+  m_LocalRotation: {x: -0, y: -0.9130671, z: -0, w: -0.40780947}
+  m_LocalPosition: {x: 68.67, y: 20.245544, z: -55.81}
   m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
   m_Children:
   - {fileID: 4009910794414490}
   - {fileID: 224783042976822082}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -65.457, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -228.135, z: 0}
 --- !u!4 &4307458501135174
 Transform:
   m_ObjectHideFlags: 1
@@ -3827,7 +3827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353f1d90b65add34181af904578f61d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseRadious: 6.1
+  chaseRadious: 11.76
   waypointTolerance: 1.5
   patrolPath: {fileID: 0}
   waypointDwellTimeMin: 2
@@ -3936,7 +3936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e78d3512e88494cb95218fdaacf771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueIdentifier: 
+  uniqueIdentifier: 1e384ef8-3ab4-4ff8-99ae-7d1856d12734
 --- !u!114 &114937416829160170
 MonoBehaviour:
   m_ObjectHideFlags: 1

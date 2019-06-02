@@ -181,7 +181,11 @@ namespace RPG.Characters
             float damageBeforeCritical = baseDamage + currentWeaponConfig.GetAdditionalDamage();
             if (isCriticalHit)
             {
-                criticalHitParticle.Play();
+                if(criticalHitParticle)
+                {
+                    criticalHitParticle.Play();
+                    Debug.LogWarning("Critical Hit Prefab is not Assigned For : " + gameObject.name + "..  Please Assign 1.");
+                }
                 return damageBeforeCritical * criticalHitMultiplier;
             }
             else
