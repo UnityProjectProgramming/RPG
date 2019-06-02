@@ -51579,6 +51579,11 @@ Prefab:
       propertyPath: m_Name
       value: Quest Icon
       objectReference: {fileID: 0}
+    - target: {fileID: 114763385284438364, guid: eed16316c7789f1458b6b466e1054bf8,
+        type: 2}
+      propertyPath: uniqueIdentifier
+      value: fefbb22d-7ad6-4fb0-be3d-b4e0e8283fd5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eed16316c7789f1458b6b466e1054bf8, type: 2}
   m_IsPrefabAsset: 0
@@ -51622,6 +51627,7 @@ MonoBehaviour:
   currentQuests: {fileID: 617320248}
   questUI: {fileID: 408181911}
   questExclemenation: {fileID: 1590261995}
+  playableDirector: {fileID: 0}
 --- !u!114 &1036766606
 MonoBehaviour:
   m_ObjectHideFlags: 0
