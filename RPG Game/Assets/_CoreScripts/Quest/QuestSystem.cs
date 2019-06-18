@@ -44,7 +44,10 @@ public class QuestSystem : MonoBehaviour
         hasRecivedReward = false;
         enemyAI = GetComponent<EnemyAI>();
 
-        dialogueManager.onFinishedDialogue += StartCinematicsSequence;
+        if(playableDirector)
+        {
+            dialogueManager.onFinishedDialogue += StartCinematicsSequence;
+        }
 
     }
 	
