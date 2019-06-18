@@ -40,6 +40,11 @@ namespace RPG.SceneManagement
         {
             GetComponent<SavingSystem>().Load(DEFAULT_SAVE_FILE);
         }
+
+        public void DeleteSave()
+        {
+            GetComponent<SavingSystem>().DeleteSave(DEFAULT_SAVE_FILE);
+        }
     }
 
 }

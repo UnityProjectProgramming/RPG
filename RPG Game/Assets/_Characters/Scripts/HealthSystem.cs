@@ -57,7 +57,10 @@ namespace RPG.Characters
             bool characterDies = (currentHealthPoint - damage <= 0);
             currentHealthPoint = Mathf.Clamp(currentHealthPoint - damage, 0f, maxHealthPoint);
             var clip = damageSounds[UnityEngine.Random.Range(0, damageSounds.Length)];
-            audioSource.PlayOneShot(clip);
+            if(clip)
+            {
+                audioSource.PlayOneShot(clip);
+            }
             if (characterDies)
             {
                 StartCoroutine(KillCharacter());

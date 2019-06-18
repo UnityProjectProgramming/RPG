@@ -11,6 +11,13 @@ namespace RPG.Saving
 {
     public class SavingSystem : MonoBehaviour
     {
+        public void DeleteSave(string saveFile)
+        {
+            string path = GetPathFromSavingFile(saveFile);
+            File.Delete(path);
+        }
+
+
         public void Save(string saveFile)
         {
             Dictionary<string, object> state = LoadFile(saveFile);

@@ -2,49 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
+using UnityEngine.SceneManagement;
+using RPG.SceneManagement;
 
-public class DialogueManager : MonoBehaviour {
+public class DialogueManagerHistoryScene : MonoBehaviour
+{
 
     private Queue<string> sentences;
 
-    [SerializeField] Text NPCNameText;
     [SerializeField] Text dialogueText;
-    [SerializeField] Text continueDialogueText;
-    [SerializeField] GameObject dialogueGameObject;
-
-
-    [HideInInspector]
-    public bool finishedDialogue = false;
-
-    public event Action<bool> onFinishedDialogue;
+    [SerializeField] GameObject TextObject;
 
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         sentences = new Queue<string>();
-        if(dialogueGameObject)
-        {
-            dialogueGameObject.SetActive(false);
-        }
-        else
-        {
-            Debug.Log("Please Assign Dialogue Gamobkect in the DialogueManager.");
-        }
     }
-	
+
     public void StartDialogue(Dialogue dialogue)
     {
-        if(NPCNameText)
-        {
-            NPCNameText.text = dialogue.NPCName;
-        }
-
-        if (dialogueGameObject)
-        {
-            dialogueGameObject.SetActive(true);
-        }
+        
         sentences.Clear();
 
         foreach (var sentence in dialogue.sentences)
@@ -60,12 +38,11 @@ public class DialogueManager : MonoBehaviour {
         foreach (var sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
-        }  
+        }
     }
 
     public void ContinueDialogue(Dialogue dialogue)
     {
-        dialogueGameObject.SetActive(true);
         foreach (var sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
@@ -75,9 +52,9 @@ public class DialogueManager : MonoBehaviour {
 
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+        if (sentences.Count == 0)
         {
-            EndDialogue();
+            StartCoroutine(EndDialogue());
             return;
         }
         var sentence = sentences.Dequeue();
@@ -88,18 +65,42 @@ public class DialogueManager : MonoBehaviour {
     IEnumerator StreamLetters(string sentence)
     {
         dialogueText.text = "";
-        foreach(var letter in sentence.ToCharArray())
+        foreach (var letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(0.05f);
         }
     }
 
-    void EndDialogue()
+    IEnumerator EndDialogue()
     {
-        dialogueGameObject.SetActive(false);
-        finishedDialogue = true;
-        onFinishedDialogue.Invoke(true);
-    }
-}
+        TextObject.SetActive(false);
 
+        DontDestroyOnLoad(gameObject);
+
+        Fader fader = FindObjectOfType<Fader>();
+        SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+
+        // Fade Out
+        yield return fader.FadeOut(2);
+
+        savingWrapper.Save();
+
+        yield return SceneManager.LoadSceneAsync(1);
+
+        savingWrapper.Load();
+
+
+        savingWrapper.Save();
+
+        yield return new WaitForSeconds(1);
+        yield return fader.FadeIn(2);
+
+
+        Destroy(gameObject);
+
+
+    }
+
+
+}
