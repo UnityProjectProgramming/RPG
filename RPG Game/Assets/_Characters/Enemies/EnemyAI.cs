@@ -21,7 +21,7 @@ namespace RPG.Characters
         [SerializeField] float waypointDwellTimeMin = 2.0f;
         [SerializeField] float waypointDwellTimeMax = 5.0f;
 
-        [SerializeField] enum State { idle, attacking, patrolling, chasing };
+        [SerializeField] public enum State { idle, attacking, patrolling, chasing };
         [SerializeField] State state = State.idle;
 
 
@@ -32,6 +32,10 @@ namespace RPG.Characters
         Character character;
         WeaponSystem weaponSystem;
 
+        public State GetCurrentState()
+        {
+            return state;
+        }
 
         private void Start()
         {

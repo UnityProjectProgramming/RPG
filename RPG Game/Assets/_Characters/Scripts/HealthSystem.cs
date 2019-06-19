@@ -14,6 +14,7 @@ namespace RPG.Characters
         [SerializeField] float maxHealthPoint        = 100f;
         [SerializeField] float currentHealthPoint    = 100f;
         [SerializeField] float deathVanishSeconds    = 2.0f;
+        [SerializeField] bool canSelfRegen = false;
         [SerializeField] Image healthBar;
         [SerializeField] AudioClip[] damageSounds;
         [SerializeField] AudioClip[] deathSounds;
@@ -21,7 +22,7 @@ namespace RPG.Characters
         //Private
         const string DEATH_TRIGGER = "Death";
         Animator animator;
-
+        EnemyAI enemyAI;
         AudioSource audioSource;
         Character characterMovement;
         public float healthAsPercentage { get { return currentHealthPoint / maxHealthPoint; } }
@@ -36,12 +37,17 @@ namespace RPG.Characters
             animator = GetComponent<Animator>();
             audioSource = GetComponent<AudioSource>();
             characterMovement = GetComponent<Character>();
+            enemyAI = GetComponent<EnemyAI>();
             //currentHealthPoint = maxHealthPoint;
         }
 
         void Update()
         {
             UpdateHealthBar();
+            if(canSelfRegen && enemyAI.GetCurrentState() != EnemyAI.State.attacking && currentHealthPoint < maxHealthPoint)
+            {
+                Heal(5f);
+            }
         }
 
         void UpdateHealthBar()
@@ -102,6 +108,7 @@ namespace RPG.Characters
             GetComponent<Animator>().SetTrigger(DEATH_TRIGGER);
             gameObject.SetActive(false); // Getting around the idea of saving each destroied object. instead we set it to active so it won't be renderd.
         }
+
 
         public object CaptureState()
         {

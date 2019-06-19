@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RPG.Characters;
-using RPG.Saving;
 
-public class HeavySoldireKiller : Quest
+
+public class BossSlayer : Quest
 {
     // TODO Implement isaveable interface
 
@@ -16,8 +15,8 @@ public class HeavySoldireKiller : Quest
 
     void AssignQuest()
     {
-        questName = "Heavy Soldire Killer";
-        questDescription = "<color=#6c6250ff>" + 0 + "</color>/ " + 2 + " Heavy Soldire Killed";
+        questName = "Boss Slayer";
+        questDescription = "<color=#6c6250ff>" + 0 + "</color>/ " + 1 + " Gate Keeper Killed";
         experienceAmountReward = 100;
 
         // Reward item....
@@ -27,8 +26,7 @@ public class HeavySoldireKiller : Quest
         questUI.PopulateQuestUI(questName, questDescription);
         
         goals.Clear();
-        goals.Add(new KillGoal(this, EnemyType.HeavySoldire, " Kill 2 Heavy Soldires ", false, 0, 2));
+        goals.Add(new KillGoal(this, EnemyType.Grunt, "Kill the gate Keeper", false, 0, 1));
         goals.ForEach(g => g.Init());
     }
-
 }

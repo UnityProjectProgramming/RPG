@@ -131,6 +131,7 @@ public class QuestSystem : MonoBehaviour
         if(playableDirector && !hasSequencePlayed)
         {
             playableDirector.Play();
+            Debug.Log(playableDirector.name);
             hasSequencePlayed = true;
         }
     }

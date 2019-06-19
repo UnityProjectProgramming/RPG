@@ -89,6 +89,23 @@ namespace RPG.Characters
             StartCoroutine(AttackTargetRepeatedly());
         }
 
+        public IEnumerator BaseDamageBoostWithTime(float effectEndTime, float boostAmount ,ParticleSystem particleSystemAura, ParticleSystem particleSystemSword)
+        {
+            float originalBaseDamage = baseDamage;
+            float newBaseDamage = baseDamage + boostAmount;
+            baseDamage = newBaseDamage;
+
+            particleSystemAura.Play();
+            particleSystemSword.Play();
+
+            yield return new WaitForSeconds(effectEndTime);
+
+            particleSystemAura.Stop();
+            particleSystemSword.Stop();
+
+            baseDamage = originalBaseDamage;
+        }
+
         IEnumerator AttackTargetRepeatedly()
         {
             //determine if alive (Attacker or defender)
