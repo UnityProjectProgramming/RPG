@@ -44,13 +44,23 @@ namespace RPG.Characters
         void Update()
         {
             UpdateHealthBar();
-            if(canSelfRegen && enemyAI.GetCurrentState() != EnemyAI.State.attacking && currentHealthPoint < maxHealthPoint)
-            {
-                Heal(5f);
-            }
+            HealthRegen(); // Health Regen if canSelfRegen is True.
         }
 
-        void UpdateHealthBar()
+        void HealthRegen()
+        {
+            if(canSelfRegen && enemyAI.GetCurrentState() != EnemyAI.State.attacking && currentHealthPoint<maxHealthPoint)
+            {
+                if(currentHealthPoint <= 0)
+                {
+                    return;
+                }
+                Heal(5f);
+            }
+
+        }
+
+void UpdateHealthBar()
         {
             if(healthBar)   // Enemies May not have health bars to update.
             {
@@ -84,8 +94,11 @@ namespace RPG.Characters
             characterMovement.GetCapsuleCollider().enabled = false; // Disabling the collider so when the enemy dies the player can path throgh thier dead bodys and not to have a glitch.
             animator.SetTrigger(DEATH_TRIGGER);
             var playerComponent = GetComponent<PlayerControl>();
-            audioSource.clip = deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)];
-            audioSource.Play();
+            if(deathSounds.Length != 0)
+            {
+                audioSource.clip = deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)];
+                audioSource.Play();
+            }
             characterMovement.GetNavMeshAgent().speed = 0;
             yield return new WaitForSecondsRealtime(audioSource.clip.length);
             if (playerComponent && playerComponent.isActiveAndEnabled) // relying on Lazy Evaluation (Google if you need help)

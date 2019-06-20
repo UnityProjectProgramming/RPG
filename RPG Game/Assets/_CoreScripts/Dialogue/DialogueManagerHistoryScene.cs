@@ -67,7 +67,10 @@ public class DialogueManagerHistoryScene : MonoBehaviour
         dialogueText.text = "";
         foreach (var letter in sentence.ToCharArray())
         {
-            dialogueText.text += letter;
+            if(dialogueText)
+            {
+                dialogueText.text += letter;
+            }
             yield return new WaitForSeconds(0.05f);
         }
     }
