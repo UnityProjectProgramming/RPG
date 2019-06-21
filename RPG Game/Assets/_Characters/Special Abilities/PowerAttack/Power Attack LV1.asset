@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: Power Attack LV1
   m_EditorClassIdentifier: 
   energyCost: 20
+  cooldown: 6
   particlePrefab: {fileID: 1770134888874916, guid: 09f68dd7d9570d641bdd6158c1659ec3,
     type: 2}
   abilityAnimation: {fileID: 7400138, guid: 26c93cb914d9a9d44bfe7d49071f8dd1, type: 3}
   audioClips:
   - {fileID: 8300000, guid: 5b895c420bd6b3f408896ebc41e96dba, type: 3}
-  extraDamage: 80
+  extraDamage: 150
