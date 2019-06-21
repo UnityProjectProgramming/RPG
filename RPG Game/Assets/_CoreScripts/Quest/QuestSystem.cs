@@ -137,31 +137,14 @@ public class QuestSystem : MonoBehaviour
     }
 
 
-    // For the isaveable interface
-    /*public object CaptureState()
+    /*// For the isaveable interface
+    public object CaptureState()
     {
-        Dictionary<string, object> state = new Dictionary<string, object>();
-        state["isQuestAssigned"] = isQuestAssigned;
-        SerializableQuest serializableQuest = new SerializableQuest(quest);
-        state["currentQuest"] = serializableQuest;
-
-
-        return state;
+        return hasFinishedQuest;
     }
 
     public void RestoreState(object state)
     {
-        Dictionary<string, object> stateDict = (Dictionary<string, object>)state;
-        isQuestAssigned = (bool)stateDict["isQuestAssigned"];
-        SerializableQuest serializableQuest = (SerializableQuest)stateDict["currentQuest"];
-        quest = serializableQuest.ToQuest();
-        quest.questUI = FindObjectOfType<QuestUI>();
-        Debug.Log(quest.questUI);
-        if (!quest.completed)
-        {
-            Debug.Log("Assigning Quest");
-            AssignQuestBackFromSaving();
-        }
         
        
     }*/

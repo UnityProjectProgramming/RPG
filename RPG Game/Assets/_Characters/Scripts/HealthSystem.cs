@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using RPG.Saving;
+using RPG.SceneManagement;
 
 namespace RPG.Characters
 {
@@ -60,7 +61,7 @@ namespace RPG.Characters
 
         }
 
-void UpdateHealthBar()
+        void UpdateHealthBar()
         {
             if(healthBar)   // Enemies May not have health bars to update.
             {
@@ -100,10 +101,13 @@ void UpdateHealthBar()
                 audioSource.Play();
             }
             characterMovement.GetNavMeshAgent().speed = 0;
-            yield return new WaitForSecondsRealtime(audioSource.clip.length);
+            //yield return new WaitForSecondsRealtime(audioSource.clip.length);
+            yield return null;
             if (playerComponent && playerComponent.isActiveAndEnabled) // relying on Lazy Evaluation (Google if you need help)
             {
-                SceneManager.LoadScene(0); // TODO check for scene Error
+                FindObjectOfType<SavingWrapper>().DeleteSave();
+                SceneManager.LoadSceneAsync(0);
+                //SceneManager.LoadScene(0); // TODO check for scene Error
             }
             else // Assume is enemy for now, reconsider other NPCs Later 
             {
@@ -122,6 +126,10 @@ void UpdateHealthBar()
             gameObject.SetActive(false); // Getting around the idea of saving each destroied object. instead we set it to active so it won't be renderd.
         }
 
+        public bool IsDead()
+        {
+            return currentHealthPoint <= 0;
+        }
 
         public object CaptureState()
         {
